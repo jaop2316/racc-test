@@ -1,0 +1,126 @@
+$susy: (
+  columns: 12,
+  gutters: 1/6,
+  math: fluid,
+  output: float,
+  gutter-position: outside,
+  global-box-sizing: border-box,
+  // debug: (image: show)
+);
+
+/// Absolute height of body text, in pixels
+/// @type Number
+$base-font-size: 18px;
+
+
+/// Absolute height of one line of type, in pixels
+/// @type Number
+$base-line-height: 24px;
+
+/**
+ * Initiate Susy and Vertical Rhythm configurations
+ */
+  @include border-box-sizing;
+  @include establish-new-baseline;
+
+
+
+.site-header{
+
+  @include container();
+  @include susy-breakpoint($screen-small-8cols, 8) {
+    @include container();
+    background-color:$c-white--gradient;
+    width:100%;
+    position: absolute;
+    z-index: 999999999999999999999999;
+    top:0;
+    left:0;
+    .branding{
+      //display: none;
+    }
+    /*.main-menu{
+      display: none;
+    }
+    .menus{
+      display: none;
+    }
+    #main-menu-fish{
+      display:none;
+      .test{
+        display: none;
+      }
+    }*/
+    .responsive-menu-toggle-icon:before, .responsive-menu-toggle-icon:after, .responsive-menu-toggle-icon span.icon{
+      background-color: $c-black;
+    }
+    .responsive-menu-toggle-icon span.label {
+      display:none;
+    }
+
+  }
+  @include susy-breakpoint($screen-medium-12cols, 12) {
+    @include container();
+    background-color:$c-white--gradient;
+    width:100%;
+    position: absolute;
+    z-index: 999999999999999999999999;
+    top:0;
+    left:0;
+
+    .branding{
+      @include span(3);
+      //float:left;
+    }
+
+    .menus{
+      @include span(9);
+    }
+
+    .main-menu{
+      @include span(9);
+      float:right;
+    }
+
+    .main-menu-fish{
+    margin-top:4px;
+    margin-right:105px;
+  }
+
+
+ul.sf-menu.sf-style-white{
+   li {
+    background: $c-white;
+    margin-right:60px;
+      &:hover{
+        background-color:$c-white;
+      }
+    }
+  a{
+    color:$c-black;
+  }
+}
+
+#main-menu-fish.sf-depth-1.menuparent{
+  background:unset;
+  &:hover{
+        background-color:$c-white;
+  }
+ }
+
+ #main-menu-fish.sf-depth-1.sf-no-children{
+  background:unset;
+}
+
+.responsive-menu-toggle{
+  display: none;
+}
+
+/*.test{
+  @include span(2);
+}*/
+}
+
+
+
+}

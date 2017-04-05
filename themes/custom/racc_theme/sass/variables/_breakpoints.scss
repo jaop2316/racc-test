@@ -1,0 +1,43 @@
+/**
+ * Main breakpoints
+ * NOTE: Breakpoints reduced 1px for media-query to avoid double breakpoint
+ * https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints
+ */
+
+$print-media: 'not screen';
+$hidpi: min-resolution 2dppx;
+$touch: pointer coarse, 'no-query' '.touch';
+
+$xsmall-s: 359px;
+$xsmall-m: 399px;
+$xsmall-l: 479px; // 8 cols breakpoint
+
+$small-s: 599px;
+$small-m: 719px;
+$small-l: 839px; // 12 cols breakpoint
+$small-xl: 959px;
+
+$medium-s: 1023px;
+$medium-l: 1279px;
+
+$large-s: 1439px;
+$large-l: 1599px;
+
+$xlarge: 1919px;
+
+/**
+ * # Media queries - Layout screen sizes
+ */
+$screen-small-8cols: 'only screen' ($xsmall-l + 1px);
+$screen-medium-12cols: $small-l + 1px;
+$screen-large-12cols: $medium-s + 1px;
+$screen-xlarge-12cols: $large-l + 1px;
+
+/**
+ * # Media queries - Max width sizes
+ */
+$max-xsmall-4cols: 'only screen' (max-width $xsmall-l);
+$max-small-8cols: 'only screen' (max-width $small-l);
+$max-medium-12cols: max-width $medium-s;
+$max-large-12cols: max-width $large-l;
+$max-xlarge-12cols: max-width $xlarge;

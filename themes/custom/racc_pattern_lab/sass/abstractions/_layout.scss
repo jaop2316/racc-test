@@ -1,0 +1,152 @@
+////
+/// @group responsive_config
+/// @author Alvaro Mena
+////
+
+/// Susy base container configuration, mobile first with 6 cols for mobile devices
+/// @type Map
+$susy: (
+  columns: 6,
+  gutters: 1/8,
+  math: fluid,
+  output: float,
+  gutter-position: outside,
+  global-box-sizing: border-box,
+  // debug: (image: show)
+);
+
+/// Absolute height of body text, in pixels
+/// @type Number
+$base-font-size: 18px;
+
+
+/// Absolute height of one line of type, in pixels
+/// @type Number
+$base-line-height: 24px;
+
+/**
+ * Initiate Susy and Vertical Rhythm configurations
+ */
+@include border-box-sizing;
+@include establish-new-baseline;
+
+/**
+ * Main definition of Susy framework in the site, using <body> tag, ensuring mobile first approach.
+ * This declaration doesn't  need to be implemented again in the site.
+ */
+body {
+  @include set-font-size($base-font-size);
+  @include container();
+  @include susy-breakpoint($screen-small-8cols, 8) {
+    @include container();
+  }
+  @include susy-breakpoint($screen-medium-12cols, 12) {
+    @include container();
+  }
+}
+
+/// This placeholder should be used to center content in the page using padding,
+/// that needs to have a background color from side to side of the page. <br/>
+/// <strong>NOTE:</strong> DO NOT ADD TO THE SITE GLOBALLY USING THE <body> TAG OR THE MAIN CONTENT DIV
+///
+/// @example scss - Usage
+///   .l-header {
+///     @extend %padding_content;
+///   }
+///
+/// @example css - CSS output
+///   .l-header {
+///     padding-left: 8.49057%;
+///     padding-right: 8.49057%;
+///   }
+///   
+///   @media only screen and (min-width: 480px) {
+///     .l-header {
+///       padding-left: 6.33803%;
+///       padding-right: 6.33803%;
+///     }
+///   }
+///   
+///   @media (min-width: 840px) {
+///     .l-header {
+///       padding-left: 12.61682%;
+///       padding-right: 12.61682%;
+///     }
+///   }
+///   
+///   @media (min-width: 1600px) {
+///     .l-header {
+///       padding-left: 8.41121%;
+///       padding-right: 8.41121%;
+///     }
+///   }
+
+%padding_content {
+  @include pad(0.5 of 6);
+  @include breakpoint($screen-small-8cols) {
+    @include pad(0.5 of 8);
+  }
+  @include breakpoint($screen-medium-12cols) {
+    @include pad(1.5 of 12);
+  }
+  @include breakpoint($screen-xlarge-12cols) {
+    @include pad(1 of 12);
+  }
+}
+
+
+/// This placeholder should be used to center content in the page using margin.<br/>
+/// <strong>NOTE:</strong> Use nested scope.<br/>
+/// <strong>NOTE:</strong> DO NOT ADD TO THE SITE GLOBALLY USING THE <body> TAG OR THE MAIN CONTENT DIV
+///
+/// @link http://susydocs.oddbird.net/en/latest/toolkit/#nested-context
+///
+///
+/// @example scss - Usage
+///  .field--name-body {
+///    @extend %margin_content;
+///  }
+///
+/// @example css - CSS output
+///   .field--name-body {
+///     margin-left: 8.49057%;
+///     margin-right: 8.49057%;
+///   }
+///   
+///   @media only screen and (min-width: 480px) {
+///     .field--name-body {
+///       margin-left: 6.33803%;
+///       margin-right: 6.33803%;
+///     }
+///   }
+///   
+///   @media (min-width: 840px) {
+///     .field--name-body {
+///       margin-left: 12.61682%;
+///       margin-right: 12.61682%;
+///     }
+///   }
+///   
+///   @media (min-width: 1600px) {
+///     .field--name-body {
+///       margin-left: 8.41121%;
+///       margin-right: 8.41121%;
+///     }
+///   }
+
+%margin_content {
+  @include nested(5 of 6);
+  @include squish(0.5 of 6);
+  @include breakpoint($screen-small-8cols) {
+    @include nested(7 of 8);
+    @include squish(0.5 of 8);
+  }
+  @include breakpoint($screen-medium-12cols) {
+    @include nested(9 of 12);
+    @include squish(1.5 of 12);
+  }
+  @include breakpoint($screen-xlarge-12cols) {
+    @include nested(10 of 12);
+    @include squish(1 of 12);
+  }
+}

@@ -1,0 +1,14 @@
+name: RACC PATTERN LAB
+type: theme
+description: It's a theme with PATTERN LAB like a base.
+package: Other
+core: 8.x
+libraries:
+  - racc_pattern_lab/global-styling
+
+base theme: patternlab
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer

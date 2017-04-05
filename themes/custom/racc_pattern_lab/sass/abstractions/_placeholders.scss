@@ -1,0 +1,119 @@
+/// Clearfix after pseudo element
+/// Fixes container height when children floated
+///
+/// @group base_placeholders
+///
+/// @example scss - Usage
+///   .foo {
+///     @extend %clearfix_after;
+///   }
+///
+/// @example css - CSS output
+///   .foo::after {
+///     content: ' ';
+///     display: block;
+///     clear: both;
+///   }
+
+%clearfix_after {
+  &::after {
+    content: ' ';
+    display: block;
+    @include break;
+  }
+}
+
+/// Navigatiton list
+/// Defined as placeholder
+///
+/// @group base_placeholders
+///
+/// @example scss - Usage
+///  .foo {
+///     @extend %navigation-list;
+///   }
+///
+/// @example css - CSS output
+///  .foo::after {
+///     content: ' ';
+///     display: block;
+///     clear: both;
+///   }
+///   
+///   .foo {
+///     list-style-type: none;
+///     line-height: 1;
+///     padding: 0;
+///     margin: 0;
+///   }
+///   
+///   .foo > li {
+///     display: inline-block;
+///   }
+///   
+///   .foo > li::before {
+///     display: none !important;
+///   }
+///   
+///   .foo > li:last-child {
+///     margin-right: 0;
+///   }
+
+%navigation-list {
+  @extend %clearfix_after;
+  list-style-type: none;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  & > li {
+    display: inline-block;
+    &::before {
+      display: none !important;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/// Vertical list
+/// Defined as placeholder
+///
+/// @group base_placeholders
+///
+/// @example scss - Usage
+///   .foo {
+///     @extend %vertical-list;
+///   }
+///
+/// @example css - CSS output
+///  .foo {
+///     margin: 0;
+///     padding: 0;
+///     border: 0;
+///   }
+///
+///   .foo li {
+///     list-style-image: none;
+///     list-style-type: none;
+///     margin-left: 0;
+///     white-space: nowrap;
+///     display: block;
+///     padding-left: 4px;
+///     padding-right: 4px;
+///   }
+
+%vertical-list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: block;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}

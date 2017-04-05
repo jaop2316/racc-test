@@ -1,0 +1,38 @@
+/**
+ * Global headers
+ */
+
+@include headings {
+  //margin: 0px;
+  word-wrap: break-word;
+  font-weight: normal;
+  @include trailer;
+}
+
+/**
+ * Headers specific styles
+ */
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}

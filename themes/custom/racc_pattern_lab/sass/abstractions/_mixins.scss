@@ -1,0 +1,653 @@
+////
+/// @author Alvaro Mena
+////
+
+/// Retina background image with width and height
+///
+/// @group base_responsive
+///
+/// @param {URL} $image - asset url
+/// @param {Length} $width - asset width
+/// @param {Length} $height - asset height
+///
+/// @example scss - Usage
+///   .foo {
+///     @include image-2x('../path-to-image/image.jpg', 200px, 50px);
+///   }
+///
+/// @example css - CSS output
+///   @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+///     .foo {
+///       /* on retina, use image that's scaled by 2 */
+///       background-image: "../path-to-image/image.jpg";
+///       background-size: 200px 50px;
+///     }
+///   }
+
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+  (-o-min-device-pixel-ratio: 2.6/2),
+  (-webkit-min-device-pixel-ratio: 1.3),
+  (min-device-pixel-ratio: 1.3),
+  (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: $image;
+    background-size: $width $height;
+  }
+}
+
+/// Center element regarding container
+///
+/// @group base_helpers
+///
+/// @param {"x" | "y" | "both"} $axis ["both"] - centering scope
+///
+/// @example scss - Usage
+///   .elem {
+///     @include centre;
+///   }
+///
+///   .foo {
+///     @include centre('x');
+///   }
+///
+///   .bar {
+///     @include centre('y');
+///   }
+///
+/// @example css - CSS output
+///   .elem {
+///     position: absolute;
+///     top: 50%;
+///     left: 50%;
+///     transform: translate(-50%, -50%);
+///   }
+///
+///   .foo {
+///     position: absolute;
+///     left: 50%;
+///     transform: translateX(-50%);
+///   }
+///
+///   .bar {
+///     position: absolute;
+///     top: 50%;
+///     transform: translateY(-50%);
+///   }
+
+@mixin centre($axis: "both") {
+  position: absolute;
+  @if $axis == "y" {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  @if $axis == "x" {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  @if $axis == "both" {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/// Circle button mixin
+///
+/// @group base_helpers
+///
+/// @param {Length} $width - value with px, em ...
+/// @param {Length} $height [$width] - value with px, em ...
+/// @param {Element} $element [before] - Pseudo element before / after
+///
+/// @example scss - Usage
+///   .foo {
+///     @include circle(150px);
+///   }
+///
+///   .bar {
+///     @include circle(150px, 100px, after);
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     position: relative;
+///     width: 150px;
+///     height: 150px;
+///     border-radius: 50%;
+///   }
+///
+///   .foo::before {
+///     position: absolute;
+///     top: 50%;
+///     left: 50%;
+///     transform: translate(-50%, -50%);
+///   }
+///
+///   .bar {
+///     position: relative;
+///     width: 150px;
+///     height: 100px;
+///     border-radius: 50%;
+///   }
+///   
+///   .bar::after {
+///     position: absolute;
+///     top: 50%;
+///     left: 50%;
+///     transform: translate(-50%, -50%);
+///   }
+
+@mixin circle($width, $height: $width, $pseudo: before) {
+  position: relative;
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  &::#{$pseudo} {
+    @include centre;
+  }
+}
+
+/// Flex display helper function
+///
+/// @group base_helpers
+///
+/// @param {flex-direction} $direction [row] -  Flex direction value: row / row-reverse / column / column-reverse
+/// @param {flex-wrap} $wrap [nowrap] -  Flex wrap value: nowrap / wrap / wrap-reverse
+/// @param {flex-justify} $justify [center] -  Flex justify value :flex-start / flex-end / center / space-between / space-around
+///
+/// @example scss - Usage
+///   .foo {
+///     @include flex-display();
+///   }
+///   .bar {
+///     @include flex-display(column, wrap, space-around);
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     display: -ms-flexbox;
+///     display: flex;
+///     -ms-flex-flow: row nowrap;
+///     flex-flow: row nowrap;
+///     -ms-flex-pack: center;
+///     justify-content: center;
+///   }
+///
+///   .foo > * {
+///     -ms-flex-positive: 1;
+///     flex-grow: 1;
+///   }
+///
+///   .bar {
+///     display: -ms-flexbox;
+///     display: flex;
+///     -ms-flex-flow: column wrap;
+///     flex-flow: column wrap;
+///     -ms-flex-pack: distribute;
+///     justify-content: space-around;
+///   }
+///
+///   .bar > * {
+///     -ms-flex-positive: 1;
+///     flex-grow: 1;
+///   }
+
+@mixin flex-display($direction: row, $wrap: nowrap, $justify: center) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  & > * {
+    flex-grow: 1;
+  }
+}
+
+/// Global headings override
+///
+/// @group base_helpers
+///
+/// @content Attributes to be applied to headers
+///
+/// @example scss - Usage
+///   @include headings {
+///     display: block;
+///     color: rgb(50, 50, 50);
+///     text-transform: capitalize;
+///   }
+///
+/// @example css - CSS output
+///   h1, h2, h3,
+///   h4, h5, h6 {
+///     display: block;
+///     color: #323232;
+///     text-transform: capitalize;
+///   }
+
+@mixin headings {
+  h1, h2, h3,
+  h4, h5, h6 {
+    @content;
+  }
+}
+
+/// Mixin to transform letter tracking value from Photoshop mock-up to em values
+///
+/// @group base_helpers
+///
+/// @param {Length} $value - PSD letter spacing value
+/// @output `letter-spacing`
+///
+/// @example scss - Usage
+///   .foo {
+///     @include letter-tracking(50);
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     letter-spacing: 0.05em;
+///   }
+
+@mixin letter-tracking($value) {
+  letter-spacing: ($value / 1000) * 1em;
+}
+
+/// Include background color on pseudo element
+///
+/// @group base_helpers
+///
+/// @param {Color} $background-color - If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.
+/// @param {Number} $opacity - Opacity value
+/// @param {Pseudo element} $pseudo [before] - Pseudo element before / after
+/// @param {Number} $z-index [0] - Numeric value
+///
+/// @example scss - Usage
+///   .foo {
+///     @include pseudo-background(rgb(0,0,0), 1);
+///   }
+///
+/// @example css - CSS output
+///   .foo::before {
+///     width: 100%;
+///     height: 100%;
+///     position: absolute;
+///     top: 0;
+///     left: 0;
+///     z-index: 0;
+///     content: " ";
+///     background-color: black;
+///     opacity: 1;
+///   }
+
+@mixin pseudo-background($background-color, $opacity, $pseudo: before, $z-index: 0) {
+  &::#{$pseudo} {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $z-index;
+    content: " ";
+    background-color: $background-color;
+    opacity: $opacity;
+  }
+}
+
+/// Include Fontawesome icon on pseudo element
+///
+/// @group base_helpers
+///
+/// @param {Icon Code} $icon - Font awesome icon entity code
+/// @param {Pseudo element} $pseudo - Pseudo element before / after
+/// @param {Boolean} $fw-bool [TRUE] - Boolean to determine which font-face to use (default: true)
+/// @param {Font Family} $font [FontAwesome] - Name of the font family (default: FontAwesome)
+///
+/// @example scss - Usage
+///   .foo {
+///     @include pseudo-icon('\f121', before);
+///   }
+///   .bar {
+///     @include pseudo-icon('\f121', before, FALSE, "iconmoon");
+///   }
+///
+/// @example css - CSS output
+///   .foo::before {
+///     font-family: FontAwesome;
+///     font-weight: normal;
+///     font-style: normal;
+///     text-decoration: none;
+///     text-rendering: optimizeLegibility;
+///     white-space: nowrap;
+///     /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+///     font-feature-settings: "liga";
+///     -webkit-font-smoothing: antialiased;
+///   }
+///
+///   .foo::before {
+///     display: inline-block;
+///     content: "";
+///     margin-right: 10px;
+///   }
+///
+///   .bar::before {
+///     display: inline-block;
+///     font-family: "iconmoon";
+///     font-weight: normal;
+///     content: "";
+///     margin-right: 10px;
+///   }
+
+@mixin pseudo-icon($icon, $pseudo, $fw-bool: TRUE, $font: FontAwesome) {
+  &::#{$pseudo} {
+    display: inline-block;
+    @if $fw-bool == TRUE {
+      @extend %font-awesome;
+    } @else {
+      font-family: $font;
+      font-weight: normal;
+    }
+    content: $icon;
+    @if $pseudo == before {
+      margin-right: 10px;
+    }
+    @if $pseudo == after {
+      margin-left: 10px;
+    }
+  }
+}
+
+/// Triangle helper mixin used to create arrows, needs to be positioned.
+///
+/// @group base_helpers
+///
+/// @param {Direction} $direction - Triangle direction, either `top`, `right`, `bottom` or `left`
+/// @param {Color} $color [currentcolor] - Triangle color
+/// @param {Color} $from-color - If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.
+/// @param {Length} $size [1em] - Triangle size
+///
+/// @example scss - Usage
+///   .foo::before{
+///     @include triangle('top');
+///   }
+///
+///   .bar::before{
+///     @include triangle('left', rgb(50,0,50), 10px);
+///   }
+///
+/// @example css - CSS output
+///   .foo::before {
+///     width: 0;
+///     height: 0;
+///     content: '';
+///     z-index: 2;
+///     border-bottom: 0.9em solid currentcolor;
+///     border-left: 1em solid transparent;
+///     border-right: 1em solid transparent;
+///   }
+///   
+///   .bar::before {
+///     width: 0;
+///     height: 0;
+///     content: '';
+///     z-index: 2;
+///     border-right: 9px solid #320032;
+///     border-bottom: 10px solid transparent;
+///     border-top: 10px solid transparent;
+///   }
+
+@mixin triangle($direction, $color: currentcolor, $size: 1em) {
+  @if not index(top right bottom left, $direction) {
+    @error "Direction must be either `top`, `right`, `bottom` or `left`.";
+  }
+
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-#{opposite-direction($direction)}: ($size * 0.9) solid $color;
+
+  $perpendicular-borders: $size solid transparent;
+
+  @if $direction == top or $direction == bottom {
+    border-left: $perpendicular-borders;
+    border-right: $perpendicular-borders;
+  } @else if $direction == right or $direction == left {
+    border-bottom: $perpendicular-borders;
+    border-top: $perpendicular-borders;
+  }
+}
+
+/// Box shadow
+///
+/// @group base_enhancements
+///
+/// @param {Length} $top - Specifies the vertical distance. Negative values place the shadow above the element.
+/// @param {Length} $left - Specifies the horizontal distance. Negative values place the shadow to the left of the element.
+/// @param {Length} $blur - The larger this value, the bigger the blur, so the shadow becomes bigger and lighter. Negative values are not allowed. If not specified, it will be 0 (the shadow's edge is sharp). The specification does not include an exact algorithm for how the blur radius should be calculated.
+/// @param {Color} $color - If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.
+/// @param {Boolean} $inset [false] - If not specified (default), the shadow is assumed to be a drop shadow (as if the box were raised above the content). The presence of the inset keyword changes the shadow to one inside the frame (as if the content was depressed inside the box). Inset shadows are drawn inside the border (even transparent ones), above the background, but below content.
+///
+/// @example scss - Usage
+///   .foo {
+///     @include box-shadow(10px, 10px, 5px, rgb(100, 0, 0));
+///   }
+///   
+///   .bar {
+///     @include box-shadow(10px, 10px, 5px, rgb(0, 100, 0), true);
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     box-shadow: 10px 10px 5px #640000;
+///   }
+///   
+///   .bar {
+///     box-shadow: inset 10px 10px 5px darkgreen;
+///   }
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $left $top $blur $color;
+    -moz-box-shadow: inset $left $top $blur $color;
+    box-shadow: inset $left $top $blur $color;
+  } @else {
+    -webkit-box-shadow: $left $top $blur $color;
+    -moz-box-shadow: $left $top $blur $color;
+    box-shadow: $left $top $blur $color;
+  }
+}
+
+/// Helper to position background image sprite used for buttons and other elements as such
+///
+/// @group base_enhancements
+///
+/// @param {Position} $normal [center] - Background position normal state
+/// @param {Position} $hover [center] - Background position hover state
+///
+/// @example scss - Usage
+///   .foo {
+///     &::before {
+///       background-image: url('path-to-images/sprite.png');
+///     }
+///     @include sprite_icon_position();
+///   }
+///   
+///   .bar {
+///     &::before {
+///       background-image: url('path-to-images/sprite.png');
+///     }
+///     @include sprite_icon_position(0px, 50px);
+///   }
+///
+/// @example css - CSS output
+///   .foo::before {
+///     background-image: url("path-to-images/sprite.png");
+///   }
+///   
+///   .foo::before {
+///     background-position: center;
+///   }
+///   
+///   .foo:hover::before {
+///     background-position: center;
+///   }
+///   
+///   .bar::before {
+///     background-image: url("path-to-images/sprite.png");
+///   }
+///   
+///   .bar::before {
+///     background-position: 0px;
+///   }
+///   
+///   .bar:hover::before {
+///     background-position: 50px;
+///   }
+
+@mixin sprite_icon_position($normal:center, $hover:center) {
+  &::before {
+    background-position: $normal;
+  }
+  &:hover {
+    &::before {
+      background-position: $hover;
+    }
+  }
+}
+
+/// Transitions
+///
+/// @group base_enhancements
+///
+/// @param {name | duration | timing function | delay} $args - Collection of arguments to animate, property time easing
+///
+/// @example scss - Usage
+///   .bar {
+///     @include transition(all 0.3s ease);
+///   }
+///
+/// @example css - CSS output
+///   .bar {
+///     transition: all 0.3s ease;
+///   }
+
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/// Basic linear gradient helper
+///
+/// @group base_enhancements
+///
+/// @param {Color} $from-color - If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.
+/// @param {Color} $to-color - If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.
+///
+/// @example scss - Usage
+///   .foo {
+///     @include vertical-linear-gradient();
+///   }
+///   
+///   .bar {
+///     @include vertical-linear-gradient(rgba(50,0,0,0), rgba(50,0,0,1));
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     background: linear-gradient(to bottom, white 0%, black 100%);
+///   }
+///   
+///   .bar {
+///     background: linear-gradient(to bottom, rgba(50, 0, 0, 0) 0%, #320000 100%);
+///   }
+
+@mixin vertical-linear-gradient($from-color: hsla(0, 0%, 100%, 1), $to-color: hsla(0, 0%, 0%, 1)) {
+  background: -moz-linear-gradient(top, $from-color 0%, $to-color 100%);
+  background: -webkit-linear-gradient(top, $from-color 0%, $to-color 100%);
+  background: linear-gradient(to bottom, $from-color 0%, $to-color 100%);
+}
+
+/// Replicates RGBA functionality for HSL colors
+///
+/// @group base_helpers
+///
+/// @param {HSL Color} $color - HSL color value
+/// @param {Opacity} $alpha [1] - Alpha value 0 to 1
+///
+/// @return {Color} RGBA compiled color
+///
+/// @example scss - Usage
+///  .foo {
+///     color: hslac(hsl(0, 0%, 0%), 0.5);
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     color: rgba(0, 0, 0, 0.5);
+///   }
+
+@function hslac($color, $alpha: 1) {
+  @if (type-of($color) == "color") {
+    @return hsla(hue($color), saturation($color), lightness($color), $alpha);
+  } @else {
+    @error "You didn't pass a color object";
+  }
+}
+
+/// Returns the opposite direction of each direction in a list
+///
+/// @group base_helpers
+///
+/// @author Hugo Giraudel
+///
+/// @param {List} $directions - List of initial directions
+///
+/// @return {List} - List of opposite directions
+///
+/// @example scss - Usage
+///   .foo {
+///     background-position: opposite-direction(top right);
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     background-position: bottom left;
+///   }
+
+@function opposite-direction($directions) {
+  $opposite-directions: ();
+  $direction-map: (
+    'top': 'bottom',
+    'right': 'left',
+    'bottom': 'top',
+    'left': 'right',
+    'center': 'center',
+    'ltr': 'rtl',
+    'rtl': 'ltr'
+  );
+
+  @each $direction in $directions {
+    $direction: to-lower-case($direction);
+
+    @if map-has-key($direction-map, $direction) {
+      $opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)));
+    } @else {
+      @warn "No opposite direction can be found for `#{$direction}`. Direction omitted.";
+    }
+  }
+
+  @return $opposite-directions;
+}

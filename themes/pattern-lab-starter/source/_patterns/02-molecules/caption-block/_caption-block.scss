@@ -1,0 +1,58 @@
+.caption-block {
+  @include local-base();
+  margin: 0;
+
+  &__image {
+
+  }
+
+  &__title {
+
+  }
+
+  &__body {
+    font-size: 1em; // 16px (default)
+    line-height: 1.35em;
+
+    @include breakpoint($bp--medium) {
+      line-height: 1.5em;
+    }
+  }
+}
+
+.tab1{
+  background-color: $c-silver-sand;
+  color:$c-white;
+  height: 194px;
+	width: 365px;
+	margin-left: 427px;
+  font-family: $ff--alternate;
+
+}
+
+.tab2{
+  background-color: $c-manatee;
+  color:$c-white;
+  height: 194px;
+	width: 365px;
+	margin-left: 427px;
+  font-family: $ff--alternate;
+}
+
+.tab3{
+  background-color: $c-osio-gray;
+  color:$c-white;
+  height: 194px;
+	width: 365px;
+	margin-left: 427px;
+  font-family: $ff--alternate;
+}
+
+.tab4{
+  background-color:$c-manatee;
+  color:$c-white;
+  height: 194px;
+	width: 365px;
+	margin-left: 427px;
+  font-family: $ff--alternate;
+}

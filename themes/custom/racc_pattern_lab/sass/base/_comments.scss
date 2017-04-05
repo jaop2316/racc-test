@@ -1,0 +1,48 @@
+/**
+ * Comments base theming
+ */
+.comment-wrapper {
+  h2 {
+    @include trailer(0);
+  }
+  .mark {
+
+  }
+}
+
+.comment {
+
+}
+
+.comment-form {
+  .form-text,
+  .form-textarea {
+    width: 100% !important;
+  }
+}
+
+/**
+ * # Layout theming
+ */
+.comment-wrapper {
+}
+
+.col-comments-content {
+}
+
+.col-comments-form {
+}
+
+@include breakpoint($screen-small-8cols) {
+  .col-comments-content {
+  }
+  .col-comments-form {
+  }
+}
+
+@include breakpoint($screen-medium-12cols) {
+  .col-comments-content {
+  }
+  .col-comments-form {
+  }
+}

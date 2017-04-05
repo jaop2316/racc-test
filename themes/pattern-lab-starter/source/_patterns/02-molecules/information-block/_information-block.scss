@@ -1,0 +1,260 @@
+$susy: (
+  columns: 12,
+  gutters: 1/8,
+  math: fluid,
+  output: float,
+  gutter-position: outside,
+  global-box-sizing: border-box,
+  // debug: (image: show)
+);
+
+/// Absolute height of body text, in pixels
+/// @type Number
+$base-font-size: 18px;
+
+
+/// Absolute height of one line of type, in pixels
+/// @type Number
+$base-line-height: 24px;
+
+/**
+ * Initiate Susy and Vertical Rhythm configurations
+ */
+  @include border-box-sizing;
+  @include establish-new-baseline;
+
+
+
+
+.information-block {
+  @include container();
+  @include susy-breakpoint($screen-small-8cols, 8) {
+    @include container();
+    .col1{
+      @include span(8);
+    }
+    .box1{
+      @include span(8);
+      background-color: $c-silver-sand;
+      height: 90px;
+      color:$c-white;
+      font-family: $ff--alternate;
+      &:hover{
+        background-color:$c-pomegranate;
+      }
+      p{
+        text-align: center;
+        //font-size: 35px;
+      }
+    }
+    .box2{
+      @include span(8);
+      background-color: $c-manatee;
+      color:$c-white;
+      height: 90px;
+      font-family: $ff--alternate;
+      &:hover{
+        background-color:$c-pomegranate;
+      }
+      p{
+        text-align: center;
+        //font-size: 35px;
+      }
+    }
+    .box3{
+      @include span(8);
+      background-color: $c-osio-gray;
+      color:$c-white;
+      height: 90px;
+      font-family: $ff--alternate;
+      &:hover{
+        background-color:$c-pomegranate;
+      }
+      p{
+        text-align: center;
+        //font-size: 35px;
+      }
+
+    }
+    .box4{
+      @include span(8);
+      background-color: $c-manatee;
+      color:$c-white;
+      height: 90px;
+      font-family: $ff--alternate;
+      &:hover{
+        background-color:$c-pomegranate;
+      }
+      p{
+        text-align: center;
+        //font-size: 35px;
+      }
+
+    }
+
+  }
+  @include susy-breakpoint($screen-medium-12cols, 12) {
+    @include container();
+    .col1{
+      @include span(9);
+    }
+
+    .col2{
+      @include span(3);
+    }
+
+    .box1{
+      @include span(7);
+      background-color: $c-silver-sand;
+      height: 194px;
+      margin-left: 450px;
+      //color:$c-white;
+      font-family: $ff--alternate;
+      &:hover{
+        background-color:$c-pomegranate;
+      }
+      p{
+      font-size: 35px;
+      text-align: center;
+      //font-weight: 400;
+      line-height: 39px;
+      padding-top: 60px;
+      }
+    }
+    .box2{
+      @include span(7);
+      background-color: $c-manatee;
+      color:$c-white;
+      height: 194px;
+      font-family: $ff--alternate;
+      margin-left: 450px;
+      &:hover{
+        background-color:$c-pomegranate;
+      }
+      p{
+      font-size: 35px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 39px;
+      padding-top: 60px;
+      }
+    }
+
+    .box3{
+      @include span(7);
+      background-color: $c-osio-gray;
+      color:$c-white;
+      height: 194px;
+      font-family: $ff--alternate;
+      margin-left: 450px;
+      &:hover{
+        background-color:$c-pomegranate;
+      }
+      p{
+      font-size: 35px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 39px;
+      padding-top: 60px;
+      }
+
+    }
+
+    .box4{
+      @include span(7);
+      background-color:$c-manatee;
+      color:$c-white;
+      height: 194px;
+      font-family: $ff--alternate;
+      margin-left: 450px;
+      &:hover{
+        background-color:$c-pomegranate;
+      }
+      p{
+      font-size: 35px;
+      text-align: center;
+      font-weight: 400;
+      line-height: 39px;
+      padding-top: 60px;
+      }
+
+    }
+
+    .tab-content{
+      margin-top:30px;
+      margin-left:10px;
+
+      p{
+        font-family: $ff--alternate;
+        color:$c-black;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 39px;
+        text-align: left;
+        padding-left: 30px;
+      }
+
+      ul{
+        list-style:none;
+      }
+
+      li{
+        padding-bottom: 10px;
+      }
+
+    }
+
+    .tab-content-2col{
+        h2{
+          font-family: $ff--alternate;
+          color:$c-black;
+          font-size: 35px;
+          font-weight: 400;
+          line-height: 39px;
+          text-align: left;
+          padding-left:50px;
+        }
+
+       p{
+         margin-top: 30px;
+         padding-left:50px
+       }
+
+      ul{
+        list-style:none;
+      }
+    }
+
+    #tab-content1{
+    display:block;
+    }
+
+
+.tabcontent {
+    @include span(12);
+    display: none;
+}
+
+.row-title{
+    h2{
+      font-family: $ff--alternate;
+      font-size: 35px;
+    }
+
+}
+
+
+
+  }
+}
+
+
+
+
+
+
+/*.information-block{
+  //position:absolute;
+  //top:100%;
+  z-index: 200;
+}*/

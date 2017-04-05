@@ -1,0 +1,180 @@
+/**
+ * Form mixin configurations
+ */
+@mixin form-base {
+  @include set-font-size(16px);
+  @include leader(0.5);
+  @include trailer(0.5);
+  @include padding-leader(0.25);
+  @include padding-trailer(0.25);
+  padding: gutters(1em);
+  // color: ;
+  background-color: $solid-white;
+  border: solid 1px $solid-black;
+  border-radius: 2px;
+  outline: none;
+  &:focus {
+    //border: solid 1px ;
+    outline: none;
+  }
+}
+
+/**
+ * Main form styling
+ */
+
+form:not([class^="search-block-form"]) {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea,
+  select {
+    @include form-base;
+  }
+  /**
+   * # Text inputs
+   */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 96%;
+    @include breakpoint($screen-small-8cols) {
+      width: 46%;
+    }
+  }
+  .description {
+    @include set-font-size(14px);
+  }
+  .form-type-textarea {
+    .grippie {
+      width: 96%;
+      @include breakpoint($screen-small-8cols) {
+        width: 46%;
+      }
+    }
+  }
+  .form-autocomplete {
+    background: none;
+    &.throbbing {
+      background: $solid-white url('../images/ajax-loader.gif') no-repeat;
+      background-position: 98% center;
+    }
+  }
+  /**
+   * # Form buttons
+   */
+  input[type="submit"] {
+    @include button-small-color($solid-black, $solid-white, lighten($solid-black, 50));
+    background-image: url('../images/form-arrow-submit.png');
+    background-repeat: no-repeat;
+    background-position: 80px center;
+    border: none;
+    outline: none;
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+  }
+  /**
+   * # Form checkboxes & radios
+   */
+  .form-type-checkbox,
+  .form-type-radio {
+    padding: 0 0 4px;
+    position: relative;
+    label {
+      padding-left: 36px;
+      padding-top: 10px;
+    }
+    input {
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 21px;
+      height: 20px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      &:focus {
+        outline: none;
+      }
+      &::-ms-expand {
+        display: none;
+      }
+    }
+  }
+
+  .form-type-checkbox {
+    input {
+      display: none;
+    }
+    label {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: " ";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: -14.5px 10px 0 0;
+        top: 50%;
+        left: 0;
+        background: url('../images/form-sprite.png') no-repeat top left;
+      }
+    }
+    input:checked ~ label::before {
+      background: url('../images/form-sprite.png') no-repeat bottom left;
+    }
+  }
+  .form-type-radio {
+    position: relative;
+    input {
+      display: none;
+    }
+    label {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: " ";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: -10.5px 10px 0 0;
+        top: 50%;
+        left: 0;
+        background: url('../images/form-sprite.png') no-repeat top center;
+      }
+    }
+    input:checked ~ label:before {
+      background: url('../images/form-sprite.png') no-repeat bottom center;
+    }
+  }
+
+  /**
+   * # Form select
+   */
+  .form-type-select,
+  .webform-component-select {
+    select:not([size]) {
+      @include form-base;
+      background: url('../images/form-dropdown.png') no-repeat right 10px center;
+      padding: 9px 15px;
+      padding-right: 50px;
+      &:focus {
+        background: url('../images/form-dropdown-focus.png') no-repeat right 10px center;
+      }
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &::-ms-expand {
+        display: none;
+      }
+    }
+  }
+}
+
+button:focus {
+  outline: none;
+}

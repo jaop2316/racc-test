@@ -1,0 +1,38 @@
+{
+  "id": "tables",
+    "name": "Tables",
+    "hasScript": "yes",
+    "items": {
+        "tables": [
+            {
+                "tableClass": "",
+                "head" : ["Proposal #", "Description","Due date"],
+                "body": [
+                    {
+                        "td": ["FY-16-17-22", "Furnish Laboratory Lab Equipment","03/24/2017"]
+                    },
+                    {
+                        "td": ["FY-16-17-28", "Campus Integrated Pest Management","03/16/2017"]
+                    },
+                    {
+                        "td": ["FY-16-17-29", "Campus Smart Room Upgrades","02/24/2017"]
+                    },
+                    {
+                        "td": ["FY-16-17-05", "Campus Lawn and Weed Control","02/23/2017"]
+                    },
+                    {
+                        "td": ["FY-16-17-19R", "BOOKSTORE OPERATION","02/22/2017"]
+                    },
+                    {
+                        "td": ["FY-16-17-27", "Landscape Maintenance","02/17/2017"]
+                    },
+                    {
+                        "td": ["FY-16-17-21 RFP", "Class room and Office furniture","02/10/2017"]
+                    }
+                ],
+                "footer": []
+            }
+        ]
+    }
+
+}

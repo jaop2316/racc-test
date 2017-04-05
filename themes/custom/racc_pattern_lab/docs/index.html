@@ -1,0 +1,728 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Drupalscssbase - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Drupalscssbase - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Drupalscssbase - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="base_enhancements"><a href="#base_enhancements">Base Enhancements</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="base_enhancements-mixin"><a href="#base_enhancements-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="base_enhancements" data-name="box-shadow" data-type="mixin"><a href="#base_enhancements-mixin-box-shadow">box-shadow</a></li><li class="sidebar__item sassdoc__item" data-group="base_enhancements" data-name="sprite_icon_position" data-type="mixin"><a href="#base_enhancements-mixin-sprite_icon_position">sprite_icon_position</a></li><li class="sidebar__item sassdoc__item" data-group="base_enhancements" data-name="transition" data-type="mixin"><a href="#base_enhancements-mixin-transition">transition</a></li><li class="sidebar__item sassdoc__item" data-group="base_enhancements" data-name="vertical-linear-gradient" data-type="mixin"><a href="#base_enhancements-mixin-vertical-linear-gradient">vertical-linear-gradient</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="base_helpers"><a href="#base_helpers">Base Helpers</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="base_helpers-mixin"><a href="#base_helpers-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="centre" data-type="mixin"><a href="#base_helpers-mixin-centre">centre</a></li><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="circle" data-type="mixin"><a href="#base_helpers-mixin-circle">circle</a></li><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="flex-display" data-type="mixin"><a href="#base_helpers-mixin-flex-display">flex-display</a></li><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="headings" data-type="mixin"><a href="#base_helpers-mixin-headings">headings</a></li><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="letter-tracking" data-type="mixin"><a href="#base_helpers-mixin-letter-tracking">letter-tracking</a></li><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="pseudo-background" data-type="mixin"><a href="#base_helpers-mixin-pseudo-background">pseudo-background</a></li><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="pseudo-icon" data-type="mixin"><a href="#base_helpers-mixin-pseudo-icon">pseudo-icon</a></li><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="triangle" data-type="mixin"><a href="#base_helpers-mixin-triangle">triangle</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="base_helpers-function"><a href="#base_helpers-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="hslac" data-type="function"><a href="#base_helpers-function-hslac">hslac</a></li><li class="sidebar__item sassdoc__item" data-group="base_helpers" data-name="opposite-direction" data-type="function"><a href="#base_helpers-function-opposite-direction">opposite-direction</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="base_placeholders"><a href="#base_placeholders">Base Placeholders</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="base_placeholders-placeholder"><a href="#base_placeholders-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="base_placeholders" data-name="clearfix_after" data-type="placeholder"><a href="#base_placeholders-placeholder-clearfix_after">clearfix_after</a></li><li class="sidebar__item sassdoc__item" data-group="base_placeholders" data-name="navigation-list" data-type="placeholder"><a href="#base_placeholders-placeholder-navigation-list">navigation-list</a></li><li class="sidebar__item sassdoc__item" data-group="base_placeholders" data-name="vertical-list" data-type="placeholder"><a href="#base_placeholders-placeholder-vertical-list">vertical-list</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="base_responsive"><a href="#base_responsive">Base Responsive</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="base_responsive-mixin"><a href="#base_responsive-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="base_responsive" data-name="image-2x" data-type="mixin"><a href="#base_responsive-mixin-image-2x">image-2x</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="extendables"><a href="#extendables">Project Extendables</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="extendables-placeholder"><a href="#extendables-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="extendables" data-name="base-button" data-type="placeholder"><a href="#extendables-placeholder-base-button">base-button</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="extendables-mixin"><a href="#extendables-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="extendables" data-name="button-small-color" data-type="mixin"><a href="#extendables-mixin-button-small-color">button-small-color</a></li><li class="sidebar__item sassdoc__item" data-group="extendables" data-name="button-medium-color" data-type="mixin"><a href="#extendables-mixin-button-medium-color">button-medium-color</a></li><li class="sidebar__item sassdoc__item" data-group="extendables" data-name="button-large-color" data-type="mixin"><a href="#extendables-mixin-button-large-color">button-large-color</a></li><li class="sidebar__item sassdoc__item" data-group="extendables" data-name="button-tab-color" data-type="mixin"><a href="#extendables-mixin-button-tab-color">button-tab-color</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="responsive_config"><a href="#responsive_config">Responsive Configurations</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="responsive_config-variable"><a href="#responsive_config-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="responsive_config" data-name="susy" data-type="variable"><a href="#responsive_config-variable-susy">susy</a></li><li class="sidebar__item sassdoc__item" data-group="responsive_config" data-name="base-font-size" data-type="variable"><a href="#responsive_config-variable-base-font-size">base-font-size</a></li><li class="sidebar__item sassdoc__item" data-group="responsive_config" data-name="base-line-height" data-type="variable"><a href="#responsive_config-variable-base-line-height">base-line-height</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="responsive_config-placeholder"><a href="#responsive_config-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="responsive_config" data-name="padding_content" data-type="placeholder"><a href="#responsive_config-placeholder-padding_content">padding_content</a></li><li class="sidebar__item sassdoc__item" data-group="responsive_config" data-name="margin_content" data-type="placeholder"><a href="#responsive_config-placeholder-margin_content">margin_content</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="base_enhancements"><div class="container">Base Enhancements</div></h1><section class="main__sub-section" id="base_enhancements-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="base_enhancements-mixin-box-shadow"><h3 class="item__heading"><a class="item__name" href="#mixin-box-shadow">box-shadow</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin box-shadow($top, $left, $blur, $color, $inset: false) { 
+  @if $inset {
+    -webkit-box-shadow: inset $left $top $blur $color;
+    -moz-box-shadow: inset $left $top $blur $color;
+    box-shadow: inset $left $top $blur $color;
+  } @else {
+    -webkit-box-shadow: $left $top $blur $color;
+    -moz-box-shadow: $left $top $blur $color;
+    box-shadow: $left $top $blur $color;
+  }
+ }" data-collapsed="@mixin box-shadow($top, $left, $blur, $color, $inset: false) { ... }"><code>@mixin box-shadow($top, $left, $blur, $color, $inset: false) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L459-L469" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Box shadow</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$top</code></th><td data-label="desc"><p>Specifies the vertical distance. Negative values place the shadow above the element.</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$left</code></th><td data-label="desc"><p>Specifies the horizontal distance. Negative values place the shadow to the left of the element.</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$blur</code></th><td data-label="desc"><p>The larger this value, the bigger the blur, so the shadow becomes bigger and lighter. Negative values are not allowed. If not specified, it will be 0 (the shadow&#39;s edge is sharp). The specification does not include an exact algorithm for how the blur radius should be calculated.</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$inset</code></th><td data-label="desc"><p>If not specified (default), the shadow is assumed to be a drop shadow (as if the box were raised above the content). The presence of the inset keyword changes the shadow to one inside the frame (as if the content was depressed inside the box). Inset shadows are drawn inside the border (even transparent ones), above the background, but below content.</p></td><td data-label="type"><code>Boolean</code></td><td data-label="default"><code>false</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include box-shadow(10px, 10px, 5px, rgb(100, 0, 0));
+}
+
+.bar {
+  @include box-shadow(10px, 10px, 5px, rgb(0, 100, 0), true);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  box-shadow: 10px 10px 5px #640000;
+}
+
+.bar {
+  box-shadow: inset 10px 10px 5px darkgreen;
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_enhancements-mixin-sprite_icon_position"><h3 class="item__heading"><a class="item__name" href="#mixin-sprite_icon_position">sprite_icon_position</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin sprite_icon_position($normal: center, $hover: center) { 
+  &amp;::before {
+    background-position: $normal;
+  }
+  &amp;:hover {
+    &amp;::before {
+      background-position: $hover;
+    }
+  }
+ }" data-collapsed="@mixin sprite_icon_position($normal: center, $hover: center) { ... }"><code>@mixin sprite_icon_position($normal: center, $hover: center) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L518-L527" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Helper to position background image sprite used for buttons and other elements as such</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$normal</code></th><td data-label="desc"><p>Background position normal state</p></td><td data-label="type"><code>Position</code></td><td data-label="default"><code>center</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover</code></th><td data-label="desc"><p>Background position hover state</p></td><td data-label="type"><code>Position</code></td><td data-label="default"><code>center</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  &amp;::before {
+    background-image: url(&#39;path-to-images/sprite.png&#39;);
+  }
+  @include sprite_icon_position();
+}
+
+.bar {
+  &amp;::before {
+    background-image: url(&#39;path-to-images/sprite.png&#39;);
+  }
+  @include sprite_icon_position(0px, 50px);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo::before {
+  background-image: url(&quot;path-to-images/sprite.png&quot;);
+}
+
+.foo::before {
+  background-position: center;
+}
+
+.foo:hover::before {
+  background-position: center;
+}
+
+.bar::before {
+  background-image: url(&quot;path-to-images/sprite.png&quot;);
+}
+
+.bar::before {
+  background-position: 0px;
+}
+
+.bar:hover::before {
+  background-position: 50px;
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_enhancements-mixin-transition"><h3 class="item__heading"><a class="item__name" href="#mixin-transition">transition</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin transition($args) { 
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+ }" data-collapsed="@mixin transition($args) { ... }"><code>@mixin transition($args) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L545-L550" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Transitions</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$args</code></th><td data-label="desc"><p>Collection of arguments to animate, property time easing</p></td><td data-label="type"><code>Name</code> or <code>Duration</code> or <code>Timing function</code> or <code>Delay</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.bar {
+  @include transition(all 0.3s ease);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.bar {
+  transition: all 0.3s ease;
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_enhancements-mixin-vertical-linear-gradient"><h3 class="item__heading"><a class="item__name" href="#mixin-vertical-linear-gradient">vertical-linear-gradient</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin vertical-linear-gradient($from-color, $to-color) { 
+  background: -moz-linear-gradient(top, $from-color 0%, $to-color 100%);
+  background: -webkit-linear-gradient(top, $from-color 0%, $to-color 100%);
+  background: linear-gradient(to bottom, $from-color 0%, $to-color 100%);
+ }" data-collapsed="@mixin vertical-linear-gradient($from-color, $to-color) { ... }"><code>@mixin vertical-linear-gradient($from-color, $to-color) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L577-L581" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Basic linear gradient helper</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$from-color</code></th><td data-label="desc"><p>If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$to-color</code></th><td data-label="desc"><p>If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include vertical-linear-gradient();
+}
+
+.bar {
+  @include vertical-linear-gradient(rgba(50,0,0,0), rgba(50,0,0,1));
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  background: linear-gradient(to bottom, white 0%, black 100%);
+}
+
+.bar {
+  background: linear-gradient(to bottom, rgba(50, 0, 0, 0) 0%, #320000 100%);
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="base_helpers"><div class="container">Base Helpers</div></h1><section class="main__sub-section" id="base_helpers-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="base_helpers-mixin-centre"><h3 class="item__heading"><a class="item__name" href="#mixin-centre">centre</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin centre($axis: &quot;both&quot;) { 
+  position: absolute;
+  @if $axis == &quot;y&quot; {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  @if $axis == &quot;x&quot; {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  @if $axis == &quot;both&quot; {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+ }" data-collapsed="@mixin centre($axis: &quot;both&quot;) { ... }"><code>@mixin centre($axis: &quot;both&quot;) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L78-L105" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Center element regarding container</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$axis</code></th><td data-label="desc"><p>centering scope</p></td><td data-label="type"><code>"x"</code> or <code>"y"</code> or <code>"both"</code></td><td data-label="default"><code>&quot;both&quot;</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.elem {
+  @include centre;
+}
+
+.foo {
+  @include centre(&#39;x&#39;);
+}
+
+.bar {
+  @include centre(&#39;y&#39;);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.elem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.foo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#base_helpers-mixin-circle"><code>circle</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_helpers-mixin-circle"><h3 class="item__heading"><a class="item__name" href="#mixin-circle">circle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin circle($width, $height: $width, $element: before) { 
+  position: relative;
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  &amp;::#{$pseudo} {
+    @include centre;
+  }
+ }" data-collapsed="@mixin circle($width, $height: $width, $element: before) { ... }"><code>@mixin circle($width, $height: $width, $element: before) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L153-L161" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Circle button mixin</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$width</code></th><td data-label="desc"><p>value with px, em ...</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$height</code></th><td data-label="desc"><p>value with px, em ...</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>$width</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$element</code></th><td data-label="desc"><p>Pseudo element before / after</p></td><td data-label="type"><code>Element</code></td><td data-label="default"><code>before</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include circle(150px);
+}
+
+.bar {
+  @include circle(150px, 100px, after);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.foo::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bar {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.bar::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#base_helpers-mixin-centre"><code>centre</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_helpers-mixin-flex-display"><h3 class="item__heading"><a class="item__name" href="#mixin-flex-display">flex-display</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin flex-display($direction: row, $wrap: nowrap, $justify: center) { 
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  &amp; &gt; * {
+    flex-grow: 1;
+  }
+ }" data-collapsed="@mixin flex-display($direction: row, $wrap: nowrap, $justify: center) { ... }"><code>@mixin flex-display($direction: row, $wrap: nowrap, $justify: center) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L208-L215" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Flex display helper function</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>Flex direction value: row / row-reverse / column / column-reverse</p></td><td data-label="type"><code>Flex-direction</code></td><td data-label="default"><code>row</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$wrap</code></th><td data-label="desc"><p>Flex wrap value: nowrap / wrap / wrap-reverse</p></td><td data-label="type"><code>Flex-wrap</code></td><td data-label="default"><code>nowrap</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$justify</code></th><td data-label="desc"><p>Flex justify value :flex-start / flex-end / center / space-between / space-around</p></td><td data-label="type"><code>Flex-justify</code></td><td data-label="default"><code>center</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include flex-display();
+}
+.bar {
+  @include flex-display(column, wrap, space-around);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.foo &gt; * {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.bar &gt; * {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_helpers-mixin-headings"><h3 class="item__heading"><a class="item__name" href="#mixin-headings">headings</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin headings() { 
+  h1, h2, h3,
+  h4, h5, h6 {
+    @content;
+  }
+ }" data-collapsed="@mixin headings() { ... }"><code>@mixin headings() { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L238-L243" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global headings override</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Content</h3><p>This mixin allows extra content to be passed (through the <code>@content</code> directive). Role: Attributes to be applied to headers</p><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>@include headings {
+  display: block;
+  color: rgb(50, 50, 50);
+  text-transform: capitalize;
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>h1, h2, h3,
+h4, h5, h6 {
+  display: block;
+  color: #323232;
+  text-transform: capitalize;
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_helpers-mixin-letter-tracking"><h3 class="item__heading"><a class="item__name" href="#mixin-letter-tracking">letter-tracking</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin letter-tracking($value) { 
+  letter-spacing: ($value / 1000) * 1em;
+ }" data-collapsed="@mixin letter-tracking($value) { ... }"><code>@mixin letter-tracking($value) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L262-L264" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin to transform letter tracking value from Photoshop mock-up to em values</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$value</code></th><td data-label="desc"><p>PSD letter spacing value</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include letter-tracking(50);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  letter-spacing: 0.05em;
+}</code></pre></div><h3 class="item__sub-heading">Output</h3><div class="item__description"><p><code>letter-spacing</code></p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#extendables-placeholder-base-button"><code>base-button</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_helpers-mixin-pseudo-background"><h3 class="item__heading"><a class="item__name" href="#mixin-pseudo-background">pseudo-background</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin pseudo-background($background-color, $opacity, $pseudo: before, $z-index: 0) { 
+  &amp;::#{$pseudo} {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $z-index;
+    content: &quot; &quot;;
+    background-color: $background-color;
+    opacity: $opacity;
+  }
+ }" data-collapsed="@mixin pseudo-background($background-color, $opacity, $pseudo: before, $z-index: 0) { ... }"><code>@mixin pseudo-background($background-color, $opacity, $pseudo: before, $z-index: 0) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L293-L305" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Include background color on pseudo element</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$opacity</code></th><td data-label="desc"><p>Opacity value</p></td><td data-label="type"><code>Number</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$pseudo</code></th><td data-label="desc"><p>Pseudo element before / after</p></td><td data-label="type"><code>Pseudo element</code></td><td data-label="default"><code>before</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$z-index</code></th><td data-label="desc"><p>Numeric value</p></td><td data-label="type"><code>Number</code></td><td data-label="default"><code>0</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include pseudo-background(rgb(0,0,0), 1);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  content: &quot; &quot;;
+  background-color: black;
+  opacity: 1;
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_helpers-mixin-pseudo-icon"><h3 class="item__heading"><a class="item__name" href="#mixin-pseudo-icon">pseudo-icon</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin pseudo-icon($icon, $pseudo, $fw-bool: TRUE, $font: FontAwesome) { 
+  &amp;::#{$pseudo} {
+    display: inline-block;
+    @if $fw-bool == TRUE {
+      @extend %font-awesome;
+    } @else {
+      font-family: $font;
+      font-weight: normal;
+    }
+    content: $icon;
+    @if $pseudo == before {
+      margin-right: 10px;
+    }
+    @if $pseudo == after {
+      margin-left: 10px;
+    }
+  }
+ }" data-collapsed="@mixin pseudo-icon($icon, $pseudo, $fw-bool: TRUE, $font: FontAwesome) { ... }"><code>@mixin pseudo-icon($icon, $pseudo, $fw-bool: TRUE, $font: FontAwesome) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L351-L368" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Include Fontawesome icon on pseudo element</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$icon</code></th><td data-label="desc"><p>Font awesome icon entity code</p></td><td data-label="type"><code>Icon code</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$pseudo</code></th><td data-label="desc"><p>Pseudo element before / after</p></td><td data-label="type"><code>Pseudo element</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$fw-bool</code></th><td data-label="desc"><p>Boolean to determine which font-face to use (default: true)</p></td><td data-label="type"><code>Boolean</code></td><td data-label="default"><code>TRUE</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$font</code></th><td data-label="desc"><p>Name of the font family (default: FontAwesome)</p></td><td data-label="type"><code>Font family</code></td><td data-label="default"><code>FontAwesome</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include pseudo-icon(&#39;\f121&#39;, before);
+}
+.bar {
+  @include pseudo-icon(&#39;\f121&#39;, before, FALSE, &quot;iconmoon&quot;);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo::before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: &quot;liga&quot;; Currently broken in Chrome &gt;= v22. Falls back to text-rendering. Safari is unaffected. */
+  font-feature-settings: &quot;liga&quot;;
+  -webkit-font-smoothing: antialiased;
+}
+
+.foo::before {
+  display: inline-block;
+  content: &quot;&quot;;
+  margin-right: 10px;
+}
+
+.bar::before {
+  display: inline-block;
+  font-family: &quot;iconmoon&quot;;
+  font-weight: normal;
+  content: &quot;&quot;;
+  margin-right: 10px;
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_helpers-mixin-triangle"><h3 class="item__heading"><a class="item__name" href="#mixin-triangle">triangle</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin triangle($direction, $color: currentcolor, $from-color, $size: 1em) { 
+  @if not index(top right bottom left, $direction) {
+    @error &quot;Direction must be either `top`, `right`, `bottom` or `left`.&quot;;
+  }
+
+  width: 0;
+  height: 0;
+  content: &#39;&#39;;
+  z-index: 2;
+  border-#{opposite-direction($direction)}: ($size * 0.9) solid $color;
+
+  $perpendicular-borders: $size solid transparent;
+
+  @if $direction == top or $direction == bottom {
+    border-left: $perpendicular-borders;
+    border-right: $perpendicular-borders;
+  } @else if $direction == right or $direction == left {
+    border-bottom: $perpendicular-borders;
+    border-top: $perpendicular-borders;
+  }
+ }" data-collapsed="@mixin triangle($direction, $color: currentcolor, $from-color, $size: 1em) { ... }"><code>@mixin triangle($direction, $color: currentcolor, $from-color, $size: 1em) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L409-L429" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Triangle helper mixin used to create arrows, needs to be positioned.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$direction</code></th><td data-label="desc"><p>Triangle direction, either <code>top</code>, <code>right</code>, <code>bottom</code> or <code>left</code></p></td><td data-label="type"><code>Direction</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>Triangle color</p></td><td data-label="type"><code>Color</code></td><td data-label="default"><code>currentcolor</code></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$from-color</code></th><td data-label="desc"><p>If not specified, the color used depends on the browser - it is usually the value of the color property, but note that Safari currently paints a transparent shadow in this case.</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$size</code></th><td data-label="desc"><p>Triangle size</p></td><td data-label="type"><code>Length</code></td><td data-label="default"><code>1em</code></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo::before{
+  @include triangle(&#39;top&#39;);
+}
+
+.bar::before{
+  @include triangle(&#39;left&#39;, rgb(50,0,50), 10px);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo::before {
+  width: 0;
+  height: 0;
+  content: &#39;&#39;;
+  z-index: 2;
+  border-bottom: 0.9em solid currentcolor;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+}
+
+.bar::before {
+  width: 0;
+  height: 0;
+  content: &#39;&#39;;
+  z-index: 2;
+  border-right: 9px solid #320032;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+}</code></pre></div><h3 class="item__sub-heading">Throws</h3><ul class="list-unstyled"><li><p>Direction must be either <code>top</code>, <code>right</code>, <code>bottom</code> or <code>left</code>.</p></li></ul><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[function]</span> <a href="#base_helpers-function-opposite-direction"><code>opposite-direction</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section></section><section class="main__sub-section" id="base_helpers-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="base_helpers-function-hslac"><h3 class="item__heading"><a class="item__name" href="#function-hslac">hslac</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function hslac($color, $alpha: 1) { 
+  @if (type-of($color) == &quot;color&quot;) {
+    @return hsla(hue($color), saturation($color), lightness($color), $alpha);
+  } @else {
+    @error &quot;You didn&#39;t pass a color object&quot;;
+  }
+ }" data-collapsed="@function hslac($color, $alpha: 1) { ... }"><code>@function hslac($color, $alpha: 1) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L602-L608" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Replicates RGBA functionality for HSL colors</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$color</code></th><td data-label="desc"><p>HSL color value</p></td><td data-label="type"><code>Hsl color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$alpha</code></th><td data-label="desc"><p>Alpha value 0 to 1</p></td><td data-label="type"><code>Opacity</code></td><td data-label="default"><code>1</code></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>Color</code> &mdash;<p>RGBA compiled color</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+   color: hslac(hsl(0, 0%, 0%), 0.5);
+ }</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  color: rgba(0, 0, 0, 0.5);
+}</code></pre></div><h3 class="item__sub-heading">Throws</h3><ul class="list-unstyled"><li><p>You didn</p></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="base_helpers-function-opposite-direction"><h3 class="item__heading"><a class="item__name" href="#function-opposite-direction">opposite-direction</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function opposite-direction($directions) { 
+  $opposite-directions: ();
+  $direction-map: (
+    &#39;top&#39;: &#39;bottom&#39;,
+    &#39;right&#39;: &#39;left&#39;,
+    &#39;bottom&#39;: &#39;top&#39;,
+    &#39;left&#39;: &#39;right&#39;,
+    &#39;center&#39;: &#39;center&#39;,
+    &#39;ltr&#39;: &#39;rtl&#39;,
+    &#39;rtl&#39;: &#39;ltr&#39;
+  );
+
+  @each $direction in $directions {
+    $direction: to-lower-case($direction);
+
+    @if map-has-key($direction-map, $direction) {
+      $opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)));
+    } @else {
+      @warn &quot;No opposite direction can be found for `#{$direction}`. Direction omitted.&quot;;
+    }
+  }
+
+  @return $opposite-directions;
+ }" data-collapsed="@function opposite-direction($directions) { ... }"><code>@function opposite-direction($directions) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L630-L653" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Returns the opposite direction of each direction in a list</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$directions</code></th><td data-label="desc"><p>List of initial directions</p></td><td data-label="type"><code>List</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>List</code> &mdash;<p>List of opposite directions</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  background-position: opposite-direction(top right);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  background-position: bottom left;
+}</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#base_helpers-mixin-triangle"><code>triangle</code></a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Hugo Giraudel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="base_placeholders"><div class="container">Base Placeholders</div></h1><section class="main__sub-section" id="base_placeholders-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="base_placeholders-placeholder-clearfix_after"><h3 class="item__heading"><a class="item__name" href="#placeholder-clearfix_after">clearfix_after</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%clearfix_after { 
+  &amp;::after {
+    content: &#39; &#39;;
+    display: block;
+    @include break;
+  }
+ }" data-collapsed="%clearfix_after { ... }"><code>%clearfix_after { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_placeholders.scss#L18-L24" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Clearfix after pseudo element Fixes container height when children floated</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @extend %clearfix_after;
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo::after {
+  content: &#39; &#39;;
+  display: block;
+  clear: both;
+}</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#base_placeholders-placeholder-navigation-list"><code>navigation-list</code></a></li></ul></section><section class="main__item container item" id="base_placeholders-placeholder-navigation-list"><h3 class="item__heading"><a class="item__name" href="#placeholder-navigation-list">navigation-list</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%navigation-list { 
+  @extend %clearfix_after;
+  list-style-type: none;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  &amp; &gt; li {
+    display: inline-block;
+    &amp;::before {
+      display: none !important;
+    }
+    &amp;:last-child {
+      margin-right: 0;
+    }
+  }
+ }" data-collapsed="%navigation-list { ... }"><code>%navigation-list { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_placeholders.scss#L62-L77" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Navigatiton list Defined as placeholder</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+   @extend %navigation-list;
+ }</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo::after {
+   content: &#39; &#39;;
+   display: block;
+   clear: both;
+ }
+ 
+ .foo {
+   list-style-type: none;
+   line-height: 1;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ .foo &gt; li {
+   display: inline-block;
+ }
+ 
+ .foo &gt; li::before {
+   display: none !important;
+ }
+ 
+ .foo &gt; li:last-child {
+   margin-right: 0;
+ }</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#base_placeholders-placeholder-clearfix_after"><code>clearfix_after</code></a></li></ul></section><section class="main__item container item" id="base_placeholders-placeholder-vertical-list"><h3 class="item__heading"><a class="item__name" href="#placeholder-vertical-list">vertical-list</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%vertical-list { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: block;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+ }" data-collapsed="%vertical-list { ... }"><code>%vertical-list { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_placeholders.scss#L106-L119" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Vertical list Defined as placeholder</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @extend %vertical-list;
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+   margin: 0;
+   padding: 0;
+   border: 0;
+ }
+
+ .foo li {
+   list-style-image: none;
+   list-style-type: none;
+   margin-left: 0;
+   white-space: nowrap;
+   display: block;
+   padding-left: 4px;
+   padding-right: 4px;
+ }</code></pre></div></section></section></section><section class="main__section"><h1 class="main__heading" id="base_responsive"><div class="container">Base Responsive</div></h1><section class="main__sub-section" id="base_responsive-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="base_responsive-mixin-image-2x"><h3 class="item__heading"><a class="item__name" href="#mixin-image-2x">image-2x</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin image-2x($image, $width, $height) { 
+  @media (min--moz-device-pixel-ratio: 1.3),
+  (-o-min-device-pixel-ratio: 2.6/2),
+  (-webkit-min-device-pixel-ratio: 1.3),
+  (min-device-pixel-ratio: 1.3),
+  (min-resolution: 1.3dppx) {
+    /* on retina, use image that&#39;s scaled by 2 */
+    background-image: $image;
+    background-size: $width $height;
+  }
+ }" data-collapsed="@mixin image-2x($image, $width, $height) { ... }"><code>@mixin image-2x($image, $width, $height) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_mixins.scss#L27-L37" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Retina background image with width and height</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$image</code></th><td data-label="desc"><p>asset url</p></td><td data-label="type"><code>Url</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$width</code></th><td data-label="desc"><p>asset width</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$height</code></th><td data-label="desc"><p>asset height</p></td><td data-label="type"><code>Length</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include image-2x(&#39;../path-to-image/image.jpg&#39;, 200px, 50px);
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  .foo {
+    /* on retina, use image that&#39;s scaled by 2 */
+    background-image: &quot;../path-to-image/image.jpg&quot;;
+    background-size: 200px 50px;
+  }
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="extendables"><div class="container">Project Extendables</div></h1><section class="main__sub-section" id="extendables-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="extendables-placeholder-base-button"><h3 class="item__heading"><a class="item__name" href="#placeholder-base-button">base-button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%base-button { 
+  display: inline-block;
+  padding: rhythm(0.5) gutters(4em);
+  cursor: pointer;
+
+  @include set-font-size(16px);
+  @include letter-tracking(100);
+ }" data-collapsed="%base-button { ... }"><code>%base-button { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_project-extendables.scss#L24-L31" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Base button placeholder</p></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @extend %base-button;
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS Output</p></div><pre class="example__code language-css"><code>.foo {
+  display: inline-block;
+  padding: 12px 2em;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 0.88889rem;
+  line-height: 24px;
+  line-height: 1.33333rem;
+  letter-spacing: 0.1em;
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[mixin]</span> <a href="#base_helpers-mixin-letter-tracking"><code>letter-tracking</code></a></li></ul><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#extendables-mixin-button-small-color"><code>button-small-color</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#extendables-mixin-button-medium-color"><code>button-medium-color</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#extendables-mixin-button-large-color"><code>button-large-color</code></a></li></ul><h3 class="item__sub-heading">TODO's</h3><ul class="list-unstyled"><li><p>Update per individual project</p></li></ul></section></section><section class="main__sub-section" id="extendables-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="extendables-mixin-button-small-color"><h3 class="item__heading"><a class="item__name" href="#mixin-button-small-color">button-small-color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-small-color($background-color, $text-color, $hover-background-color) { 
+  @extend %base-button;
+  color: $text-color;
+  background-color: $background-color;
+  text-transform: uppercase;
+  &amp;:hover {
+    color: $background-color;
+    background-color: $hover-background-color;
+  }
+ }" data-collapsed="@mixin button-small-color($background-color, $text-color, $hover-background-color) { ... }"><code>@mixin button-small-color($background-color, $text-color, $hover-background-color) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_project-extendables.scss#L71-L80" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Small button helper mixin</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$text-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover-background-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include button-small-color(rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 255, 150));
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  display: inline-block;
+  padding: 12px 2em;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 0.88889rem;
+  line-height: 24px;
+  line-height: 1.33333rem;
+  letter-spacing: 0.1em;
+}
+
+.foo {
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+.foo:hover {
+  color: black;
+  background-color: #969696;
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#extendables-placeholder-base-button"><code>base-button</code></a></li></ul><h3 class="item__sub-heading">TODO's</h3><ul class="list-unstyled"><li><p>Update per individual project</p></li></ul></section><section class="main__item container item" id="extendables-mixin-button-medium-color"><h3 class="item__heading"><a class="item__name" href="#mixin-button-medium-color">button-medium-color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-medium-color($background-color, $text-color, $hover-background-color) { 
+  @extend %base-button;
+  padding: rhythm(1) gutters(8em);
+  @include set-font-size(32px);
+  color: $text-color;
+  background-color: $background-color;
+  &amp;:hover {
+    color: $background-color;
+    background-color: $hover-background-color;
+  }
+ }" data-collapsed="@mixin button-medium-color($background-color, $text-color, $hover-background-color) { ... }"><code>@mixin button-medium-color($background-color, $text-color, $hover-background-color) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_project-extendables.scss#L124-L134" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Medium button color</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$text-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover-background-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include button-medium-color(rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 255, 150));
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code> .foo {
+   display: inline-block;
+   padding: 12px 2em;
+   cursor: pointer;
+   font-size: 16px;
+   font-size: 0.88889rem;
+   line-height: 24px;
+   line-height: 1.33333rem;
+   letter-spacing: 0.1em;
+ }
+
+.foo {
+   padding: 24px 4em;
+   font-size: 32px;
+   font-size: 1.77778rem;
+   line-height: 36px;
+   line-height: 2rem;
+   color: white;
+   background-color: black;
+ }
+ 
+ .foo:hover {
+   color: black;
+   background-color: #969696;
+ }</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#extendables-placeholder-base-button"><code>base-button</code></a></li></ul><h3 class="item__sub-heading">TODO's</h3><ul class="list-unstyled"><li><p>Update per individual project</p></li></ul></section><section class="main__item container item" id="extendables-mixin-button-large-color"><h3 class="item__heading"><a class="item__name" href="#mixin-button-large-color">button-large-color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-large-color($background-color, $text-color, $hover-background-color) { 
+  @extend %base-button;
+  padding: rhythm(2) gutters(10em);
+  @include set-font-size(42px);
+  color: $text-color;
+  background-color: $background-color;
+  &amp;:hover {
+    color: $background-color;
+    background-color: $hover-background-color;
+  }
+ }" data-collapsed="@mixin button-large-color($background-color, $text-color, $hover-background-color) { ... }"><code>@mixin button-large-color($background-color, $text-color, $hover-background-color) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_project-extendables.scss#L177-L188" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Large button color</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$text-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover-background-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include button-large-color(rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 255, 150));
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  display: inline-block;
+  padding: 12px 2em;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 0.88889rem;
+  line-height: 24px;
+  line-height: 1.33333rem;
+  letter-spacing: 0.1em;
+}
+
+.foo {
+  padding: 48px 5em;
+  font-size: 42px;
+  font-size: 2.33333rem;
+  line-height: 48px;
+  line-height: 2.66667rem;
+  color: white;
+  background-color: black;
+}
+
+.foo:hover {
+  color: black;
+  background-color: #969696;
+}</code></pre></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[placeholder]</span> <a href="#extendables-placeholder-base-button"><code>base-button</code></a></li></ul><h3 class="item__sub-heading">TODO's</h3><ul class="list-unstyled"><li><p>Update per individual project</p></li></ul></section><section class="main__item container item" id="extendables-mixin-button-tab-color"><h3 class="item__heading"><a class="item__name" href="#mixin-button-tab-color">button-tab-color</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin button-tab-color($background-color, $text-color, $hover-background-color, $hover-text-color) { 
+  padding: rhythm(1) gutters(2.5em) rhythm(0.5);
+  background-color: $background-color;
+  color: $text-color;
+
+  @include set-font-size(19px);
+  text-transform: uppercase;
+  &amp;:hover,
+  &amp;.active {
+    background-color: $hover-background-color;
+    color: $hover-text-color;
+  }
+ }" data-collapsed="@mixin button-tab-color($background-color, $text-color, $hover-background-color, $hover-text-color) { ... }"><code>@mixin button-tab-color($background-color, $text-color, $hover-background-color, $hover-text-color) { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_project-extendables.scss#L223-L235" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Button tab color</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$background-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$text-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover-background-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$hover-text-color</code></th><td data-label="desc"><p>RGB color rgb(0, 0, 0);</p></td><td data-label="type"><code>Color</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.foo {
+  @include button-tab-color(rgb(0, 0, 0), rgb(255, 255, 255), rgb(150, 150, 150), rgb(0, 0, 0));
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.foo {
+  padding: 24px 1.25em 12px;
+  background-color: black;
+  color: white;
+  font-size: 19px;
+  font-size: 1.05556rem;
+  line-height: 24px;
+  line-height: 1.33333rem;
+  text-transform: uppercase;
+}
+
+.foo:hover, .foo.active {
+  background-color: #969696;
+  color: black;
+}</code></pre></div><h3 class="item__sub-heading">TODO's</h3><ul class="list-unstyled"><li><p>Update per individual project</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="responsive_config"><div class="container">Responsive Configurations</div></h1><section class="main__sub-section" id="responsive_config-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="responsive_config-variable-susy"><h3 class="item__heading"><a class="item__name" href="#variable-susy">susy</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$susy: (
+  columns: 6,
+  gutters: 1/8,
+  math: fluid,
+  output: float,
+  gutter-position: outside,
+  global-box-sizing: border-box,
+  // debug: (image: show)
+);</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_layout.scss#L8-L16" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Susy base container configuration, mobile first with 6 cols for mobile devices</p></div><h3 class="item__sub-heading">Type</h3><p><code>Map</code></p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="responsive_config-variable-base-font-size"><h3 class="item__heading"><a class="item__name" href="#variable-base-font-size">base-font-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-font-size: 18px;</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_layout.scss#L20-L20" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Absolute height of body text, in pixels</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="responsive_config-variable-base-line-height"><h3 class="item__heading"><a class="item__name" href="#variable-base-line-height">base-line-height</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$base-line-height: 24px;</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_layout.scss#L25-L25" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Absolute height of one line of type, in pixels</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section></section><section class="main__sub-section" id="responsive_config-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="responsive_config-placeholder-padding_content"><h3 class="item__heading"><a class="item__name" href="#placeholder-padding_content">padding_content</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%padding_content { 
+  @include pad(0.5 of 6);
+  @include breakpoint($screen-small-8cols) {
+    @include pad(0.5 of 8);
+  }
+  @include breakpoint($screen-medium-12cols) {
+    @include pad(1.5 of 12);
+  }
+  @include breakpoint($screen-xlarge-12cols) {
+    @include pad(1 of 12);
+  }
+ }" data-collapsed="%padding_content { ... }"><code>%padding_content { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_layout.scss#L84-L95" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>This placeholder should be used to center content in the page using padding, that needs to have a background color from side to side of the page.<br><strong>NOTE:</strong> DO NOT ADD TO THE SITE GLOBALLY USING THE</p><body>TAG OR THE MAIN CONTENT DIV<p></p></body></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.l-header {
+  @extend %padding_content;
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.l-header {
+  padding-left: 8.49057%;
+  padding-right: 8.49057%;
+}
+
+@media only screen and (min-width: 480px) {
+  .l-header {
+    padding-left: 6.33803%;
+    padding-right: 6.33803%;
+  }
+}
+
+@media (min-width: 840px) {
+  .l-header {
+    padding-left: 12.61682%;
+    padding-right: 12.61682%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .l-header {
+    padding-left: 8.41121%;
+    padding-right: 8.41121%;
+  }
+}</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section><section class="main__item container item" id="responsive_config-placeholder-margin_content"><h3 class="item__heading"><a class="item__name" href="#placeholder-margin_content">margin_content</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%margin_content { 
+  @include nested(5 of 6);
+  @include squish(0.5 of 6);
+  @include breakpoint($screen-small-8cols) {
+    @include nested(7 of 8);
+    @include squish(0.5 of 8);
+  }
+  @include breakpoint($screen-medium-12cols) {
+    @include nested(9 of 12);
+    @include squish(1.5 of 12);
+  }
+  @include breakpoint($screen-xlarge-12cols) {
+    @include nested(10 of 12);
+    @include squish(1 of 12);
+  }
+ }" data-collapsed="%margin_content { ... }"><code>%margin_content { ... }</code></pre><a href="https://gitlab.com/mimodsg/drupal-theme-base/raw/master/sass/abstractions/_layout.scss#L137-L152" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>This placeholder should be used to center content in the page using margin.<br><strong>NOTE:</strong> Use nested scope.<br><strong>NOTE:</strong> DO NOT ADD TO THE SITE GLOBALLY USING THE</p><body>TAG OR THE MAIN CONTENT DIV<p></p></body></div><h3 class="item__sub-heading">Example</h3><div class="item__example example"><div class="example__description"><p>Usage</p></div><pre class="example__code language-scss"><code>.field--name-body {
+  @extend %margin_content;
+}</code></pre></div><div class="item__example example"><div class="example__description"><p>CSS output</p></div><pre class="example__code language-css"><code>.field--name-body {
+  margin-left: 8.49057%;
+  margin-right: 8.49057%;
+}
+
+@media only screen and (min-width: 480px) {
+  .field--name-body {
+    margin-left: 6.33803%;
+    margin-right: 6.33803%;
+  }
+}
+
+@media (min-width: 840px) {
+  .field--name-body {
+    margin-left: 12.61682%;
+    margin-right: 12.61682%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .field--name-body {
+    margin-left: 8.41121%;
+    margin-right: 8.41121%;
+  }
+}</code></pre></div><h3 class="item__sub-heading">Links</h3><ul class="list-unstyled"><li><a href="http://susydocs.oddbird.net/en/latest/toolkit/#nested-context">http://susydocs.oddbird.net/en/latest/toolkit/#nested-context</a></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Alvaro Mena</p></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Drupalscssbase</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

@@ -1,0 +1,47 @@
+$susy: (
+  columns: 12,
+  gutters: 1/8,
+  math: fluid,
+  output: float,
+  gutter-position: outside,
+  global-box-sizing: border-box,
+  // debug: (image: show)
+);
+
+/// Absolute height of body text, in pixels
+/// @type Number
+$base-font-size: 18px;
+
+
+/// Absolute height of one line of type, in pixels
+/// @type Number
+$base-line-height: 24px;
+
+/**
+ * Initiate Susy and Vertical Rhythm configurations
+ */
+  @include border-box-sizing;
+  @include establish-new-baseline;
+
+
+
+
+.brands-block{
+  background-color: $c-manatee;
+  @include container();
+  @include susy-breakpoint($screen-small-8cols, 8) {
+  }
+  @include susy-breakpoint($screen-medium-12cols, 12) {
+    @include container();
+    padding-top: 70px;
+    padding-bottom: 90px;
+    padding-left: 240px;
+    padding-right: 80px;
+    a{
+    	color:$c-white;
+    	font-family: $ff--alternate;
+    	font-size: 30px;
+    }
+
+   }
+}

@@ -1,0 +1,24 @@
+# Ignore the node modules folder (created by 'npm install').
+node_modules
+
+# We absolutely don't want to have the .sass-cache in git.
+.sass-cache
+*.css.map
+
+# Ignore
+
+# Ignore subtheme Omega base structure
+/*.info
+/*/*.styles.scss
+/*/*.reset.scss
+/theme-settings.php
+/template.php
+/logo.png
+/screenshot.png
+/process
+/preprocess
+/js
+/css
+/images
+/templates
+/theme

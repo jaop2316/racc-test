@@ -1,0 +1,54 @@
+/**
+ * Unorder Lists
+ */
+.l-content {
+  ul:not([class]) {
+    list-style: none;
+    padding-left: 20px;
+    li:not([class]) {
+      padding-left: 20px;
+      position: relative;
+      list-style-image: none;
+      list-style-type: none;
+      @include pseudo-icon('\f111', 'before');
+      &::before {
+        color: $solid-black;
+        font-size: 5px;
+        line-height: 1;
+        position: absolute;
+        left: 0px;
+        top: 7px;
+      }
+      & > ul > li::before {
+        color: $solid-black;
+      }
+      & > ul > li > ul > li::before {
+        color: $solid-black;
+      }
+    }
+  }
+}
+
+/**
+ * Order Lists
+ */
+.l-content {
+  ol:not([class]) {
+    padding-left: 20px;
+    li {
+      padding-left: 20px;
+      list-style-type: none;
+      counter-increment: list;
+      position: relative;
+      &::after {
+        content: counter(list) ".";
+        position: absolute;
+        left: -20px;
+        top: 0px;
+        width: 2em;
+        text-align: right;
+        color: $solid-black;
+      }
+    }
+  }
+}

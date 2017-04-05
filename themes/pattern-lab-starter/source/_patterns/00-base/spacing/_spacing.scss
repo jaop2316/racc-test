@@ -1,0 +1,23 @@
+$spacing--sm: 5px;
+$spacing--l: 20px;
+
+.u-spacing {
+  //@include rhythm-borders(2px);
+  margin-top:	rhythm(1);
+  margin-bottom: rhythm(1);
+  margin-left: rhythm(1);
+  margin-right: rhythm(1);
+
+}
+
+.u-spacing-up {
+  margin-top:	rhythm(1);
+}
+
+.u-gap-down {
+  margin-bottom: $spacing--sm;
+}
+
+.u-gap-up {
+  margin-top: $spacing--sm;
+}

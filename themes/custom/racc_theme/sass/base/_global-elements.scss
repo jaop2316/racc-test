@@ -1,0 +1,118 @@
+/**
+ * Global typography
+ */
+body {
+
+  * {
+    @include transition(all 0.3s ease);
+  }
+}
+
+ul, ol, p {
+  margin: 0px;
+  @include trailer;
+  word-wrap: break-word;
+}
+
+b, strong {
+}
+
+em, i {
+}
+
+hr {
+}
+
+figure, figcaption {
+  font-style: italic;
+}
+
+small {
+  text-transform: uppercase;
+}
+
+sub, sup {
+  text-transform: uppercase;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+sup {
+  vertical-align: super;
+}
+
+img {
+  @include breakpoint($max-small-8cols) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/**
+ * # Text elements
+ */
+blockquote {
+
+  text-align: justify;
+  padding: 0px 70px;
+  quotes: "“" "”" "‘" "’";
+  position: relative;
+  margin: 0px 60px;
+
+  &::before,
+  &::after {
+    position: absolute;
+  }
+  &::before {
+    content: open-quote;
+    top: 0;
+    left: -10px;
+    line-height: 1;
+  }
+  &::after {
+    content: close-quote;
+    bottom: 0;
+    right: -10px;
+    line-height: 0;
+  }
+}
+
+.page-anchor {
+  position: relative;
+  span {
+    position: absolute;
+    top: rhythm(-3);
+  }
+}
+
+/**
+ * # Links
+ */
+.l-page {
+  a {
+    text-decoration: none;
+    &.with-title {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+    &:hover {
+    }
+    &:focus {
+      outline: 0;
+    }
+    &:hover,
+    &:active {
+      outline: 0;
+    }
+  }
+}
+
+/**
+ * # Drupal overrides
+ */
+span.mailto {
+  display: none;
+}

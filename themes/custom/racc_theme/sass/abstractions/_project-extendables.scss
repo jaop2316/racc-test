@@ -1,0 +1,235 @@
+/// Base button placeholder
+///
+/// @group extendables
+///
+/// @todo Update per individual project
+///
+/// @example scss - Usage
+///   .foo {
+///     @extend %base-button;
+///   }
+///
+/// @example css - CSS Output
+///   .foo {
+///     display: inline-block;
+///     padding: 12px 2em;
+///     cursor: pointer;
+///     font-size: 16px;
+///     font-size: 0.88889rem;
+///     line-height: 24px;
+///     line-height: 1.33333rem;
+///     letter-spacing: 0.1em;
+///   }
+
+%base-button {
+  display: inline-block;
+  padding: rhythm(0.5) gutters(4em);
+  cursor: pointer;
+
+  @include set-font-size(16px);
+  @include letter-tracking(100);
+}
+
+/// Small button helper mixin
+///
+/// @group extendables
+///
+/// @todo Update per individual project
+///
+/// @param {Color} $background-color - RGB color rgb(0, 0, 0);
+/// @param {Color} $text-color - RGB color rgb(0, 0, 0);
+/// @param {Color} $hover-background-color - RGB color rgb(0, 0, 0);
+///
+/// @example scss - Usage
+///   .foo {
+///     @include button-small-color(rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 255, 150));
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     display: inline-block;
+///     padding: 12px 2em;
+///     cursor: pointer;
+///     font-size: 16px;
+///     font-size: 0.88889rem;
+///     line-height: 24px;
+///     line-height: 1.33333rem;
+///     letter-spacing: 0.1em;
+///   }
+/// 
+///   .foo {
+///     color: white;
+///     background-color: black;
+///     text-transform: uppercase;
+///   }
+/// 
+///   .foo:hover {
+///     color: black;
+///     background-color: #969696;
+///   }
+
+@mixin button-small-color($background-color, $text-color, $hover-background-color) {
+  @extend %base-button;
+  color: $text-color;
+  background-color: $background-color;
+  text-transform: uppercase;
+  &:hover {
+    color: $background-color;
+    background-color: $hover-background-color;
+  }
+}
+
+/// Medium button color
+///
+/// @group extendables
+///
+/// @todo Update per individual project
+///
+/// @param {Color} $background-color - RGB color rgb(0, 0, 0);
+/// @param {Color} $text-color - RGB color rgb(0, 0, 0);
+/// @param {Color} $hover-background-color - RGB color rgb(0, 0, 0);
+///
+/// @example scss - Usage
+///   .foo {
+///     @include button-medium-color(rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 255, 150));
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     display: inline-block;
+///     padding: 12px 2em;
+///     cursor: pointer;
+///     font-size: 16px;
+///     font-size: 0.88889rem;
+///     line-height: 24px;
+///     line-height: 1.33333rem;
+///     letter-spacing: 0.1em;
+///   }
+/// 
+///  .foo {
+///     padding: 24px 4em;
+///     font-size: 32px;
+///     font-size: 1.77778rem;
+///     line-height: 36px;
+///     line-height: 2rem;
+///     color: white;
+///     background-color: black;
+///   }
+///   
+///   .foo:hover {
+///     color: black;
+///     background-color: #969696;
+///   }
+
+@mixin button-medium-color($background-color, $text-color, $hover-background-color) {
+  @extend %base-button;
+  padding: rhythm(1) gutters(8em);
+  @include set-font-size(32px);
+  color: $text-color;
+  background-color: $background-color;
+  &:hover {
+    color: $background-color;
+    background-color: $hover-background-color;
+  }
+}
+
+/// Large button color
+///
+/// @group extendables
+///
+/// @todo Update per individual project
+///
+/// @param {Color} $background-color - RGB color rgb(0, 0, 0);
+/// @param {Color} $text-color - RGB color rgb(0, 0, 0);
+/// @param {Color} $hover-background-color - RGB color rgb(0, 0, 0);
+///
+/// @example scss - Usage
+///   .foo {
+///     @include button-large-color(rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 255, 150));
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     display: inline-block;
+///     padding: 12px 2em;
+///     cursor: pointer;
+///     font-size: 16px;
+///     font-size: 0.88889rem;
+///     line-height: 24px;
+///     line-height: 1.33333rem;
+///     letter-spacing: 0.1em;
+///   }
+/// 
+///   .foo {
+///     padding: 48px 5em;
+///     font-size: 42px;
+///     font-size: 2.33333rem;
+///     line-height: 48px;
+///     line-height: 2.66667rem;
+///     color: white;
+///     background-color: black;
+///   }
+///   
+///   .foo:hover {
+///     color: black;
+///     background-color: #969696;
+///   }
+  
+@mixin button-large-color($background-color, $text-color, $hover-background-color) {
+  @extend %base-button;
+  padding: rhythm(2) gutters(10em);
+  @include set-font-size(42px);
+  color: $text-color;
+  background-color: $background-color;
+  &:hover {
+    color: $background-color;
+    background-color: $hover-background-color;
+  }
+}
+
+/// Button tab color
+///
+/// @group extendables
+///
+/// @todo Update per individual project
+///
+/// @param {Color} $background-color - RGB color rgb(0, 0, 0);
+/// @param {Color} $text-color - RGB color rgb(0, 0, 0);
+/// @param {Color} $hover-background-color - RGB color rgb(0, 0, 0);
+/// @param {Color} $hover-text-color - RGB color rgb(0, 0, 0);
+///
+/// @example scss - Usage
+///   .foo {
+///     @include button-tab-color(rgb(0, 0, 0), rgb(255, 255, 255), rgb(150, 150, 150), rgb(0, 0, 0));
+///   }
+///
+/// @example css - CSS output
+///   .foo {
+///     padding: 24px 1.25em 12px;
+///     background-color: black;
+///     color: white;
+///     font-size: 19px;
+///     font-size: 1.05556rem;
+///     line-height: 24px;
+///     line-height: 1.33333rem;
+///     text-transform: uppercase;
+///   }
+///   
+///   .foo:hover, .foo.active {
+///     background-color: #969696;
+///     color: black;
+///   }
+
+@mixin button-tab-color($background-color, $text-color, $hover-background-color, $hover-text-color) {
+  padding: rhythm(1) gutters(2.5em) rhythm(0.5);
+  background-color: $background-color;
+  color: $text-color;
+
+  @include set-font-size(19px);
+  text-transform: uppercase;
+  &:hover,
+  &.active {
+    background-color: $hover-background-color;
+    color: $hover-text-color;
+  }
+}

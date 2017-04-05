@@ -1,0 +1,28 @@
+@import "vendor/foundation-form.scss";
+input[type="email"],
+input[type="text"] {
+	border-radius: 5px;
+  width: 194px;
+  height: 60px;
+	float:left;
+	margin-right: 5px;
+}
+
+select {
+	width: 100%;
+}
+
+#forms {
+  fieldset {
+    margin-top: 0;
+  }
+}
+
+label{
+  font-size: 30px;
+	display:none;
+}
+
+body{
+  font-size:15px;
+}

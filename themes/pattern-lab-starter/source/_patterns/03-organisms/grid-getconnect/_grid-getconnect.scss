@@ -1,0 +1,66 @@
+$susy: (
+  columns: 12,
+  gutters: 1/6,
+  math: fluid,
+  output: float,
+  gutter-position: outside,
+  global-box-sizing: border-box,
+  // debug: (image: show)
+);
+
+/// Absolute height of body text, in pixels
+/// @type Number
+$base-font-size: 18px;
+
+
+/// Absolute height of one line of type, in pixels
+/// @type Number
+$base-line-height: 24px;
+
+/**
+ * Initiate Susy and Vertical Rhythm configurations
+ */
+  @include border-box-sizing;
+  @include establish-new-baseline;
+
+
+.grid-getconnect {
+
+  @include container();
+  @include susy-breakpoint($screen-small-8cols, 8) {
+    @include container();
+  }
+  @include susy-breakpoint($screen-medium-12cols, 12) {
+    @include container();
+    .image-getConnect{
+      position: relative;
+     /*&::before{
+        content: '';
+        position:absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    background: linear-gradient(to bottom, rgba(10,10,10,0) 0%,rgba(10,10,10,0.65) 100%);
+    z-index: 1;
+  }*/
+    }
+    .message-getconnect{
+      //position: absolute;
+      top:30%;
+      color:$c-black;
+      //z-index: 2;
+
+
+    }
+
+    .url-getconnect{
+      //position: absolute;
+      top:600%;
+      z-index: 2;
+      //color:$c-white;
+
+    }
+  }
+
+}

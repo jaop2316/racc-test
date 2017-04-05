@@ -1,0 +1,92 @@
+/**
+ * Tables - with responsive support
+ */
+table:not([class]) {
+  @include leader(0.5);
+  @include trailer(1);
+  width: 100%;
+  border: none;
+  caption {
+    @include trailer;
+    color: $solid-black;
+    text-transform: capitalize;
+  }
+  thead {
+    th {
+      background-color: $solid-white;
+      min-width: 140px;
+      a {
+        color: $solid-white;
+      }
+      img {
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+  }
+  tr {
+    margin-bottom: 10px;
+    padding: 0;
+    &:last-child {
+      border-bottom: solid 3px $solid-black;
+    }
+
+    td {
+      border: solid 1px $solid-black;
+      background-color: $solid-white;
+      border-bottom: none;
+      min-width: 140px;
+    }
+  }
+  td, th {
+    padding: 10px 15px;
+  }
+
+  @include breakpoint($max-small-8cols) {
+    thead {
+      display: none;
+    }
+    tr, tr.menu-enabled {
+      display: block;
+      width: 100%;
+      border-bottom: solid 1px $solid-black;
+      text-align: left;
+
+      td, td.menu-operations, td.checkbox {
+        display: block;
+        width: 100%;
+        text-align: left;
+
+        &:before {
+          width: 100%;
+          display: block;
+          content: attr(data-label);
+          text-transform: uppercase;
+          color: $solid-black;
+          @include letter-tracking(50);
+        }
+      }
+    }
+  }
+
+  @include breakpoint($screen-medium-12cols) {
+    tr {
+      width: inherit;
+      td {
+        border: none;
+        border-bottom: solid 1px $solid-black;
+        &:last-child {
+          border-bottom: solid 1px $solid-black;
+        }
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  @include breakpoint($screen-large-12cols) {
+    caption {
+    }
+  }
+}
+

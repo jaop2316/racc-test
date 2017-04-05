@@ -1,0 +1,97 @@
+{
+  "items": [
+    {
+      "name": "$c-pomegranate",
+      "value": "hsl(5, 89%, 54%)",
+      "comment": "Primary Color,Used in Main Menu"
+    },
+    {
+      "name": "$c-white",
+      "value": "white",
+      "comment": "Secondary color site background color"
+    },
+    {
+      "name": "$c-gray--lightest",
+      "value": "hsl(0, 0%, 92%)",
+      "comment": "Sidebar Menu Background Color"
+    },
+    {
+      "name": "$c-black",
+      "value": "black",
+      "comment": "Footer Background Color"
+    },
+    {
+      "name": "$c-manatee",
+      "value": "hsl(228, 5%, 61%)",
+      "comment": "Sign Up Button in Contact Form Color"
+    },
+    {
+      "name": "$c-concrete",
+      "value": "hsl(0, 0%, 95%)",
+      "comment": "Background Color Forms Buttons"
+    },
+    {
+      "name": "$c-white--gradient",
+      "value": "hsla(0, 100%, 100%, 0.7)",
+      "comment": "Header background color"
+    },
+    {
+      "name": "$c-spun--pearl",
+      "value": "hsl(250, 4%, 67%)",
+      "comment": "Color Font Copyright in block"
+    },
+    {
+      "name": "$c-tuna",
+      "value": "hsl(231, 7%, 21%)",
+      "comment": "Footer Background color"
+    },
+    {
+      "name": "$c-silver-sand",
+      "value": "hsl(220, 3%, 79%)",
+      "comment": "First Box  information color"
+    },
+    {
+      "name": "$c-osio-gray",
+      "value": "hsl(230, 3%, 55%)",
+      "comment": ""
+    },
+    {
+      "name": "$c-red",
+      "value": "hsl(352, 92%, 38%)",
+      "comment": ""
+    },
+    {
+      "name": "$c-gray--lighter",
+      "value": "hsl(0, 0%, 80%)",
+      "comment": ""
+    },
+    {
+      "name": "$c-gray--light",
+      "value": "hsl(0, 0%, 60%)",
+      "comment": ""
+    },
+    {
+      "name": "$c-gray",
+      "value": "hsl(0, 0%, 48%)",
+      "comment": ""
+    },
+    {
+      "name": "$c-gray--dark",
+      "value": "hsl(0, 0%, 40%)",
+      "comment": ""
+    },
+    {
+      "name": "$c-gray--darker",
+      "value": "hsl(0, 0%, 20%)",
+      "comment": ""
+    },
+    {
+      "name": "$c-gray--darkest",
+      "value": "hsl(0, 0%, 16.1%)",
+      "comment": ""
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$c-</code> in <code>source/_patterns/00-base/01-colors/_color-vars.scss</code>"
+  }
+}

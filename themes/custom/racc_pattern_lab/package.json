@@ -1,0 +1,20 @@
+{
+  "name": "racc_pattern_lab",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "breakpoint-sass": "^2.6.1",
+    "browser-sync": "^2.9.8",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-watch": "^4.3.3",
+    "node-sass-globbing": "0.0.23",
+    "susy": "^2.2.12"
+  }
+}
