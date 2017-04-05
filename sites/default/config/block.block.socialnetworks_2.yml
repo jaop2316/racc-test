@@ -1,0 +1,33 @@
+uuid: fc802964-87c9-4bb0-8696-b772dcf4d031
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-networks
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - racc_pattern_lab
+id: socialnetworks_2
+theme: racc_pattern_lab
+region: footer
+weight: -15
+provider: null
+plugin: 'menu_block:social-networks'
+settings:
+  id: 'menu_block:social-networks'
+  label: 'Social Networks'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'social-networks:'
+  suggestion: social_networks
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

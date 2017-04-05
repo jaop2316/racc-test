@@ -1,0 +1,21 @@
+uuid: 9bf0f5c3-aba6-4124-9a08-db7f750dbdb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.panelizer
+    - node.type.student
+  module:
+    - panelizer
+id: node.student.panelizer
+field_name: panelizer
+entity_type: node
+bundle: student
+label: Panelizer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: panelizer

@@ -1,0 +1,286 @@
+uuid: 972a4593-acb8-4d6c-969e-8fb264c18e9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.career_opportunities.body
+    - field.field.node.career_opportunities.field_announce_date
+    - field.field.node.career_opportunities.field_aplication_instructions
+    - field.field.node.career_opportunities.field_aplication_status
+    - field.field.node.career_opportunities.field_apply_by_date_
+    - field.field.node.career_opportunities.field_background_check
+    - field.field.node.career_opportunities.field_classification
+    - field.field.node.career_opportunities.field_full_time_position
+    - field.field.node.career_opportunities.field_inmediate_need
+    - field.field.node.career_opportunities.field_position_type
+    - field.field.node.career_opportunities.field_salary
+    - field.field.node.career_opportunities.panelizer
+    - node.type.career_opportunities
+  module:
+    - datetime
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: true
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          15edd903-27ba-4185-8738-6a5b9270e95d:
+            id: 'entity_field:node:body'
+            label: Summary
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 15edd903-27ba-4185-8738-6a5b9270e95d
+          d774792e-83db-41c9-b3d8-44407cae354e:
+            id: 'entity_field:node:field_announce_date'
+            label: 'Announce date'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: datetime_default
+              settings:
+                timezone_override: ''
+                format_type: medium
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -2
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: d774792e-83db-41c9-b3d8-44407cae354e
+          7d211d34-6c20-4545-a2d6-6a9fe45e413e:
+            id: 'entity_field:node:field_aplication_instructions'
+            label: 'Aplication Instructions'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -5
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 7d211d34-6c20-4545-a2d6-6a9fe45e413e
+          b07ed80c-18be-4557-98c6-2eb483ea4ee3:
+            id: 'entity_field:node:field_aplication_status'
+            label: 'Aplication Status'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: entity_reference_label
+              settings:
+                link: true
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: b07ed80c-18be-4557-98c6-2eb483ea4ee3
+          3347f178-8161-4f57-abde-85fd2b2e58bf:
+            id: 'entity_field:node:field_apply_by_date_'
+            label: 'Apply by Date '
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 3347f178-8161-4f57-abde-85fd2b2e58bf
+          520b1981-d82a-4805-923f-fbaf29c3096c:
+            id: 'entity_field:node:field_background_check'
+            label: 'Background Check'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -4
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 520b1981-d82a-4805-923f-fbaf29c3096c
+          6bca7bbd-f659-46a7-ac17-f715f7c9b7db:
+            id: 'entity_field:node:field_position_type'
+            label: 'Position Type'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: entity_reference_label
+              settings:
+                link: true
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 6bca7bbd-f659-46a7-ac17-f715f7c9b7db
+          1d96c5b2-9b76-4c2d-b6ea-dfe1b82394bf:
+            id: 'entity_field:node:field_salary'
+            label: Salary
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 2
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 1d96c5b2-9b76-4c2d-b6ea-dfe1b82394bf
+          24fde920-867d-4704-b544-1b046aa9c93c:
+            id: 'entity_field:node:title'
+            label: Title
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -3
+            uuid: 24fde920-867d-4704-b544-1b046aa9c93c
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        label: Default
+        uuid: 1feb152b-ab01-47ce-8a98-4bdfdbd19085
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: 'Job Description'
+        storage_type: panelizer_default
+        storage_id: 'node:career_opportunities:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+id: node.career_opportunities.default
+targetEntityType: node
+bundle: career_opportunities
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+  field_announce_date:
+    weight: 3
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_aplication_instructions:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_aplication_status:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_apply_by_date_:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_background_check:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_classification:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_full_time_position:
+    weight: 10
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_inmediate_need:
+    weight: 11
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_position_type:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_salary:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  panelizer: true

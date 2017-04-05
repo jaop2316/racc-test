@@ -1,0 +1,23 @@
+uuid: ad5f4f75-6d38-427f-99cf-ed3a41728caf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_message_url
+    - node.type.get_connected
+  module:
+    - link
+id: node.get_connected.field_message_url
+field_name: field_message_url
+entity_type: node
+bundle: get_connected
+label: 'Message URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

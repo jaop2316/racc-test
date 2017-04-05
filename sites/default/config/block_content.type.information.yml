@@ -1,0 +1,8 @@
+uuid: 8ce7d708-0286-4798-9536-d8b1c913b78f
+langcode: en
+status: true
+dependencies: {  }
+id: information
+label: Information
+revision: 0
+description: 'In this block will write information to students. '

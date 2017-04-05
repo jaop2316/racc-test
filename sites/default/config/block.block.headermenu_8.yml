@@ -1,0 +1,33 @@
+uuid: 6bbc0379-f94c-4fa6-b856-c9f9d7a15678
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-menu
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - racc_pattern_lab
+id: headermenu_8
+theme: racc_pattern_lab
+region: header
+weight: -19
+provider: null
+plugin: 'menu_block:header-menu'
+settings:
+  id: 'menu_block:header-menu'
+  label: 'Header menu'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'header-menu:'
+  suggestion: header_menu
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

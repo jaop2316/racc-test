@@ -1,0 +1,22 @@
+uuid: 44d7d003-b0b9-48be-bf88-a7076a8f64cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.annual_fund
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.annual_fund.body
+field_name: body
+entity_type: block_content
+bundle: annual_fund
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

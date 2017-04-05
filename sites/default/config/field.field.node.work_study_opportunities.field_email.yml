@@ -1,0 +1,19 @@
+uuid: 469a972e-8d86-4d32-ba0d-523609485081
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.work_study_opportunities
+id: node.work_study_opportunities.field_email
+field_name: field_email
+entity_type: node
+bundle: work_study_opportunities
+label: Email
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

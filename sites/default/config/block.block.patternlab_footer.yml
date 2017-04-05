@@ -1,0 +1,32 @@
+uuid: 8eecd32e-0d59-45a0-9428-d38e739650e5
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - patternlab
+_core:
+  default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
+id: patternlab_footer
+theme: patternlab
+region: '-1'
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

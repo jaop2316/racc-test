@@ -1,0 +1,22 @@
+uuid: 7a7a0c94-c0b3-47cb-a114-0fe9526e35fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.current_postings
+  module:
+    - text
+id: node.current_postings.body
+field_name: body
+entity_type: node
+bundle: current_postings
+label: 'Aditional Info'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

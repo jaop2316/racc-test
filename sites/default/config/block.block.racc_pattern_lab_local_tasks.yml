@@ -1,0 +1,22 @@
+uuid: cd63a206-cbd2-45ec-8879-436d5962766a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - racc_pattern_lab
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: racc_pattern_lab_local_tasks
+theme: racc_pattern_lab
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

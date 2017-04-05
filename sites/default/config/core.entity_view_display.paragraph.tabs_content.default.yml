@@ -1,0 +1,57 @@
+uuid: 2981d80a-fd71-4fa9-a709-9a5d562bb036
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabs_content.field_aditional_info
+    - field.field.paragraph.tabs_content.field_body
+    - field.field.paragraph.tabs_content.field_image
+    - field.field.paragraph.tabs_content.field_title
+    - paragraphs.paragraphs_type.tabs_content
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: twocol_stacked
+      path: modules/panels/layouts/twocol_stacked
+      library: layout_plugin/twocol_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      top:
+        - field_image
+      left:
+        - field_body
+      right:
+        - field_aditional_info
+id: paragraph.tabs_content.default
+targetEntityType: paragraph
+bundle: tabs_content
+mode: default
+content:
+  field_aditional_info:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  field_title: true

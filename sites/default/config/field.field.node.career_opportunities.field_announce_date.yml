@@ -1,0 +1,21 @@
+uuid: e3746d4e-e12f-44a5-a368-92054e49cea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_announce_date
+    - node.type.career_opportunities
+  module:
+    - datetime
+id: node.career_opportunities.field_announce_date
+field_name: field_announce_date
+entity_type: node
+bundle: career_opportunities
+label: 'Announce date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

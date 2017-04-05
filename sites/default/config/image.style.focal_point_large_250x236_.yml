@@ -1,0 +1,16 @@
+uuid: 4375717b-11db-458e-8186-b3e36a49980c
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: focal_point_large_250x236_
+label: 'Focal Point large (250x236)'
+effects:
+  6402c823-94a9-4d0d-8a3f-72adf10885ff:
+    uuid: 6402c823-94a9-4d0d-8a3f-72adf10885ff
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 236

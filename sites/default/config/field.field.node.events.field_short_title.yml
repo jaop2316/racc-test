@@ -1,0 +1,19 @@
+uuid: 91f6083f-ae98-4f2d-b67b-b6db6c307b53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_title
+    - node.type.events
+id: node.events.field_short_title
+field_name: field_short_title
+entity_type: node
+bundle: events
+label: 'Short Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

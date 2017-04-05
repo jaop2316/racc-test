@@ -1,0 +1,22 @@
+uuid: 33b323cb-3337-487f-867c-8d7b9f807cb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.layout_content
+    - field.storage.block_content.field_sidebar_body
+  module:
+    - text
+id: block_content.layout_content.field_sidebar_body
+field_name: field_sidebar_body
+entity_type: block_content
+bundle: layout_content
+label: 'Sidebar Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

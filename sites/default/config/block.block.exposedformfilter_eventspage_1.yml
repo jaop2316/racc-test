@@ -1,0 +1,30 @@
+uuid: 00f385d4-5ace-4217-bcc5-7a6bea801f1a
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.events_category
+    - views.view.filter_events
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - bartik
+id: exposedformfilter_eventspage_1
+theme: bartik
+region: '-1'
+weight: -10
+provider: null
+plugin: 'views_exposed_filter_block:filter_events-page_1'
+settings:
+  id: 'views_exposed_filter_block:filter_events-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Events
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: events_category
+    context_mapping: {  }

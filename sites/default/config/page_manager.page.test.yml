@@ -1,0 +1,12 @@
+uuid: f549b20b-9e0c-48fd-99fc-de9996a60841
+langcode: en
+status: true
+dependencies: {  }
+id: test
+label: Test
+description: 'Test Researching'
+use_admin_theme: false
+path: /test
+access_logic: and
+access_conditions: {  }
+parameters: {  }

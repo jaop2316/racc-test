@@ -1,0 +1,22 @@
+uuid: ef58d462-93d6-4ed3-bce2-b7af67cfbf8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: current_postings
+label: 'Current Postings'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:nid]'
+selection_criteria:
+  a82b3265-3dfe-4d0d-9a95-26e7aab25a09:
+    id: node_type
+    bundles:
+      current_postings: current_postings
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a82b3265-3dfe-4d0d-9a95-26e7aab25a09
+selection_logic: and
+weight: -5
+relationships: {  }

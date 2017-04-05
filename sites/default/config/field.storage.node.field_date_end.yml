@@ -1,0 +1,18 @@
+uuid: 1ad21d8b-ea36-408e-b94b-1ac9120e11f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_date_end
+field_name: field_date_end
+entity_type: node
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

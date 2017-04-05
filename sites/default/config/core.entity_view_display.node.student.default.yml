@@ -1,0 +1,161 @@
+uuid: 669f5841-a63f-4863-9829-04a2c162e879
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student.body
+    - field.field.node.student.field_image
+    - field.field.node.student.panelizer
+    - node.type.student
+    - responsive_image.styles.student_responsive
+  module:
+    - ds
+    - panelizer
+    - responsive_image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: twocol
+      path: modules/panels/layouts/twocol
+      library: layout_plugin/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_image
+      right:
+        - node_link
+        - node_title
+        - body
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'STUDENT SPOTLIGHT'
+          'link class': ''
+          wrapper: h2
+          class: ''
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          ad622f4e-54c0-412a-8e4d-71fbff905d51:
+            id: 'entity_field:node:uid'
+            label: 'Authored by'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: author
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 0
+            uuid: ad622f4e-54c0-412a-8e4d-71fbff905d51
+          b5ec4563-d9c7-471c-8d28-55d3ae86c265:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: timestamp
+              settings:
+                date_format: medium
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 0
+            uuid: b5ec4563-d9c7-471c-8d28-55d3ae86c265
+          b6ad617c-cb53-47a6-a29c-13aed251a33f:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 2
+            uuid: b6ad617c-cb53-47a6-a29c-13aed251a33f
+          dd625a0a-d206-4005-9523-ead61cacf89f:
+            id: 'entity_field:node:field_image'
+            label: Image
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: responsive_image
+              settings:
+                responsive_image_style: student_responsive
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 1
+            uuid: dd625a0a-d206-4005-9523-ead61cacf89f
+        id: panels_variant
+        label: Default
+        uuid: 3b9ff9eb-14a1-47f3-a3dc-6da3f1f45708
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: ''
+        storage_id: ''
+        builder: ipe
+        pattern: panelizer
+id: node.student.default
+targetEntityType: node
+bundle: student
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_image:
+    type: responsive_image
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: student_responsive
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true
+  links: true
+  panelizer: true

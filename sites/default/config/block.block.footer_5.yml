@@ -1,0 +1,33 @@
+uuid: 8a83c70d-ed55-47f9-899d-49edf276e304
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - racc_pattern_lab
+id: footer_5
+theme: racc_pattern_lab
+region: '-1'
+weight: -9
+provider: null
+plugin: 'menu_block:footer'
+settings:
+  id: 'menu_block:footer'
+  label: Footer
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer:'
+  suggestion: footer
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

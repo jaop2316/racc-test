@@ -1,0 +1,41 @@
+uuid: c3b9061f-7a31-4185-9231-f5d2904c1285
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.news
+    - views.view.news
+  module:
+    - panels
+    - views
+id: news-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    ce07e89d-3d06-47dd-b1af-f75f3ea42c84:
+      id: 'views_block:news-block_2'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 0
+      uuid: ce07e89d-3d06-47dd-b1af-f75f3ea42c84
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 134559a1-8bad-4af2-98e8-5e145f5e4f8b
+  label: null
+  weight: 0
+  layout: onecol
+  layout_settings: {  }
+  page_title: News
+  storage_type: page_manager
+  storage_id: news-panels_variant-0
+  builder: standard
+page: news
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

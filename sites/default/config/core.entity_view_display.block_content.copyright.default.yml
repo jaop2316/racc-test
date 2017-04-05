@@ -1,0 +1,36 @@
+uuid: 5938b80b-58b3-4e06-9e2d-84a949f56391
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright
+    - field.field.block_content.copyright.body
+    - field.field.block_content.copyright.field_image
+    - field.field.block_content.copyright.field_short_text
+    - field.field.block_content.copyright.field_title
+  module:
+    - responsive_image
+    - text
+id: block_content.copyright.default
+targetEntityType: block_content
+bundle: copyright
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: responsive_image
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_short_text: true
+  field_title: true
+  langcode: true

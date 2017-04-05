@@ -1,0 +1,45 @@
+uuid: e3e4b1a7-1081-4276-b933-017d6a9d91c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.annual_fund
+    - field.storage.block_content.field_paragraph
+    - paragraphs.paragraphs_type.body_and_left_image
+    - paragraphs.paragraphs_type.body_and_right_image
+    - paragraphs.paragraphs_type.tabs_content
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - entity_reference_revisions
+id: block_content.annual_fund.field_paragraph
+field_name: field_paragraph
+entity_type: block_content
+bundle: annual_fund
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      body_and_left_image: body_and_left_image
+      body_and_right_image: body_and_right_image
+      tabs_content: tabs_content
+      timeline: timeline
+    target_bundles_drag_drop:
+      body_and_left_image:
+        enabled: true
+        weight: 5
+      body_and_right_image:
+        enabled: true
+        weight: 6
+      tabs_content:
+        enabled: true
+        weight: 7
+      timeline:
+        enabled: true
+        weight: 8
+field_type: entity_reference_revisions

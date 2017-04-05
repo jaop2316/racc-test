@@ -1,0 +1,19 @@
+uuid: b85ce4be-72d0-4f33-8ca6-9f8c9d84ad75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_secondary
+    - node.type.spotlight
+id: node.spotlight.field_text_secondary
+field_name: field_text_secondary
+entity_type: node
+bundle: spotlight
+label: 'Text Secondary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

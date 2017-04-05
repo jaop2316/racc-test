@@ -1,0 +1,30 @@
+uuid: 8d1bc324-0693-4608-bf45-f6294834ab95
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.featured_and_news_
+    - views.view.filter
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - racc_theme
+id: racc_theme_exposedformfilterpage_1_2
+theme: racc_theme
+region: '-1'
+weight: -13
+provider: null
+plugin: 'views_exposed_filter_block:filter-page_1'
+settings:
+  id: 'views_exposed_filter_block:filter-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: NEWS
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: featured_and_news_
+    context_mapping: {  }

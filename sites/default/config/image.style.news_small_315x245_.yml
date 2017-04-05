@@ -1,0 +1,16 @@
+uuid: 29c078d1-c933-4585-8783-2723bc7a97d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: news_small_315x245_
+label: 'News Small (315x245)'
+effects:
+  582c3320-793d-4bcc-8e87-439894bc37c0:
+    uuid: 582c3320-793d-4bcc-8e87-439894bc37c0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 315
+      height: 245

@@ -1,0 +1,16 @@
+uuid: 01942ea4-1450-4535-b9e9-2533e2c3e0cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slider_small_370x400_
+label: 'Slider small (370x400)'
+effects:
+  eb9e19b0-5596-4f7a-969c-785b8395d3ba:
+    uuid: eb9e19b0-5596-4f7a-969c-785b8395d3ba
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 370
+      height: 400

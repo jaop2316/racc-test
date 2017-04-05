@@ -1,0 +1,31 @@
+uuid: cc672562-3af5-4ddf-afdc-1a956573cfbf
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:annual_fund:ef45c9bc-b06a-4c01-8389-179415e300f1'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - patternlab
+id: patternlab_annualfund
+theme: patternlab
+region: '-1'
+weight: -14
+provider: null
+plugin: 'block_content:ef45c9bc-b06a-4c01-8389-179415e300f1'
+settings:
+  id: 'block_content:ef45c9bc-b06a-4c01-8389-179415e300f1'
+  label: 'Annual Fund'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

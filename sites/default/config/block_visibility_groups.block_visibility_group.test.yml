@@ -1,0 +1,23 @@
+uuid: 1e4e69e1-c22c-47c9-b966-545b6db01a9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: test
+label: Test
+logic: and
+conditions:
+  3655dec0-6c51-4d60-9ef0-e673cde3af2c:
+    id: request_path
+    pages: "/about-racc\r\n/about-racc/*"
+    negate: false
+    context_mapping: {  }
+    uuid: 3655dec0-6c51-4d60-9ef0-e673cde3af2c
+  2015dbb7-ae6e-453c-8346-c057e2e750c8:
+    id: request_path
+    pages: "/about-racc/current-postings\r\n/about-racc/career-opportunities\r\n/about-racc/foundation-for-racc/*"
+    negate: true
+    context_mapping: {  }
+    uuid: 2015dbb7-ae6e-453c-8346-c057e2e750c8
+allow_other_conditions: false

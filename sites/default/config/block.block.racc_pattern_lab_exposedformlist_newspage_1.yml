@@ -1,0 +1,28 @@
+uuid: 4c3e1860-1ff0-43b4-a515-7b1a939a2d30
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.featured_and_news_
+  module:
+    - block_visibility_groups
+  theme:
+    - racc_pattern_lab
+id: racc_pattern_lab_exposedformlist_newspage_1
+theme: racc_pattern_lab
+region: '-1'
+weight: -18
+provider: null
+plugin: 'views_exposed_filter_block:list_news-page_1'
+settings:
+  id: 'views_exposed_filter_block:list_news-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: featured_and_news_
+    context_mapping: {  }

@@ -1,0 +1,85 @@
+uuid: 7792f110-5c0c-4913-95df-c83b2a6bcc48
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.layout_content
+    - field.field.block_content.layout_content.body
+    - field.field.block_content.layout_content.field_banner
+    - field.field.block_content.layout_content.field_image
+    - field.field.block_content.layout_content.field_sidebar_body
+    - field.field.block_content.layout_content.field_sidebar_title
+    - field.field.block_content.layout_content.field_title
+    - field.field.block_content.layout_content.field_video_link
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+    - video_embed_field
+id: block_content.layout_content.default
+targetEntityType: block_content
+bundle: layout_content
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_banner:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_sidebar_body:
+    weight: 8
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+  field_sidebar_title:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_video_link:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+  info:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

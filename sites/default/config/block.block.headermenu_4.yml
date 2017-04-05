@@ -1,0 +1,33 @@
+uuid: cba7c325-8187-4d80-9bbf-8e55c5a5565b
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.header-menu
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - patternlab
+id: headermenu_4
+theme: patternlab
+region: '-1'
+weight: -4
+provider: null
+plugin: 'menu_block:header-menu'
+settings:
+  id: 'menu_block:header-menu'
+  label: 'Header menu'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'header-menu:'
+  suggestion: header_menu
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

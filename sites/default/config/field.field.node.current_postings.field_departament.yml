@@ -1,0 +1,28 @@
+uuid: 4143fb55-7042-4628-ae00-70c43fac11ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_departament
+    - node.type.current_postings
+    - taxonomy.vocabulary.departament
+id: node.current_postings.field_departament
+field_name: field_departament
+entity_type: node
+bundle: current_postings
+label: Departament
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      departament: departament
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

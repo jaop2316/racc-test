@@ -1,0 +1,19 @@
+uuid: 0f10edce-f887-47dc-b0e4-2d9714db274f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary
+    - node.type.career_opportunities
+id: node.career_opportunities.field_salary
+field_name: field_salary
+entity_type: node
+bundle: career_opportunities
+label: Salary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

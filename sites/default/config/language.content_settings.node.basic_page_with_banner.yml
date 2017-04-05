@@ -1,0 +1,11 @@
+uuid: 41e7e8ce-e074-4a19-bdf7-70966e8d4a04
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.basic_page_with_banner
+id: node.basic_page_with_banner
+target_entity_type_id: node
+target_bundle: basic_page_with_banner
+default_langcode: site_default
+language_alterable: false

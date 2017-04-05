@@ -1,0 +1,30 @@
+uuid: 73bb8708-51e4-41e6-a383-6a672d593309
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.news2
+    - views.view.filter
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - racc_pattern_lab
+id: racc_pattern_lab_exposedformfilterpage_1_5
+theme: racc_pattern_lab
+region: content
+weight: -11
+provider: null
+plugin: 'views_exposed_filter_block:filter-page_1'
+settings:
+  id: 'views_exposed_filter_block:filter-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: news2
+    context_mapping: {  }

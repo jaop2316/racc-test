@@ -1,0 +1,17 @@
+uuid: a5b2ad23-30dd-4441-9237-ce163e404262
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: events_category
+label: 'Events Category'
+logic: and
+conditions:
+  0ba4a755-c7dc-40cc-a3f5-85ff46e4c0e9:
+    id: request_path
+    pages: "/events\r\n/event/*"
+    negate: false
+    context_mapping: {  }
+    uuid: 0ba4a755-c7dc-40cc-a3f5-85ff46e4c0e9
+allow_other_conditions: false

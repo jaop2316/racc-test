@@ -1,0 +1,18 @@
+uuid: 08b36cbf-1383-4bd2-a29e-7b19c3c7caf9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Slider
+type: slider
+description: 'Use for show a preview about important events , news , etc.  '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

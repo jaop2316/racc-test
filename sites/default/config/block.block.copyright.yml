@@ -1,0 +1,31 @@
+uuid: da887bc4-4344-4ba6-bca7-578df8446086
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:copyright:786663da-1b7b-4650-8c77-589082845ae7'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - bartik
+id: copyright
+theme: bartik
+region: footer_fifth
+weight: -12
+provider: null
+plugin: 'block_content:786663da-1b7b-4650-8c77-589082845ae7'
+settings:
+  id: 'block_content:786663da-1b7b-4650-8c77-589082845ae7'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

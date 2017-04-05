@@ -1,0 +1,33 @@
+uuid: 5cd7e648-f5e4-437f-abcc-1feb80cee8ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - bartik
+id: footer_2
+theme: bartik
+region: footer_second
+weight: -13
+provider: null
+plugin: 'menu_block:footer'
+settings:
+  id: 'menu_block:footer'
+  label: 'Contact Information'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer:menu_link_content:72a2a05c-7f34-4d49-89ac-e910fbd1c3c4'
+  suggestion: footer
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

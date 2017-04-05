@@ -1,0 +1,28 @@
+uuid: 54c32d3e-2dd9-4bbb-8882-a50371e57bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aplication_status
+    - node.type.career_opportunities
+    - taxonomy.vocabulary.application_status
+id: node.career_opportunities.field_aplication_status
+field_name: field_aplication_status
+entity_type: node
+bundle: career_opportunities
+label: 'Aplication Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      application_status: application_status
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

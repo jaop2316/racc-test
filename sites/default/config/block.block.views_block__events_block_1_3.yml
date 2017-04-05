@@ -1,0 +1,31 @@
+uuid: cd4a4e9f-4b65-4239-84b2-8b9e606479b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.academics_menu
+    - views.view.events
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - bartik
+id: views_block__events_block_1_3
+theme: bartik
+region: sidebar_first
+weight: -24
+provider: null
+plugin: 'views_block:events-block_1'
+settings:
+  id: 'views_block:events-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: academics_menu
+    context_mapping: {  }

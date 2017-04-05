@@ -1,0 +1,28 @@
+uuid: d8c228ee-e913-42fd-9bea-ad9bd4aef05d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.get_connected
+    - taxonomy.vocabulary.social_
+id: node.get_connected.field_type
+field_name: field_type
+entity_type: node
+bundle: get_connected
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      social_: social_
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

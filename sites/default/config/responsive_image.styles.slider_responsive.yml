@@ -1,0 +1,30 @@
+uuid: d8aac484-ef52-440f-ad5e-9766387acff4
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.slider_large_1600x1239
+    - image.style.slider_medium_768x663_
+    - image.style.slider_small_370x400_
+  theme:
+    - bartik
+id: slider_responsive
+label: 'Slider responsive'
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: slider_large_1600x1239
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: slider_medium_768x663_
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: slider_small_370x400_
+breakpoint_group: bartik
+fallback_image_style: slider_small_370x400_

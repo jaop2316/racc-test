@@ -1,0 +1,47 @@
+uuid: c14e4b08-0a62-40e5-b435-78586b403154
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.information
+    - field.field.block_content.information.field_tab_content
+    - field.field.block_content.information.field_tabs
+  module:
+    - ds
+    - entity_reference_revisions
+third_party_settings:
+  ds:
+    layout:
+      id: twocol
+      path: modules/panels/layouts/twocol
+      library: layout_plugin/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_tabs
+      right:
+        - field_tab_content
+id: block_content.information.default
+targetEntityType: block_content
+bundle: information
+mode: default
+content:
+  field_tab_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_tabs:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true

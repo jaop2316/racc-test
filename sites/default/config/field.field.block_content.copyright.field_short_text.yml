@@ -1,0 +1,19 @@
+uuid: 4cc03958-f450-46f6-b89f-e5b258afd873
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright
+    - field.storage.block_content.field_short_text
+id: block_content.copyright.field_short_text
+field_name: field_short_text
+entity_type: block_content
+bundle: copyright
+label: 'Short Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: e84b311a-7f25-4903-8366-3ea5ac6f567f
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - racc_theme
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: racc_theme_search
+theme: racc_theme
+region: '-1'
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,28 @@
+uuid: c1d24a83-ab7a-42f0-ae45-78dbf6240811
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_departament
+    - node.type.work_study_opportunities
+    - taxonomy.vocabulary.departament
+id: node.work_study_opportunities.field_departament
+field_name: field_departament
+entity_type: node
+bundle: work_study_opportunities
+label: Departament
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      departament: departament
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

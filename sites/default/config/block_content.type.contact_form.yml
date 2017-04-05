@@ -1,0 +1,8 @@
+uuid: 5001e4ed-2a12-40b6-9ccf-7480ed4b6d17
+langcode: en
+status: true
+dependencies: {  }
+id: contact_form
+label: 'Contact Form'
+revision: 0
+description: 'It''s a block embedded a contact form.'

@@ -1,0 +1,46 @@
+uuid: b7e7872d-b792-4fbc-bf88-5a52740acf86
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.information
+    - field.field.block_content.information.field_tab_content
+    - field.field.block_content.information.field_tabs
+  module:
+    - paragraphs
+id: block_content.information.default
+targetEntityType: block_content
+bundle: information
+mode: default
+content:
+  field_tab_content:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_tabs:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  info:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

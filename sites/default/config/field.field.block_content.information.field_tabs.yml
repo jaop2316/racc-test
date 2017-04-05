@@ -1,0 +1,19 @@
+uuid: f3511ef3-3efa-49e4-a696-282fe62797f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.information
+    - field.storage.block_content.field_tabs
+id: block_content.information.field_tabs
+field_name: field_tabs
+entity_type: block_content
+bundle: information
+label: Tabs
+description: 'Write tab text of section information. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

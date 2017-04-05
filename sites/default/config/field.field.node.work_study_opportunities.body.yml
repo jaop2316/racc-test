@@ -1,0 +1,22 @@
+uuid: 26498f08-7f62-4c9c-9eee-5be83d000370
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.work_study_opportunities
+  module:
+    - text
+id: node.work_study_opportunities.body
+field_name: body
+entity_type: node
+bundle: work_study_opportunities
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,19 @@
+uuid: 79e12d9f-7251-436b-b2a6-3e02f71918e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bid_bond
+    - node.type.current_postings
+id: node.current_postings.field_bid_bond
+field_name: field_bid_bond
+entity_type: node
+bundle: current_postings
+label: 'Bid bond'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

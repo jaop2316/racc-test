@@ -1,0 +1,30 @@
+uuid: 0d0e8514-25a2-46d5-923d-5b51cdfe8b9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.student_large_370x370_
+    - image.style.student_medium_637x637_
+    - image.style.student_small_347x347_
+  theme:
+    - bartik
+id: student_responsive
+label: 'Student responsive'
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: student_large_370x370_
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: student_medium_637x637_
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: student_small_347x347_
+breakpoint_group: bartik
+fallback_image_style: student_small_347x347_

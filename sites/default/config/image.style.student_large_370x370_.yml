@@ -1,0 +1,16 @@
+uuid: 3ac46220-c579-4298-b910-4eee6f597c57
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: student_large_370x370_
+label: 'Student large(370x370)'
+effects:
+  161bab77-c489-49e3-ab7f-6328066572f2:
+    uuid: 161bab77-c489-49e3-ab7f-6328066572f2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 370
+      height: 370

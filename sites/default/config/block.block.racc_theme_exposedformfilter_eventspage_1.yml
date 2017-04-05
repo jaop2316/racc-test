@@ -1,0 +1,30 @@
+uuid: eb13c8f9-733d-4891-b71d-4643ca236dce
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.events_category
+    - views.view.filter_events
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - racc_theme
+id: racc_theme_exposedformfilter_eventspage_1
+theme: racc_theme
+region: '-1'
+weight: -10
+provider: null
+plugin: 'views_exposed_filter_block:filter_events-page_1'
+settings:
+  id: 'views_exposed_filter_block:filter_events-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Events
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: events_category
+    context_mapping: {  }

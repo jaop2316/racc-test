@@ -1,0 +1,21 @@
+uuid: e2dbbeae-4f84-412d-9f0f-b1a88c21daec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post_date
+    - node.type.work_study_opportunities
+  module:
+    - datetime
+id: node.work_study_opportunities.field_post_date
+field_name: field_post_date
+entity_type: node
+bundle: work_study_opportunities
+label: 'Post Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

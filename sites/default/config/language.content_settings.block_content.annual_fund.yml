@@ -1,0 +1,11 @@
+uuid: bd74e287-1354-49ec-b37b-8dfc63564682
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.annual_fund
+id: block_content.annual_fund
+target_entity_type_id: block_content
+target_bundle: annual_fund
+default_langcode: site_default
+language_alterable: false

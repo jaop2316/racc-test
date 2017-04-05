@@ -1,0 +1,56 @@
+uuid: 0dc42a59-089a-4e9f-aa03-4daf4c909104
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.basic_page_with_banner.body
+    - field.field.node.basic_page_with_banner.field_image
+    - node.type.basic_page_with_banner
+  module:
+    - ds
+    - panelizer
+    - responsive_image
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+  ds:
+    layout:
+      id: onecol
+      path: modules/panels/layouts/onecol
+      library: layout_plugin/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      middle:
+        - field_image
+        - body
+id: node.basic_page_with_banner.teaser
+targetEntityType: node
+bundle: basic_page_with_banner
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_image:
+    type: responsive_image
+    weight: 0
+    label: above
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

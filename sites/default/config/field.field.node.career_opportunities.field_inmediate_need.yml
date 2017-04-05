@@ -1,0 +1,23 @@
+uuid: 9359bd5c-e603-4f11-96ff-3e0814722e27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inmediate_need
+    - node.type.career_opportunities
+id: node.career_opportunities.field_inmediate_need
+field_name: field_inmediate_need
+entity_type: node
+bundle: career_opportunities
+label: 'Inmediate need'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

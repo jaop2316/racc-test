@@ -1,0 +1,33 @@
+uuid: 21c3cbd7-1960-4e12-ac79-07d896884b57
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - bartik
+id: footer
+theme: bartik
+region: footer_first
+weight: -13
+provider: null
+plugin: 'menu_block:footer'
+settings:
+  id: 'menu_block:footer'
+  label: 'Popular Links'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer:menu_link_content:faf0a0c2-6412-47eb-8cc7-3d0aa1e6af96'
+  suggestion: footer
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,27 @@
+uuid: 84e4cd88-4f84-4d0b-a97e-a7edcffb608b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+  theme:
+    - patternlab
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: patternlab_page_title
+theme: patternlab
+region: content
+weight: -13
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page Title'
+  provider: core
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

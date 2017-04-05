@@ -1,0 +1,28 @@
+uuid: 30673dc8-c546-47e3-a297-ce0808eb8684
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_type
+    - node.type.career_opportunities
+    - taxonomy.vocabulary.position_type
+id: node.career_opportunities.field_position_type
+field_name: field_position_type
+entity_type: node
+bundle: career_opportunities
+label: 'Position Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      position_type: position_type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

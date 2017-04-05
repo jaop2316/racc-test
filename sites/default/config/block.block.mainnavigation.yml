@@ -1,0 +1,34 @@
+uuid: c7d04243-3f3d-468b-b454-88ddd00d866d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.test
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - bartik
+id: mainnavigation
+theme: bartik
+region: sidebar_first
+weight: -26
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'ABOUT RACC'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 3
+  expand: 1
+  parent: 'main:menu_link_content:29a996f1-afdf-4520-8ccc-611024c406dd'
+  suggestion: main
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: test
+    context_mapping: {  }

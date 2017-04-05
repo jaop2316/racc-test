@@ -1,0 +1,33 @@
+uuid: 4872b324-adac-4174-80e2-4e84ffa1fae8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - bartik
+id: footer_4
+theme: bartik
+region: footer_fourth
+weight: -13
+provider: null
+plugin: 'menu_block:footer'
+settings:
+  id: 'menu_block:footer'
+  label: 'Login Center'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer:menu_link_content:48170af1-4dbb-4202-8a9e-830a8eec192a'
+  suggestion: footer
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

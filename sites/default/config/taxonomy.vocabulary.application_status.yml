@@ -1,0 +1,9 @@
+uuid: 7e7f9eed-0c1b-465c-909b-f529c0a9db42
+langcode: en
+status: true
+dependencies: {  }
+name: 'Application Status'
+vid: application_status
+description: 'It''s a vocabulary for aplication status.'
+hierarchy: 0
+weight: 0

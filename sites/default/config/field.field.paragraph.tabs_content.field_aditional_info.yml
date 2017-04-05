@@ -1,0 +1,21 @@
+uuid: d37dc042-c00d-44c9-a610-e118adea3c9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_aditional_info
+    - paragraphs.paragraphs_type.tabs_content
+  module:
+    - text
+id: paragraph.tabs_content.field_aditional_info
+field_name: field_aditional_info
+entity_type: paragraph
+bundle: tabs_content
+label: 'Aditional Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

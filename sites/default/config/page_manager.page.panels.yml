@@ -1,0 +1,12 @@
+uuid: 78e42a6f-1525-4b18-97eb-7905172ae56b
+langcode: en
+status: true
+dependencies: {  }
+id: panels
+label: 'Panels Everywhere'
+description: ''
+use_admin_theme: false
+path: /panels
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,34 @@
+uuid: f893c971-de87-442e-b20a-2a6b94d15df1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.human_resources_menu
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - bartik
+id: mainnavigation_7
+theme: bartik
+region: sidebar_first
+weight: -18
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'HUMAN RESOURCES'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'main:menu_link_content:c596b569-1808-492c-becb-2c99d0dc1424'
+  suggestion: main
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: human_resources_menu
+    context_mapping: {  }

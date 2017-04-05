@@ -1,0 +1,31 @@
+uuid: 5afe18ae-a34f-4836-b80d-4a7019a3f8f6
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:timeline:52588531-8e0b-4c3c-af5d-bf2504480f5b'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - bartik
+id: timelineinaboutpage
+theme: bartik
+region: '-1'
+weight: -17
+provider: null
+plugin: 'block_content:52588531-8e0b-4c3c-af5d-bf2504480f5b'
+settings:
+  id: 'block_content:52588531-8e0b-4c3c-af5d-bf2504480f5b'
+  label: 'College History'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

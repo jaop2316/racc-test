@@ -1,0 +1,73 @@
+uuid: 6f399cdb-8de4-462e-8c35-9f32a7063ac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.goals
+    - field.field.block_content.goals.body
+    - field.field.block_content.goals.field_image
+    - field.field.block_content.goals.field_sidebar_body
+    - field.field.block_content.goals.field_sidebar_title
+    - field.field.block_content.goals.field_title
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: twocol_stacked
+      path: modules/panels/layouts/twocol_stacked
+      library: layout_plugin/twocol_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_sidebar_title
+        - field_sidebar_body
+      right:
+        - field_image
+        - field_title
+        - body
+id: block_content.goals.default
+targetEntityType: block_content
+bundle: goals
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_sidebar_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_sidebar_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true

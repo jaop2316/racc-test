@@ -1,0 +1,27 @@
+uuid: f6c4d84a-dfe8-472d-968a-37a44024c523
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+  theme:
+    - bartik
+id: views_block__spotlight_block_1
+theme: bartik
+region: '-1'
+weight: -21
+provider: null
+plugin: 'views_block:spotlight-block_1'
+settings:
+  id: 'views_block:spotlight-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,16 @@
+uuid: d06e2854-4e10-4d7b-9631-36c4286895fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slider_homepage_1600x980_
+label: 'Slider Homepage (1600x980)'
+effects:
+  fdeffc62-1920-4c20-873b-4097358e3b42:
+    uuid: fdeffc62-1920-4c20-873b-4097358e3b42
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 980

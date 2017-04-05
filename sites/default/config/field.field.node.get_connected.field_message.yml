@@ -1,0 +1,19 @@
+uuid: 7bdf7519-2ed0-4d37-a8dd-24885f774d60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_message
+    - node.type.get_connected
+id: node.get_connected.field_message
+field_name: field_message
+entity_type: node
+bundle: get_connected
+label: Message
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,30 @@
+uuid: c96ae70e-32be-4e46-beaf-088f41a9b25e
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.brand_large
+    - image.style.brand_medium_149x150
+    - image.style.brand_small_129x150_
+  theme:
+    - bartik
+id: brand
+label: 'Brand Responsive'
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: brand_large
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: brand_medium_149x150
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: brand_small_129x150_
+breakpoint_group: bartik
+fallback_image_style: brand_small_129x150_

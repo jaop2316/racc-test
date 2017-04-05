@@ -1,0 +1,17 @@
+uuid: 7bc2946c-93fc-4652-ad3f-8e5e04e98e35
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: admissions_menus
+label: 'Admissions Menus'
+logic: and
+conditions:
+  158c0ebc-02f6-4999-8018-034caa7b3c46:
+    id: request_path
+    pages: "/admissions\r\n/admissions/*"
+    negate: false
+    context_mapping: {  }
+    uuid: 158c0ebc-02f6-4999-8018-034caa7b3c46
+allow_other_conditions: false

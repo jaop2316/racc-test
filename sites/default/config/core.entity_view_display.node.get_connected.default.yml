@@ -1,0 +1,77 @@
+uuid: c56b03f5-c26f-4ea9-8261-99a165ca6531
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.get_connected.field_image
+    - field.field.node.get_connected.field_message
+    - field.field.node.get_connected.field_message_url
+    - field.field.node.get_connected.field_type
+    - field.field.node.get_connected.field_url
+    - image.style.get_connected_large_400x400_
+    - node.type.get_connected
+  module:
+    - image
+    - link
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.get_connected.default
+targetEntityType: node
+bundle: get_connected
+mode: default
+content:
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: get_connected_large_400x400_
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_message:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_message_url:
+    weight: 106
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_type:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_url:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

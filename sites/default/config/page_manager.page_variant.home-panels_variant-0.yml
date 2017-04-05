@@ -1,0 +1,142 @@
+uuid: 883440d3-ed58-4306-aa70-afa4f1003ad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.home
+    - views.view.brands
+    - views.view.events
+    - views.view.homepage_get_connected_
+    - views.view.news
+    - views.view.slider
+    - views.view.students
+  content:
+    - 'block_content:contact_form:c163dac8-a8e2-4333-8ef7-2a7b139306f8'
+    - 'block_content:information:02012e8c-6a85-48f7-b222-5a370dce3b67'
+    - 'block_content:layout_content:268a2fa3-8669-4c73-9358-087172a5a42e'
+  module:
+    - block_content
+    - panels
+    - views
+id: home-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    65ff7632-75b7-426d-865b-2c439fe801ae:
+      id: 'views_block:news-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: -1
+      uuid: 65ff7632-75b7-426d-865b-2c439fe801ae
+      context_mapping: {  }
+    9e04b4af-ef47-4662-b09c-0d28a3672420:
+      id: 'views_block:slider-homepage_slideshow'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: -4
+      uuid: 9e04b4af-ef47-4662-b09c-0d28a3672420
+      context_mapping: {  }
+    6666405f-0d38-4c28-9b55-c71d3c231674:
+      id: 'views_block:brands-homepage_brands'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 4
+      uuid: 6666405f-0d38-4c28-9b55-c71d3c231674
+      context_mapping: {  }
+    172a2b9c-41cb-423b-870a-19208826a590:
+      id: 'views_block:events-homepage_last_events'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 0
+      uuid: 172a2b9c-41cb-423b-870a-19208826a590
+      context_mapping: {  }
+    2d9f237c-0fe2-4edf-bc70-1d248b5a139f:
+      id: 'views_block:students-homepage_students'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: -2
+      uuid: 2d9f237c-0fe2-4edf-bc70-1d248b5a139f
+      context_mapping: {  }
+    5cb48fa1-1a6a-4523-beea-4af07214a4ca:
+      id: 'views_block:homepage_get_connected_-homepage_get_connected'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 1
+      uuid: 5cb48fa1-1a6a-4523-beea-4af07214a4ca
+      context_mapping: {  }
+    2c2013b4-425b-49fe-8215-9f2843655b89:
+      id: 'block_content:02012e8c-6a85-48f7-b222-5a370dce3b67'
+      label: 'Information about RACC'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: middle
+      weight: -3
+      uuid: 2c2013b4-425b-49fe-8215-9f2843655b89
+      context_mapping: {  }
+    8d20b71e-a763-4fb8-a3e1-6231a14c7cbd:
+      id: 'block_content:c163dac8-a8e2-4333-8ef7-2a7b139306f8'
+      label: 'NEED MORE INFO '
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: middle
+      weight: 2
+      uuid: 8d20b71e-a763-4fb8-a3e1-6231a14c7cbd
+      context_mapping: {  }
+    7ac56f45-b24c-4486-b88b-8cbf1e5c8849:
+      id: 'block_content:268a2fa3-8669-4c73-9358-087172a5a42e'
+      label: 'Layout Content'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: middle
+      weight: 3
+      uuid: 7ac56f45-b24c-4486-b88b-8cbf1e5c8849
+      context_mapping: {  }
+  id: panels_variant
+  uuid: d3de549e-fb43-4f62-8fc8-3c6bda0f8763
+  label: null
+  weight: 0
+  layout: onecol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: home-panels_variant-0
+  builder: standard
+page: home
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,8 @@
+uuid: 53721d17-f70b-4e69-b3a6-466f14074693
+langcode: en
+status: true
+dependencies: {  }
+id: generic_content
+label: 'Generic Content'
+revision: 0
+description: 'It''s a block for whole Generic contect in RACC site. '

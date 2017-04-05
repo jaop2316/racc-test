@@ -1,0 +1,12 @@
+uuid: 0bb17a2d-2854-4a3a-92bd-a2beab0a8414
+langcode: en
+status: true
+dependencies: {  }
+id: events
+label: Events
+description: ''
+use_admin_theme: false
+path: /events
+access_logic: and
+access_conditions: {  }
+parameters: {  }

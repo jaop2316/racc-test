@@ -1,0 +1,7 @@
+uuid: 52d15d7e-26c0-4490-bbc4-a0190e061b7b
+langcode: en
+status: true
+dependencies: {  }
+id: body_and_right_image
+label: 'Body and Right Image'
+behavior_plugins: {  }

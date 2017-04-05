@@ -1,0 +1,9 @@
+uuid: 5af22f9e-1fa3-4b2b-853c-789e2f9ee4b4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Position Type'
+vid: position_type
+description: 'Describe Position Type in carrer opportunities.'
+hierarchy: 0
+weight: 0

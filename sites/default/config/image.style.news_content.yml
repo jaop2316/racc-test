@@ -1,0 +1,16 @@
+uuid: be7a1928-34ff-47fd-9240-7c230e06715c
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: news_content
+label: 'News Content'
+effects:
+  2e5e0314-1989-4837-9686-ef0c417d0157:
+    uuid: 2e5e0314-1989-4837-9686-ef0c417d0157
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 319

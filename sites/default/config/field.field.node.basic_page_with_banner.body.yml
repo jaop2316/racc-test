@@ -1,0 +1,22 @@
+uuid: 47e6dc1f-337b-446f-a315-8c7da17d1b53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.basic_page_with_banner
+  module:
+    - text
+id: node.basic_page_with_banner.body
+field_name: body
+entity_type: node
+bundle: basic_page_with_banner
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

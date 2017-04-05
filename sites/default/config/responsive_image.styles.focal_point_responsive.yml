@@ -1,0 +1,30 @@
+uuid: dd925a9f-21a2-4c41-8970-34c7879732c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.focal_point_large_250x236_
+    - image.style.focal_point_medium_375x354_
+    - image.style.focal_point_small_487x460_
+  theme:
+    - bartik
+id: focal_point_responsive
+label: 'Focal Point responsive'
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: focal_point_large_250x236_
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: focal_point_medium_375x354_
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: focal_point_small_487x460_
+breakpoint_group: bartik
+fallback_image_style: focal_point_small_487x460_

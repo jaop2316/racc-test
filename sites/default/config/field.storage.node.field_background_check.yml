@@ -1,0 +1,19 @@
+uuid: dc40b5c5-96d3-472c-85c9-392971c45bc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_background_check
+field_name: field_background_check
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

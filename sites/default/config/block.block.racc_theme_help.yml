@@ -1,0 +1,22 @@
+uuid: aa4eecc2-8887-4b12-bd18-f52f66ec7a5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - racc_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: racc_theme_help
+theme: racc_theme
+region: content
+weight: -18
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

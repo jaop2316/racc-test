@@ -1,0 +1,22 @@
+uuid: 5470fe7d-a3d0-4ca0-8049-9419cc14b79d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - racc_pattern_lab
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: racc_pattern_lab_content
+theme: racc_pattern_lab
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

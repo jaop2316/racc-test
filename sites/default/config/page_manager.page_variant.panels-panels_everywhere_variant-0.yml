@@ -1,0 +1,41 @@
+uuid: 7de9c5c6-d8ef-4cbf-8755-c328af0f50cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.panels
+    - views.view.slider
+  module:
+    - panels_everywhere
+    - views
+id: panels-panels_everywhere_variant-0
+label: 'Panels Everywhere'
+variant: panels_everywhere_variant
+variant_settings:
+  blocks:
+    ea293028-ef09-4017-981b-385e4371283f:
+      id: 'views_block:slider-block_1'
+      label: ''
+      provider: views
+      label_display: 0
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: '0'
+      uuid: ea293028-ef09-4017-981b-385e4371283f
+      context_mapping: {  }
+  id: panels_everywhere_variant
+  uuid: 21e76329-e32c-493e-bb8b-e8e4fc256793
+  label: null
+  weight: 0
+  layout: twocol_bricks
+  layout_settings: {  }
+  page_title: ''
+  storage_type: ''
+  storage_id: ''
+  builder: standard
+page: panels
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

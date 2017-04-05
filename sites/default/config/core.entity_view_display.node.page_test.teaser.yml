@@ -1,0 +1,27 @@
+uuid: f3209116-2fce-4d0c-9c20-3aa562db1534
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page_test.body
+    - node.type.page_test
+  module:
+    - text
+    - user
+id: node.page_test.teaser
+targetEntityType: node
+bundle: page_test
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  langcode: true

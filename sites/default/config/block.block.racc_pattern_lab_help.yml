@@ -1,0 +1,22 @@
+uuid: d1d3d381-8daa-49a9-ada2-4df642d9a7bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - racc_pattern_lab
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: racc_pattern_lab_help
+theme: racc_pattern_lab
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 0d087f75-1871-4030-8a80-6a2c56eb80df
+langcode: en
+status: true
+dependencies: {  }
+name: Departament
+vid: departament
+description: 'Describe Faculty and Staff departaments.'
+hierarchy: 0
+weight: 0

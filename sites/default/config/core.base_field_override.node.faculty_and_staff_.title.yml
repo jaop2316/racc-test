@@ -1,0 +1,18 @@
+uuid: 17bc5155-5ffa-4485-8b09-7fe0ee8b986b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faculty_and_staff_
+id: node.faculty_and_staff_.title
+field_name: title
+entity_type: node
+bundle: faculty_and_staff_
+label: 'Full Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

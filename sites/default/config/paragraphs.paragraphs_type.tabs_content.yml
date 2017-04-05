@@ -1,0 +1,7 @@
+uuid: d095cf36-b65e-4f68-a38c-624423fcb5cd
+langcode: en
+status: true
+dependencies: {  }
+id: tabs_content
+label: 'Tabs Content'
+behavior_plugins: {  }

@@ -1,0 +1,64 @@
+uuid: eaeb5067-bcbb-44d3-99df-30c6c8e17e0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.generic_content
+    - field.field.block_content.generic_content.body
+    - field.field.block_content.generic_content.field_image
+    - field.field.block_content.generic_content.field_teaser
+    - field.field.block_content.generic_content.field_title
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: twocol
+      path: modules/panels/layouts/twocol
+      library: layout_plugin/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_title
+        - field_teaser
+        - body
+      right:
+        - field_image
+id: block_content.generic_content.default
+targetEntityType: block_content
+bundle: generic_content
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_teaser:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true

@@ -1,0 +1,12 @@
+uuid: 6ba3b24d-9b39-4b28-aeb8-2ac269436221
+langcode: en
+status: true
+dependencies: {  }
+id: home
+label: Home
+description: 'It''s a RACC project home.'
+use_admin_theme: false
+path: /home
+access_logic: and
+access_conditions: {  }
+parameters: {  }

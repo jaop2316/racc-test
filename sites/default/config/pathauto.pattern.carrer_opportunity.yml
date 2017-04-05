@@ -1,0 +1,22 @@
+uuid: 5016b0fc-383b-415b-bf5a-2c9e60b1baec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: carrer_opportunity
+label: 'Carrer Opportunity'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/id-[node:nid]'
+selection_criteria:
+  6ca7c5d4-f1e1-4fd3-b36f-ef5baed429a5:
+    id: node_type
+    bundles:
+      career_opportunities: career_opportunities
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6ca7c5d4-f1e1-4fd3-b36f-ef5baed429a5
+selection_logic: and
+weight: -5
+relationships: {  }

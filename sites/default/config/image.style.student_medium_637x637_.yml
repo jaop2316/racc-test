@@ -1,0 +1,16 @@
+uuid: 9a95f4ad-11c0-4a8a-957d-23e370d7bff8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: student_medium_637x637_
+label: 'Student medium (637x637)'
+effects:
+  06476739-6f67-48d4-9871-13b19d0ddac8:
+    uuid: 06476739-6f67-48d4-9871-13b19d0ddac8
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 637
+      height: 637

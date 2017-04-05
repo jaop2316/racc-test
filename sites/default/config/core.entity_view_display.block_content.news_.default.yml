@@ -1,0 +1,22 @@
+uuid: 16f0797c-87c8-4f4c-b9a8-3523736d7fca
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.news_
+    - field.field.block_content.news_.body
+  module:
+    - text
+id: block_content.news_.default
+targetEntityType: block_content
+bundle: news_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

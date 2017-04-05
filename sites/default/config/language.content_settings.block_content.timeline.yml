@@ -1,0 +1,11 @@
+uuid: b60d668b-2aeb-4732-ac68-2b9cf66eeca9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.timeline
+id: block_content.timeline
+target_entity_type_id: block_content
+target_bundle: timeline
+default_langcode: site_default
+language_alterable: false

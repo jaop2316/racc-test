@@ -1,0 +1,16 @@
+uuid: fa326654-d069-4541-a3e0-681c72f6b5c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: brand_large
+label: 'Brand Large (222x150)'
+effects:
+  79799653-ef0a-4fc7-9db3-3d6980c9f0c9:
+    uuid: 79799653-ef0a-4fc7-9db3-3d6980c9f0c9
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 222
+      height: 150

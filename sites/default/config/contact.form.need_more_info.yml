@@ -1,0 +1,20 @@
+uuid: 2fbb839a-c42b-49dc-86f4-b48c2456abb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Sign Up'
+    show_preview: false
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+id: need_more_info
+label: 'NEED MORE INFO'
+recipients:
+  - amarillo9k@hotmail.com
+reply: ''
+weight: 0
+message: 'Thank you for contact us '
+redirect: /home

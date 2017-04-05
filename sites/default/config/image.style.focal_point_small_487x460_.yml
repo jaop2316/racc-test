@@ -1,0 +1,16 @@
+uuid: 8f812099-a9bc-4f65-a53f-0eaea787765f
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: focal_point_small_487x460_
+label: 'Focal Point small (487x460)'
+effects:
+  e5d1b4a7-ad07-4f07-a181-16bceb5079eb:
+    uuid: e5d1b4a7-ad07-4f07-a181-16bceb5079eb
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 487
+      height: 460

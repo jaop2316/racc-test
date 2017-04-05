@@ -1,0 +1,16 @@
+uuid: f00f648f-fec8-43f8-ab79-084b9f8b8d16
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: news_large_254x198
+label: 'News Large (254x198)'
+effects:
+  5909a5da-fda0-46b7-a16c-4d7173ecc1da:
+    uuid: 5909a5da-fda0-46b7-a16c-4d7173ecc1da
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 254
+      height: 198

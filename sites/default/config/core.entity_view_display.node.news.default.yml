@@ -1,0 +1,152 @@
+uuid: df3f4022-9590-4b6e-b2a0-6274afd1491b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_category
+    - field.field.node.news.field_feature
+    - field.field.node.news.field_image
+    - field.field.node.news.field_short_title
+    - field.field.node.news.panelizer
+    - image.style.news_content
+    - node.type.news
+  module:
+    - ds
+    - image
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: true
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          c01dc27d-b30e-4f56-89a8-9d1e493c860b:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 2
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: c01dc27d-b30e-4f56-89a8-9d1e493c860b
+          30996028-bfef-432d-b974-ea001a4a376b:
+            id: 'entity_field:node:field_image'
+            label: Image
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: image
+              settings:
+                image_style: news_content
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 30996028-bfef-432d-b974-ea001a4a376b
+          db53c4e1-3d50-4e04-a299-a044d0945550:
+            id: 'entity_field:node:title'
+            label: Title
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 0
+            uuid: db53c4e1-3d50-4e04-a299-a044d0945550
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          dc4006a5-9efc-4c8f-9d6f-0b589b9f5a64:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: timestamp
+              settings:
+                date_format: long
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 1
+            uuid: dc4006a5-9efc-4c8f-9d6f-0b589b9f5a64
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        label: Default
+        uuid: 009f53df-4630-4f57-a7c2-373aa1b702ff
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: NEWS
+        storage_type: panelizer_default
+        storage_id: 'node:news:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+  ds:
+    fields:
+      node_post_date:
+        plugin_id: node_post_date
+        weight: 2
+        label: hidden
+        formatter: ds_post_date_long
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h1
+          class: ''
+          link: false
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: news_content
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  field_category: true
+  field_feature: true
+  field_short_title: true
+  langcode: true
+  links: true
+  panelizer: true

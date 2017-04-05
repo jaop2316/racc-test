@@ -1,0 +1,17 @@
+uuid: 9fa84ea5-4d85-4f68-86d8-ae3d9e4dd893
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: main_menu_side_bar
+label: 'Main Menu Side Bar'
+logic: and
+conditions:
+  3339b108-14a7-4614-b398-7b06fee99217:
+    id: request_path
+    pages: /about-racc/career-opportunities
+    negate: false
+    context_mapping: {  }
+    uuid: 3339b108-14a7-4614-b398-7b06fee99217
+allow_other_conditions: false

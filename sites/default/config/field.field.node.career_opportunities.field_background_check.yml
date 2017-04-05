@@ -1,0 +1,19 @@
+uuid: 65369de7-b35a-465f-b0ce-18846eb1197a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_check
+    - node.type.career_opportunities
+id: node.career_opportunities.field_background_check
+field_name: field_background_check
+entity_type: node
+bundle: career_opportunities
+label: 'Background Check'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,33 @@
+uuid: 3db4fe36-c5f7-4432-a54c-e6cbdc1f715f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - bartik
+id: footer_3
+theme: bartik
+region: footer_third
+weight: -13
+provider: null
+plugin: 'menu_block:footer'
+settings:
+  id: 'menu_block:footer'
+  label: Policies
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer:menu_link_content:55f13a98-3da9-4b7f-8210-1a326f920b38'
+  suggestion: footer
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

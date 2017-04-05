@@ -1,0 +1,14 @@
+uuid: bb0f88ad-da3f-4d4a-9d22-3a141de2b358
+name: RACC
+mail: jessikita.ldu@gmal.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

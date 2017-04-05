@@ -1,0 +1,47 @@
+uuid: 741f045b-cdeb-4f09-95c8-de3a4246dafa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.career_opportunities.body
+    - field.field.node.career_opportunities.field_announce_date
+    - field.field.node.career_opportunities.field_aplication_instructions
+    - field.field.node.career_opportunities.field_aplication_status
+    - field.field.node.career_opportunities.field_apply_by_date_
+    - field.field.node.career_opportunities.field_background_check
+    - field.field.node.career_opportunities.field_classification
+    - field.field.node.career_opportunities.field_full_time_position
+    - field.field.node.career_opportunities.field_inmediate_need
+    - field.field.node.career_opportunities.field_position_type
+    - field.field.node.career_opportunities.field_salary
+    - node.type.career_opportunities
+  module:
+    - text
+    - user
+id: node.career_opportunities.teaser
+targetEntityType: node
+bundle: career_opportunities
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_announce_date: true
+  field_aplication_instructions: true
+  field_aplication_status: true
+  field_apply_by_date_: true
+  field_background_check: true
+  field_classification: true
+  field_full_time_position: true
+  field_inmediate_need: true
+  field_position_type: true
+  field_salary: true
+  langcode: true

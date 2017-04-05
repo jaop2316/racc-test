@@ -1,0 +1,19 @@
+uuid: 950b0786-06c1-4029-9e85-d86d634b657b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.goals
+    - field.storage.block_content.field_title
+id: block_content.goals.field_title
+field_name: field_title
+entity_type: block_content
+bundle: goals
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 2b48ef97-965e-4a44-861e-34e70c725293
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.timeline
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.timeline.body
+field_name: body
+entity_type: block_content
+bundle: timeline
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

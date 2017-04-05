@@ -1,0 +1,9 @@
+uuid: e235617e-4fd7-45c4-b871-52d828e8f3c1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Events Category'
+vid: events_category
+description: 'Describe Events Category in RACC'
+hierarchy: 0
+weight: 0

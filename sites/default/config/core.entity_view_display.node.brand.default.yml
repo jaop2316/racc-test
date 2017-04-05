@@ -1,0 +1,43 @@
+uuid: 457aebd9-f2ba-470c-b260-4417271858c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.brand.field_image
+    - field.field.node.brand.field_url
+    - node.type.brand
+    - responsive_image.styles.brand
+  module:
+    - link
+    - responsive_image
+    - user
+id: node.brand.default
+targetEntityType: node
+bundle: brand
+mode: default
+content:
+  field_image:
+    weight: 101
+    label: above
+    settings:
+      responsive_image_style: brand
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+  field_url:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

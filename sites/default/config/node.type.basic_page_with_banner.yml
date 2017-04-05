@@ -1,0 +1,18 @@
+uuid: 30cf273d-2bfc-4cbf-892b-44109982b236
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Basic Page with banner'
+type: basic_page_with_banner
+description: 'It''s a basic page with and image banner'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

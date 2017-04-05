@@ -1,0 +1,23 @@
+uuid: 37b1ef7c-8425-4460-8cf6-6921ca886088
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.slider
+  module:
+    - link
+id: node.slider.field_url
+field_name: field_url
+entity_type: node
+bundle: slider
+label: Url
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

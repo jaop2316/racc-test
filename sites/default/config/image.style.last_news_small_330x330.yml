@@ -1,0 +1,16 @@
+uuid: ea2cf3a7-c3d0-4fed-b6d1-7aa31f09ab65
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: last_news_small_330x330
+label: 'Last News small(330x330)'
+effects:
+  ae696c9f-1971-4ac9-a3a6-555643ed2d74:
+    uuid: ae696c9f-1971-4ac9-a3a6-555643ed2d74
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 330
+      height: 330

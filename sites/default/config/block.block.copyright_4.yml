@@ -1,0 +1,31 @@
+uuid: 138e8e51-18c2-4154-91d0-c129af055402
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:copyright:786663da-1b7b-4650-8c77-589082845ae7'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - racc_pattern_lab
+id: copyright_4
+theme: racc_pattern_lab
+region: footer
+weight: -16
+provider: null
+plugin: 'block_content:786663da-1b7b-4650-8c77-589082845ae7'
+settings:
+  id: 'block_content:786663da-1b7b-4650-8c77-589082845ae7'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,8 @@
+uuid: fad7fd9b-71c8-49e8-9f75-93708b036b48
+langcode: en
+status: true
+dependencies: {  }
+id: annual_fund
+label: 'Annual Fund'
+revision: 0
+description: ''

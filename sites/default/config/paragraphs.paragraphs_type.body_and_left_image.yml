@@ -1,0 +1,7 @@
+uuid: cdaa7cc9-b5e7-431e-9c75-0d01deddf943
+langcode: en
+status: true
+dependencies: {  }
+id: body_and_left_image
+label: 'Body and Left Image'
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: eebd9f38-9fc8-4abe-b8b1-4fb13a6dd3f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mailbox
+    - node.type.faculty_and_staff_
+id: node.faculty_and_staff_.field_mailbox
+field_name: field_mailbox
+entity_type: node
+bundle: faculty_and_staff_
+label: Mailbox
+description: 'Put here mailbox of a Faculty / Staff member'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

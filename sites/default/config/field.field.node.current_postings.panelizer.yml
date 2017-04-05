@@ -1,0 +1,21 @@
+uuid: 94baafa8-d385-4d4e-a571-9323d4b64281
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.panelizer
+    - node.type.current_postings
+  module:
+    - panelizer
+id: node.current_postings.panelizer
+field_name: panelizer
+entity_type: node
+bundle: current_postings
+label: Panelizer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: panelizer

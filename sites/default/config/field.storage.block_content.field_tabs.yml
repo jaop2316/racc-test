@@ -1,0 +1,21 @@
+uuid: 2458f6d9-d135-4fe3-8f89-c1aea57f55f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_tabs
+field_name: field_tabs
+entity_type: block_content
+type: string
+settings:
+  max_length: 40
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

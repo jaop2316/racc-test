@@ -1,0 +1,19 @@
+uuid: ddd3bd5b-0f91-4341-a82e-accd6ea4435a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.layout_content
+    - field.storage.block_content.field_sidebar_title
+id: block_content.layout_content.field_sidebar_title
+field_name: field_sidebar_title
+entity_type: block_content
+bundle: layout_content
+label: 'Sidebar Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

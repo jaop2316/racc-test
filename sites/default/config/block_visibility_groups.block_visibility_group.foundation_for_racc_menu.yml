@@ -1,0 +1,17 @@
+uuid: af0d33bd-36fd-44fa-92f0-55af035863a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: foundation_for_racc_menu
+label: 'Foundation for RACC menu'
+logic: and
+conditions:
+  b72885c7-c68d-4610-b929-fd1e546cecc8:
+    id: request_path
+    pages: '/about-racc/foundation-for-racc/*'
+    negate: false
+    context_mapping: {  }
+    uuid: b72885c7-c68d-4610-b929-fd1e546cecc8
+allow_other_conditions: false

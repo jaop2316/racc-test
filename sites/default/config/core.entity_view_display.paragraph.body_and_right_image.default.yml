@@ -1,0 +1,46 @@
+uuid: 975a6c58-e939-4648-ac9f-38161abee67f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.body_and_right_image.field_body
+    - field.field.paragraph.body_and_right_image.field_image
+    - paragraphs.paragraphs_type.body_and_right_image
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: twocol
+      path: modules/panels/layouts/twocol
+      library: layout_plugin/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_body
+      right:
+        - field_image
+id: paragraph.body_and_right_image.default
+targetEntityType: paragraph
+bundle: body_and_right_image
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden: {  }

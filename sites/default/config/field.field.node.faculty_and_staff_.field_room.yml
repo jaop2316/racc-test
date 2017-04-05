@@ -1,0 +1,19 @@
+uuid: 2a77d86d-5160-46a5-9ce2-fd8f41f8d8ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room
+    - node.type.faculty_and_staff_
+id: node.faculty_and_staff_.field_room
+field_name: field_room
+entity_type: node
+bundle: faculty_and_staff_
+label: Room
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

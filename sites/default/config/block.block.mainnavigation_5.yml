@@ -1,0 +1,34 @@
+uuid: 61d72b5b-4669-4dba-aa3a-cec998de766e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.work_study_menu
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - bartik
+id: mainnavigation_5
+theme: bartik
+region: sidebar_first
+weight: -20
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: WORK-STUDY
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'main:menu_link_content:8500810a-2e02-4706-9585-ed56f6afd6bf'
+  suggestion: main
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: work_study_menu
+    context_mapping: {  }

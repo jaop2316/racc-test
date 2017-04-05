@@ -1,0 +1,22 @@
+uuid: 45f860f5-3f7e-4f0f-930d-81768252e262
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: work_study_opportunity
+label: 'Work Study opportunity'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/id-[node:nid]'
+selection_criteria:
+  dd739e3f-03d3-4d35-94df-4d117cfafbbe:
+    id: node_type
+    bundles:
+      work_study_opportunities: work_study_opportunities
+    negate: false
+    context_mapping:
+      node: node
+    uuid: dd739e3f-03d3-4d35-94df-4d117cfafbbe
+selection_logic: and
+weight: -5
+relationships: {  }

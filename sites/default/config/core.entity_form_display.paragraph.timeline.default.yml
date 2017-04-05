@@ -1,0 +1,42 @@
+uuid: 144bd46c-2d38-4338-b6f7-2096ae8cebd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.timeline.field_image
+    - field.field.paragraph.timeline.field_time_frame
+    - field.field.paragraph.timeline.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - image
+id: paragraph.timeline.default
+targetEntityType: paragraph
+bundle: timeline
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_time_frame:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

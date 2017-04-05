@@ -1,0 +1,102 @@
+uuid: a72be313-fc7f-4007-901f-382542ccb07c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.layout_content
+    - field.field.block_content.layout_content.body
+    - field.field.block_content.layout_content.field_banner
+    - field.field.block_content.layout_content.field_image
+    - field.field.block_content.layout_content.field_sidebar_body
+    - field.field.block_content.layout_content.field_sidebar_title
+    - field.field.block_content.layout_content.field_title
+    - field.field.block_content.layout_content.field_video_link
+  module:
+    - ds
+    - image
+    - responsive_image
+    - text
+    - video_embed_field
+third_party_settings:
+  ds:
+    layout:
+      id: onecol
+      path: modules/panels/layouts/onecol
+      library: layout_plugin/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      middle:
+        - field_banner
+        - field_sidebar_title
+        - field_sidebar_body
+        - field_video_link
+        - field_title
+        - body
+id: block_content.layout_content.default
+targetEntityType: block_content
+bundle: layout_content
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  field_banner:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_image:
+    type: responsive_image
+    weight: 0
+    label: above
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_sidebar_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_sidebar_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_title:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_video_link:
+    weight: 3
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+  langcode:
+    type: language
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+hidden: {  }

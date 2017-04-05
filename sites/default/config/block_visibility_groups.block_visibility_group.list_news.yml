@@ -1,0 +1,23 @@
+uuid: 58699468-6500-4a11-b8c5-420da40415df
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: list_news
+label: 'List News'
+logic: and
+conditions:
+  577f91c5-aeda-45b3-ae01-fd8b0c445d7a:
+    id: request_path
+    pages: "/list-news*\r\n"
+    negate: false
+    context_mapping: {  }
+    uuid: 577f91c5-aeda-45b3-ae01-fd8b0c445d7a
+  f91a1ea1-44d2-4b74-9715-e509bef75b44:
+    id: request_path
+    pages: '/list-news?field_category_target_id=All'
+    negate: true
+    context_mapping: {  }
+    uuid: f91a1ea1-44d2-4b74-9715-e509bef75b44
+allow_other_conditions: false

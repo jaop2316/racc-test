@@ -1,0 +1,16 @@
+uuid: 8d29535c-fa8e-4e0d-a902-5eaa40b72568
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slider_medium_768x663_
+label: 'Slider medium (768x663)'
+effects:
+  0cc4151a-1127-4fce-bd96-adad91f42f16:
+    uuid: 0cc4151a-1127-4fce-bd96-adad91f42f16
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 663

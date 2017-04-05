@@ -1,0 +1,34 @@
+uuid: a011cfe1-54d1-466e-a20f-f75a82469fd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.academics_menu
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - bartik
+id: mainnavigation_2
+theme: bartik
+region: sidebar_first
+weight: -25
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: ACADEMICS
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 4
+  expand: 1
+  parent: 'main:menu_link_content:eb368ca3-5970-46ca-a5a5-61107150e47f'
+  suggestion: main
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: academics_menu
+    context_mapping: {  }

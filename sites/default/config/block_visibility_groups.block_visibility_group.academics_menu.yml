@@ -1,0 +1,17 @@
+uuid: 553acf8e-098b-4ba0-a213-e6ece7cebdf9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: academics_menu
+label: 'Academics Menu'
+logic: and
+conditions:
+  1ae8e329-a400-46bb-9568-3f2a5ce823b1:
+    id: request_path
+    pages: "/academics\r\n/academics/*"
+    negate: false
+    context_mapping: {  }
+    uuid: 1ae8e329-a400-46bb-9568-3f2a5ce823b1
+allow_other_conditions: false

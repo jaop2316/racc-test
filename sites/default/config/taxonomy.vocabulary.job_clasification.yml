@@ -1,0 +1,9 @@
+uuid: 8ccd795c-ecee-431d-b0ac-4beeeabc2bb5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Job Clasification'
+vid: job_clasification
+description: 'Vocabulary about jobs in racc for example Faculty , Staff ,Other.'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,19 @@
+uuid: 470a8fad-721f-43d4-8636-84ff28d20f67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_ext
+    - node.type.faculty_and_staff_
+id: node.faculty_and_staff_.field_phone_ext
+field_name: field_phone_ext
+entity_type: node
+bundle: faculty_and_staff_
+label: Phone/Ext
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

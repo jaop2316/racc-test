@@ -1,0 +1,310 @@
+uuid: 381b98b7-306b-4844-98cb-87334b3d4ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.work_study_opportunities.body
+    - field.field.node.work_study_opportunities.field_contact
+    - field.field.node.work_study_opportunities.field_departament
+    - field.field.node.work_study_opportunities.field_dept_location
+    - field.field.node.work_study_opportunities.field_email
+    - field.field.node.work_study_opportunities.field_hours
+    - field.field.node.work_study_opportunities.field_office_phone
+    - field.field.node.work_study_opportunities.field_pay_rate
+    - field.field.node.work_study_opportunities.field_post_date
+    - field.field.node.work_study_opportunities.field_term
+    - field.field.node.work_study_opportunities.panelizer
+    - node.type.work_study_opportunities
+  module:
+    - datetime
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: true
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          f5666557-6c6a-4e25-9b0f-f84f2e21aac4:
+            id: 'entity_field:node:body'
+            label: Description
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 2
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: f5666557-6c6a-4e25-9b0f-f84f2e21aac4
+          65d2dc6e-a9a1-4421-ad74-3e50ea867397:
+            id: 'entity_field:node:field_contact'
+            label: Contact
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 65d2dc6e-a9a1-4421-ad74-3e50ea867397
+          c76de39e-371c-405d-84fb-20ecd4966804:
+            id: 'entity_field:node:field_departament'
+            label: Departament
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: entity_reference_label
+              settings:
+                link: true
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -4
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: c76de39e-371c-405d-84fb-20ecd4966804
+          9b77268b-7a82-4dfe-b58e-365f5c31f699:
+            id: 'entity_field:node:field_dept_location'
+            label: 'Dept Location'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 9b77268b-7a82-4dfe-b58e-365f5c31f699
+          f6dd3973-d478-47f2-be18-240525f47437:
+            id: 'entity_field:node:field_email'
+            label: Email
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 4
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: f6dd3973-d478-47f2-be18-240525f47437
+          6d57d644-dc7f-43c0-bf09-7eb8c225300e:
+            id: 'entity_field:node:field_hours'
+            label: Hours
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 6d57d644-dc7f-43c0-bf09-7eb8c225300e
+          39d53206-6f97-49f8-8838-4300d1802735:
+            id: 'entity_field:node:field_office_phone'
+            label: 'Office phone'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 5
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 39d53206-6f97-49f8-8838-4300d1802735
+          56717d88-00ce-49bf-8be2-df52ffee9296:
+            id: 'entity_field:node:field_pay_rate'
+            label: 'Pay rate'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 56717d88-00ce-49bf-8be2-df52ffee9296
+          e04b2d5c-2a2e-4d90-8ad8-46ae288f16bb:
+            id: 'entity_field:node:field_post_date'
+            label: 'Post Date'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: datetime_custom
+              settings:
+                timezone_override: ''
+                date_format: m/d/Y
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -5
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: e04b2d5c-2a2e-4d90-8ad8-46ae288f16bb
+          58b6348c-f366-4484-842e-525692dd451b:
+            id: 'entity_field:node:field_term'
+            label: Term
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 58b6348c-f366-4484-842e-525692dd451b
+          7d995b2f-1bbd-4f68-ac0d-8373622ae97f:
+            id: 'entity_field:node:title'
+            label: 'Job Title'
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -2
+            uuid: 7d995b2f-1bbd-4f68-ac0d-8373622ae97f
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        label: Default
+        uuid: 9c4a5e1e-fc09-4903-ab6e-26dc3d1a7843
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: 'Work-Study Job Details'
+        storage_type: panelizer_default
+        storage_id: 'node:work_study_opportunities:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+id: node.work_study_opportunities.default
+targetEntityType: node
+bundle: work_study_opportunities
+mode: default
+content:
+  body:
+    label: inline
+    type: text_default
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  field_contact:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_departament:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_dept_location:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_email:
+    weight: 9
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_hours:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_office_phone:
+    weight: 10
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_pay_rate:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_post_date:
+    weight: 1
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_term:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  panelizer: true

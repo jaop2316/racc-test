@@ -1,0 +1,39 @@
+uuid: 15ea9612-b4dd-48fb-804a-cb115cc2cb82
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.current_postings.body
+    - field.field.node.current_postings.field_bid_bond
+    - field.field.node.current_postings.field_departament
+    - field.field.node.current_postings.field_due_date
+    - field.field.node.current_postings.field_performance_bond
+    - field.field.node.current_postings.field_post_date
+    - field.field.node.current_postings.field_proposal_number
+    - node.type.current_postings
+  module:
+    - text
+    - user
+id: node.current_postings.teaser
+targetEntityType: node
+bundle: current_postings
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_bid_bond: true
+  field_departament: true
+  field_due_date: true
+  field_performance_bond: true
+  field_post_date: true
+  field_proposal_number: true
+  langcode: true

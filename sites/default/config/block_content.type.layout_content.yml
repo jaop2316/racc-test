@@ -1,0 +1,8 @@
+uuid: 3cbb45f7-0761-4c94-9df0-11536184cb8e
+langcode: en
+status: true
+dependencies: {  }
+id: layout_content
+label: 'Layout Content'
+revision: 0
+description: 'It''s a block to aditional content. '

@@ -1,0 +1,168 @@
+uuid: 6ef03939-6b0e-42ec-bb53-b991482d0810
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.career_opportunities.body
+    - field.field.node.career_opportunities.field_announce_date
+    - field.field.node.career_opportunities.field_aplication_instructions
+    - field.field.node.career_opportunities.field_aplication_status
+    - field.field.node.career_opportunities.field_apply_by_date_
+    - field.field.node.career_opportunities.field_background_check
+    - field.field.node.career_opportunities.field_classification
+    - field.field.node.career_opportunities.field_full_time_position
+    - field.field.node.career_opportunities.field_inmediate_need
+    - field.field.node.career_opportunities.field_position_type
+    - field.field.node.career_opportunities.field_salary
+    - node.type.career_opportunities
+  module:
+    - datetime
+    - field_group
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_job_detail:
+      children:
+        - field_announce_date
+        - field_apply_by_date_
+        - field_aplication_status
+        - field_salary
+        - field_full_time_position
+        - field_inmediate_need
+        - field_classification
+      parent_name: ''
+      weight: 8
+      format_type: details
+      format_settings:
+        label: 'Job Details'
+        open: true
+        id: ''
+        classes: ''
+        required_fields: false
+      label: 'Job Details'
+id: node.career_opportunities.default
+targetEntityType: node
+bundle: career_opportunities
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 16
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_announce_date:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_aplication_instructions:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_aplication_status:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_apply_by_date_:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_background_check:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_classification:
+    weight: 15
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_full_time_position:
+    weight: 13
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_inmediate_need:
+    weight: 14
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_position_type:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_salary:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

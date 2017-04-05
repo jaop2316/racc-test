@@ -1,0 +1,35 @@
+uuid: 2acc6570-2da9-4837-a755-34f6899f0a37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page_test.body
+    - field.field.node.page_test.field_paragraph
+    - node.type.page_test
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.page_test.default
+targetEntityType: node
+bundle: page_test
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  langcode: true

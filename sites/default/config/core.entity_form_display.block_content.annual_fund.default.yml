@@ -1,0 +1,48 @@
+uuid: c38b06c1-e19a-41f2-bc30-359432a4d8a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.annual_fund
+    - field.field.block_content.annual_fund.body
+    - field.field.block_content.annual_fund.field_paragraph
+  module:
+    - paragraphs
+    - text
+id: block_content.annual_fund.default
+targetEntityType: block_content
+bundle: annual_fund
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_paragraph:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

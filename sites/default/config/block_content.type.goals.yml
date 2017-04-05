@@ -1,0 +1,8 @@
+uuid: fd1c2811-5b98-4e34-a2ac-d0a946adcb53
+langcode: en
+status: true
+dependencies: {  }
+id: goals
+label: Goals
+revision: 0
+description: 'It`s a block to Goals in about RACC page'

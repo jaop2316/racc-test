@@ -1,0 +1,146 @@
+uuid: 949a705d-d2f8-4f5c-a434-1e173806b4c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.panelizer
+    - node.type.page
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: true
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          8f4d800e-21e2-478f-9466-ab5d7a98173e:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 8f4d800e-21e2-478f-9466-ab5d7a98173e
+          7e46584c-a2a5-4b0e-9983-b0b3f3e5a27e:
+            id: 'views_block:current_postings-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: -2
+            uuid: 7e46584c-a2a5-4b0e-9983-b0b3f3e5a27e
+            context_mapping: {  }
+          f17e1909-3ba0-47fa-9347-2b1b7dfe7f08:
+            id: 'views_block:carrer_opportunities-carrer_opportunity_immediate_need'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: -1
+            uuid: f17e1909-3ba0-47fa-9347-2b1b7dfe7f08
+            context_mapping: {  }
+          20f1ae99-d384-4774-b368-b569e29774f9:
+            id: 'views_block:carrer_opportunities-carrer_opportunity_full_time_positions'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 1
+            uuid: 20f1ae99-d384-4774-b368-b569e29774f9
+            context_mapping: {  }
+          358b2ea3-8d0f-4fd4-971c-223ef85c372f:
+            id: 'views_block:carrer_opportunities-carrer_opportunity_part_time_instructor'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 2
+            uuid: 358b2ea3-8d0f-4fd4-971c-223ef85c372f
+            context_mapping: {  }
+          d46cb8a6-ddef-4325-97aa-bc43d091761c:
+            id: 'views_block:carrer_opportunities-carrer_opportunity_part_time_staff'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 0
+            uuid: d46cb8a6-ddef-4325-97aa-bc43d091761c
+            context_mapping: {  }
+          a7389e6f-45fb-4a57-8f4f-eda48cd77ddd:
+            id: 'views_block:work_study_opportunities-block_1'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 3
+            uuid: a7389e6f-45fb-4a57-8f4f-eda48cd77ddd
+            context_mapping: {  }
+        id: panels_variant
+        label: Default
+        uuid: d9384aaf-775c-4c1e-8e71-a67e51455c60
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: panelizer_default
+        storage_id: 'node:page:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+_core:
+  default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  addtoany:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  body:
+    label: hidden
+    type: text_default
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  panelizer: true

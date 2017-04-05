@@ -1,0 +1,16 @@
+uuid: 95c1fe23-8d6b-478f-ad6e-3bd195d1c2af
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: focal_point_medium_375x354_
+label: 'Focal Point medium(375x354)'
+effects:
+  dac18f4d-29ca-414d-b49e-4b97cb66db52:
+    uuid: dac18f4d-29ca-414d-b49e-4b97cb66db52
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 354

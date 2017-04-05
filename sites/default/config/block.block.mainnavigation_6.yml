@@ -1,0 +1,34 @@
+uuid: 0a31bb65-fe0e-413c-84d1-c13444d80a55
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.business_opportunities
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - bartik
+id: mainnavigation_6
+theme: bartik
+region: sidebar_first
+weight: -21
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'BUSINESS OPPORTUNITIES'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 1
+  parent: 'main:menu_link_content:12a64d5d-bcfb-4947-9e14-8e66c1562723'
+  suggestion: main
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: business_opportunities
+    context_mapping: {  }

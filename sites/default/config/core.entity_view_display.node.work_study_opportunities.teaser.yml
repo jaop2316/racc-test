@@ -1,0 +1,45 @@
+uuid: 484182d8-1716-43ec-9f2f-76750ea737eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.work_study_opportunities.body
+    - field.field.node.work_study_opportunities.field_contact
+    - field.field.node.work_study_opportunities.field_departament
+    - field.field.node.work_study_opportunities.field_dept_location
+    - field.field.node.work_study_opportunities.field_email
+    - field.field.node.work_study_opportunities.field_hours
+    - field.field.node.work_study_opportunities.field_office_phone
+    - field.field.node.work_study_opportunities.field_pay_rate
+    - field.field.node.work_study_opportunities.field_post_date
+    - field.field.node.work_study_opportunities.field_term
+    - node.type.work_study_opportunities
+  module:
+    - text
+    - user
+id: node.work_study_opportunities.teaser
+targetEntityType: node
+bundle: work_study_opportunities
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_contact: true
+  field_departament: true
+  field_dept_location: true
+  field_email: true
+  field_hours: true
+  field_office_phone: true
+  field_pay_rate: true
+  field_post_date: true
+  field_term: true
+  langcode: true

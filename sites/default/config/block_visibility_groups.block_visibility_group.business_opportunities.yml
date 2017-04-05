@@ -1,0 +1,17 @@
+uuid: 4a03d131-9a1a-4584-938d-16fc2eb33aa6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: business_opportunities
+label: 'Business Opportunities'
+logic: and
+conditions:
+  cc136d75-174b-4c43-a5d7-c61c9eab0377:
+    id: request_path
+    pages: "/about-racc/current-postings\r\n/purchasing-policy"
+    negate: false
+    context_mapping: {  }
+    uuid: cc136d75-174b-4c43-a5d7-c61c9eab0377
+allow_other_conditions: false

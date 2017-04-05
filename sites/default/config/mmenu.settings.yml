@@ -1,0 +1,96 @@
+mmenu_allowed_blocks_nums: 5
+mmenu_item_mmenu_left:
+  enabled: '0'
+  title: 'Left menu'
+  name: mmenu_left
+  blocks:
+    -
+      module_delta: 'block_content|block_content:786663da-1b7b-4650-8c77-589082845ae7|racc_theme_copyright'
+      menu_parameters:
+        min_depth: '2'
+      title: 'Main menu'
+      collapsed: '1'
+      wrap: '0'
+      module: block_content
+      delta: racc_theme_copyright
+  options:
+    classes: mm-fresh
+    effects: {  }
+    slidingSubmenus: true
+    clickOpen:
+      open: false
+      selector: ''
+    counters:
+      add: true
+      update: true
+    dragOpen:
+      open: true
+      pageNode: body
+      threshold: !!float 100
+      maxStartPos: !!float 50
+    footer:
+      add: true
+      content: ''
+      title: 'Copyright ©2017'
+      update: true
+    header:
+      add: true
+      content: ''
+      title: RACC
+      update: true
+    labels:
+      collapse: false
+    offCanvas:
+      enabled: true
+      modal: false
+      moveBackground: true
+      position: left
+      zposition: front
+    searchfield:
+      add: false
+      addTo: menu
+      search: false
+      placeholder: Search
+      noResults: 'No results found.'
+      showLinksOnly: true
+  configurations:
+    clone: false
+    preventTabbing: false
+    panelNodetype: 'div, ul, ol'
+    transitionDuration: !!float 400
+    classNames:
+      label: Label
+      panel: Panel
+      selected: Selected
+      buttonbars:
+        buttonbar: anchors
+      counters:
+        counter: Counter
+      fixedElements:
+        fixedTop: FixedTop
+        fixedBottom: FixedBottom
+      footer:
+        panelFooter: Footer
+      header:
+        panelHeader: Header
+        panelNext: Next
+        panelPrev: Prev
+      labels:
+        collapsed: Collapsed
+      toggles:
+        toggle: Toggle
+        check: Check
+    dragOpen:
+      width:
+        perc: 0.8
+        min: !!float 140
+        max: !!float 440
+      height:
+        perc: 0.8
+        min: !!float 140
+        max: !!float 880
+    offCanvas:
+      menuInjectMethod: prepend
+      menuWrapperSelector: body
+      pageNodetype: div
+      pageSelector: 'body > div'

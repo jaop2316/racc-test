@@ -1,0 +1,236 @@
+uuid: e1dc975f-77ba-4142-a496-8ffffaf8d005
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.current_postings.body
+    - field.field.node.current_postings.field_bid_bond
+    - field.field.node.current_postings.field_departament
+    - field.field.node.current_postings.field_due_date
+    - field.field.node.current_postings.field_performance_bond
+    - field.field.node.current_postings.field_post_date
+    - field.field.node.current_postings.field_proposal_number
+    - field.field.node.current_postings.panelizer
+    - node.type.current_postings
+  module:
+    - datetime
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: true
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          d5d16908-82e1-4152-92cf-2c663fdbcea4:
+            id: 'entity_field:node:body'
+            label: 'Aditional Info'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 4
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: d5d16908-82e1-4152-92cf-2c663fdbcea4
+          3aaa8287-c35c-442d-8afe-4a44d1ba7b65:
+            id: 'entity_field:node:field_bid_bond'
+            label: 'Bid bond'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 2
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 3aaa8287-c35c-442d-8afe-4a44d1ba7b65
+          70ef6841-8dff-44a9-ae19-19eace9a1760:
+            id: 'entity_field:node:field_departament'
+            label: Departament
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: entity_reference_label
+              settings:
+                link: true
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 70ef6841-8dff-44a9-ae19-19eace9a1760
+          478d1dc7-c904-41e6-a6d7-5b2fb4a6569d:
+            id: 'entity_field:node:field_due_date'
+            label: 'Due Date'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: datetime_default
+              settings:
+                format_type: medium
+                timezone_override: ''
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 478d1dc7-c904-41e6-a6d7-5b2fb4a6569d
+          d5ef24bc-d064-4fd7-96cf-b480afd01678:
+            id: 'entity_field:node:field_performance_bond'
+            label: 'Performance Bond'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: d5ef24bc-d064-4fd7-96cf-b480afd01678
+          f5c4b864-0995-4efc-85bc-2c61105cfd19:
+            id: 'entity_field:node:field_post_date'
+            label: 'Post Date'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: datetime_default
+              settings:
+                format_type: medium
+                timezone_override: ''
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -3
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: f5c4b864-0995-4efc-85bc-2c61105cfd19
+          c8761f06-d6e8-4289-9103-c42c6e02cbd0:
+            id: 'entity_field:node:field_proposal_number'
+            label: 'Proposal number'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -2
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: c8761f06-d6e8-4289-9103-c42c6e02cbd0
+          00497f8a-7c29-4890-aa1a-2a1db8bec472:
+            id: 'entity_field:node:title'
+            label: Title
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: 0
+            uuid: 00497f8a-7c29-4890-aa1a-2a1db8bec472
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        label: Default
+        uuid: ff3a2544-0f52-4669-ab96-8d80ad7caa02
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: panelizer_default
+        storage_id: 'node:current_postings:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+id: node.current_postings.default
+targetEntityType: node
+bundle: current_postings
+mode: default
+content:
+  body:
+    label: inline
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  field_bid_bond:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_departament:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_due_date:
+    weight: 3
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_performance_bond:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_post_date:
+    weight: 0
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_proposal_number:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true
+  links: true
+  panelizer: true

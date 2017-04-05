@@ -1,0 +1,22 @@
+uuid: eb3e3eed-43dc-4a35-b3f4-739f9a8358af
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - racc_pattern_lab
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: racc_pattern_lab_messages
+theme: racc_pattern_lab
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

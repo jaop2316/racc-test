@@ -1,0 +1,30 @@
+uuid: 2b864e7b-2037-4410-a7cf-43b9c2c4256c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.news_large_254x198
+    - image.style.news_medium_706x531_
+    - image.style.news_small_315x245_
+  theme:
+    - bartik
+id: news_responsive
+label: 'News Responsive'
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: news_large_254x198
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: news_medium_706x531_
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: news_small_315x245_
+breakpoint_group: bartik
+fallback_image_style: news_small_315x245_

@@ -1,0 +1,28 @@
+uuid: 9579045f-270f-4398-a52a-1c79e4e56387
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - patternlab
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: patternlab_breadcrumbs
+theme: patternlab
+region: '-1'
+weight: -13
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

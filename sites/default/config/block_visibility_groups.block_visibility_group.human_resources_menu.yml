@@ -1,0 +1,17 @@
+uuid: 5ed87cd1-0ba0-424e-98bc-d7363b1d335f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: human_resources_menu
+label: 'Human Resources Menu'
+logic: and
+conditions:
+  7fa98b08-9030-461c-b106-d959bc7b919d:
+    id: request_path
+    pages: /about-racc/career-opportunities
+    negate: false
+    context_mapping: {  }
+    uuid: 7fa98b08-9030-461c-b106-d959bc7b919d
+allow_other_conditions: false

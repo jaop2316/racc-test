@@ -1,0 +1,16 @@
+uuid: 29e31f1c-2536-4888-9beb-821fba29a0a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: brand_small_129x150_
+label: 'Brand Small (129x150)'
+effects:
+  655e3cff-6a15-4517-a329-522658f0d06c:
+    uuid: 655e3cff-6a15-4517-a329-522658f0d06c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 129
+      height: 150

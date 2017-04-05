@@ -1,0 +1,16 @@
+uuid: b89639d4-8593-488d-aa4d-4a8f225e3525
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: news_medium_706x531_
+label: 'News Medium (706x531)'
+effects:
+  8641e41b-91ad-4d12-b0a4-5030e821ac8b:
+    uuid: 8641e41b-91ad-4d12-b0a4-5030e821ac8b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 706
+      height: 531

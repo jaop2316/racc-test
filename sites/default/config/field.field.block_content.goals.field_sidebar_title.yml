@@ -1,0 +1,19 @@
+uuid: 38b9a0da-278b-4d97-8da7-a4e3e5577053
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.goals
+    - field.storage.block_content.field_sidebar_title
+id: block_content.goals.field_sidebar_title
+field_name: field_sidebar_title
+entity_type: block_content
+bundle: goals
+label: 'Sidebar Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

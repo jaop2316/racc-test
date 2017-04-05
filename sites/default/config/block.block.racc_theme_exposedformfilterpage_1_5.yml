@@ -1,0 +1,30 @@
+uuid: 4fb6acd3-c12d-4aca-b7c1-8beffae1a914
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.news2
+    - views.view.filter
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - racc_theme
+id: racc_theme_exposedformfilterpage_1_5
+theme: racc_theme
+region: content
+weight: -23
+provider: null
+plugin: 'views_exposed_filter_block:filter-page_1'
+settings:
+  id: 'views_exposed_filter_block:filter-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: news2
+    context_mapping: {  }

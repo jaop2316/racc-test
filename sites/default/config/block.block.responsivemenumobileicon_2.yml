@@ -1,0 +1,26 @@
+uuid: 7e8c9793-8a3c-446d-9f8a-e3884f6dcb30
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - responsive_menu
+  theme:
+    - racc_pattern_lab
+id: responsivemenumobileicon_2
+theme: racc_pattern_lab
+region: header
+weight: 0
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  provider: responsive_menu
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

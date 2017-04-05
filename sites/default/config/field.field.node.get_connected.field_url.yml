@@ -1,0 +1,23 @@
+uuid: 7a2f62df-1a43-4dc3-8c3a-4581a9794ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.get_connected
+  module:
+    - link
+id: node.get_connected.field_url
+field_name: field_url
+entity_type: node
+bundle: get_connected
+label: 'Network Url'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,162 @@
+uuid: a622de27-ea14-464f-8284-656a65e22d5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_image
+    - field.field.node.spotlight.field_text_secondary
+    - field.field.node.spotlight.field_video_link
+    - node.type.spotlight
+  module:
+    - ds
+    - image
+    - panelizer
+    - text
+    - user
+    - video_embed_field
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          4a4320fe-64f7-4068-b74f-8d3ef90d98e7:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: left
+            weight: 1
+            uuid: 4a4320fe-64f7-4068-b74f-8d3ef90d98e7
+          8583c2ff-ab77-4ace-8ece-e410b3fce11e:
+            id: 'entity_field:node:field_image'
+            label: 'Background Image'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: image
+              settings:
+                image_style: ''
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: top
+            weight: 1
+            uuid: 8583c2ff-ab77-4ace-8ece-e410b3fce11e
+          28094226-a0c3-425d-bb26-f40f010c7449:
+            id: 'entity_field:node:field_text_secondary'
+            label: 'Text Secondary'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: right
+            weight: 2
+            uuid: 28094226-a0c3-425d-bb26-f40f010c7449
+          5ffc879e-1dd4-408c-b15f-3fecaf7f214a:
+            id: 'entity_field:node:field_video_link'
+            label: 'Video Link'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: video_embed_field_video
+              settings:
+                responsive: true
+                width: 854
+                height: 480
+                autoplay: true
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: right
+            weight: 1
+            uuid: 5ffc879e-1dd4-408c-b15f-3fecaf7f214a
+        id: panels_variant
+        label: Default
+        uuid: 427cdbd1-85f7-4fb5-a0bf-244c22dfe161
+        weight: 0
+        layout: twocol_stacked
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: panelizer_default
+        storage_id: 'node:spotlight:full:default'
+        builder: ipe
+        pattern: panelizer
+  ds:
+    layout:
+      id: twocol_stacked
+      path: modules/panels/layouts/twocol_stacked
+      library: layout_plugin/twocol_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      top:
+        - field_image
+      left:
+        - body
+      right:
+        - field_video_link
+        - field_text_secondary
+id: node.spotlight.full
+targetEntityType: node
+bundle: spotlight
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_text_secondary:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_video_link:
+    weight: 2
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+hidden:
+  langcode: true
+  links: true

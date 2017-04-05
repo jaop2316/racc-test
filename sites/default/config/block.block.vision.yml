@@ -1,0 +1,31 @@
+uuid: 0b4388f8-07c5-4ef4-9f51-a19680f3e75a
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:goals:c0349bc6-8af4-423f-b946-345c05000fea'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - bartik
+id: vision
+theme: bartik
+region: '-1'
+weight: 2
+provider: null
+plugin: 'block_content:c0349bc6-8af4-423f-b946-345c05000fea'
+settings:
+  id: 'block_content:c0349bc6-8af4-423f-b946-345c05000fea'
+  label: Vision
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: a5c113ed-703e-413a-bb6d-5e096b99f8ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.panelizer
+    - node.type.career_opportunities
+  module:
+    - panelizer
+id: node.career_opportunities.panelizer
+field_name: panelizer
+entity_type: node
+bundle: career_opportunities
+label: Panelizer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: panelizer

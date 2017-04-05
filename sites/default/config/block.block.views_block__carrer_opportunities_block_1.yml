@@ -1,0 +1,20 @@
+uuid: 11c0bc26-ad24-4516-8b94-65a6e40d496f
+langcode: en
+status: false
+dependencies:
+  theme:
+    - bartik
+id: views_block__carrer_opportunities_block_1
+theme: bartik
+region: '-1'
+weight: -20
+provider: null
+plugin: 'views_block:carrer_opportunities-block_1'
+settings:
+  id: 'views_block:carrer_opportunities-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

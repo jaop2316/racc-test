@@ -1,0 +1,33 @@
+uuid: 04cb2710-1142-4cd9-a5ce-65228fac8d52
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.timeline
+    - field.storage.block_content.field_timeline
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - entity_reference_revisions
+id: block_content.timeline.field_timeline
+field_name: field_timeline
+entity_type: block_content
+bundle: timeline
+label: Timeline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      timeline: timeline
+    target_bundles_drag_drop:
+      tabs_content:
+        weight: 3
+        enabled: false
+      timeline:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

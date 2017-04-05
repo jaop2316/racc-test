@@ -1,0 +1,19 @@
+uuid: 41d7b52b-d1fe-4736-8219-9a8e6e50dfb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pay_rate
+    - node.type.work_study_opportunities
+id: node.work_study_opportunities.field_pay_rate
+field_name: field_pay_rate
+entity_type: node
+bundle: work_study_opportunities
+label: 'Pay rate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,28 @@
+uuid: fef2df09-537b-4348-b0d5-506218ea77d1
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - racc_pattern_lab
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: racc_pattern_lab_breadcrumbs
+theme: racc_pattern_lab
+region: '-1'
+weight: -19
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

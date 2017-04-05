@@ -1,0 +1,21 @@
+uuid: 80d287a8-f02b-40ff-b720-0f1aa3e52d53
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.generic_content
+    - field.storage.block_content.field_teaser
+  module:
+    - text
+id: block_content.generic_content.field_teaser
+field_name: field_teaser
+entity_type: block_content
+bundle: generic_content
+label: Teaser
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

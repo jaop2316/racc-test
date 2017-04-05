@@ -1,0 +1,19 @@
+uuid: b8ff9c30-9d2a-48d4-876b-4049e671dd82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proposal_number
+    - node.type.current_postings
+id: node.current_postings.field_proposal_number
+field_name: field_proposal_number
+entity_type: node
+bundle: current_postings
+label: 'Proposal number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

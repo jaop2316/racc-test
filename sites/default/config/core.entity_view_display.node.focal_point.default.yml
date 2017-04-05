@@ -1,0 +1,21 @@
+uuid: f0d27397-2ed5-470a-9f95-ee0a759260b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.focal_point.field_image
+    - node.type.focal_point
+  module:
+    - user
+id: node.focal_point.default
+targetEntityType: node
+bundle: focal_point
+mode: default
+content:
+  links:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_image: true
+  langcode: true

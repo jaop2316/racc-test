@@ -1,0 +1,16 @@
+uuid: 3d85aa34-1d85-4063-898c-bad591a42e23
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: student_small_347x347_
+label: 'Student small (347x347)'
+effects:
+  418ff09b-0967-4d51-a64e-3650ad45f300:
+    uuid: 418ff09b-0967-4d51-a64e-3650ad45f300
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 347
+      height: 347

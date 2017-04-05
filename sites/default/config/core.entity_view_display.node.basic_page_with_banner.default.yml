@@ -1,0 +1,166 @@
+uuid: 75938d4a-3ca7-4d85-b75f-c3115798ba3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page_with_banner.body
+    - field.field.node.basic_page_with_banner.field_image
+    - field.field.node.basic_page_with_banner.panelizer
+    - node.type.basic_page_with_banner
+  module:
+    - image
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: true
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          530fdc87-6a46-4fdf-9a7d-f3e78e9c9a75:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 530fdc87-6a46-4fdf-9a7d-f3e78e9c9a75
+          07331991-2683-4834-8aca-d48c15221245:
+            id: 'entity_field:node:field_image'
+            label: Image
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: image
+              settings:
+                image_style: ''
+                image_link: ''
+              third_party_settings: {  }
+              weight: 0
+            region: middle
+            weight: -2
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 07331991-2683-4834-8aca-d48c15221245
+          83c55714-f18e-4551-8e2a-138cc4ca2e38:
+            id: 'block_content:52588531-8e0b-4c3c-af5d-bf2504480f5b'
+            label: 'Timeline in about page '
+            provider: block_content
+            label_display: '0'
+            status: true
+            info: ''
+            view_mode: full
+            region: middle
+            weight: 0
+            uuid: 83c55714-f18e-4551-8e2a-138cc4ca2e38
+            context_mapping: {  }
+          ecf16252-f419-4d00-a420-1966bb7ede08:
+            id: 'block_content:c440f520-f0e0-4b66-8e51-3388229190c5'
+            label: 'Mission Statement in about page'
+            provider: block_content
+            label_display: '0'
+            status: true
+            info: ''
+            view_mode: full
+            region: middle
+            weight: 1
+            uuid: ecf16252-f419-4d00-a420-1966bb7ede08
+            context_mapping: {  }
+          1b31d45f-0306-48c0-809b-72251d9806a7:
+            id: 'block_content:73f36b1f-b933-483c-818e-6a63fac7a5da'
+            label: Philosophy
+            provider: block_content
+            label_display: visible
+            status: true
+            info: ''
+            view_mode: full
+            region: middle
+            weight: 2
+            uuid: 1b31d45f-0306-48c0-809b-72251d9806a7
+            context_mapping: {  }
+          e5fa56c7-bbfe-4e33-9b0a-6c315e400f08:
+            id: 'block_content:c0349bc6-8af4-423f-b946-345c05000fea'
+            label: Vision
+            provider: block_content
+            label_display: '0'
+            status: true
+            info: ''
+            view_mode: full
+            region: middle
+            weight: 3
+            uuid: e5fa56c7-bbfe-4e33-9b0a-6c315e400f08
+            context_mapping: {  }
+          5fb920bc-8a1e-402b-b3fe-3d9c7deacad9:
+            id: 'views_block:directory-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: middle
+            weight: 4
+            uuid: 5fb920bc-8a1e-402b-b3fe-3d9c7deacad9
+            context_mapping: {  }
+        id: panels_variant
+        label: Default
+        uuid: 64aa6e77-87bd-404d-a749-e847260e3f59
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: null
+        storage_type: panelizer_default
+        storage_id: 'node:basic_page_with_banner:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
+id: node.basic_page_with_banner.default
+targetEntityType: node
+bundle: basic_page_with_banner
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  langcode:
+    type: language
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  panelizer:
+    type: panelizer
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,31 @@
+uuid: 6a37d832-005c-4d9a-b4fe-2c2dbdfe90cc
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:annual_fund:ef45c9bc-b06a-4c01-8389-179415e300f1'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - racc_pattern_lab
+id: racc_pattern_lab_annualfund
+theme: racc_pattern_lab
+region: '-1'
+weight: -20
+provider: null
+plugin: 'block_content:ef45c9bc-b06a-4c01-8389-179415e300f1'
+settings:
+  id: 'block_content:ef45c9bc-b06a-4c01-8389-179415e300f1'
+  label: 'Annual Fund'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

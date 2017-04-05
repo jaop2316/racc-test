@@ -1,0 +1,22 @@
+uuid: 06a91037-4f3f-41b8-8422-e8d4c4d405fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - patternlab
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: patternlab_content
+theme: patternlab
+region: content
+weight: -13
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

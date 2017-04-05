@@ -1,0 +1,19 @@
+uuid: 31ba8fd9-ab39-4574-ab39-faa88053900c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_time_frame
+    - paragraphs.paragraphs_type.timeline
+id: paragraph.timeline.field_time_frame
+field_name: field_time_frame
+entity_type: paragraph
+bundle: timeline
+label: 'Time frame'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

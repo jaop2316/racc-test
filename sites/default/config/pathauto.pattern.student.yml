@@ -1,0 +1,22 @@
+uuid: cf5336e8-7094-440d-8bab-dfac456d1f45
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: student
+label: Student
+type: 'canonical_entities:node'
+pattern: '[node:content-type]-spotlight'
+selection_criteria:
+  08b235ac-774a-40a2-88fd-91323c264876:
+    id: node_type
+    bundles:
+      student: student
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 08b235ac-774a-40a2-88fd-91323c264876
+selection_logic: and
+weight: -5
+relationships: {  }

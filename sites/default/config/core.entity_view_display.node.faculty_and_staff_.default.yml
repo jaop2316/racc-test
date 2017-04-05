@@ -1,0 +1,80 @@
+uuid: d71754aa-be64-4282-91a2-93c8ea68338f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faculty_and_staff_.field_departament
+    - field.field.node.faculty_and_staff_.field_email
+    - field.field.node.faculty_and_staff_.field_first_name
+    - field.field.node.faculty_and_staff_.field_last_name
+    - field.field.node.faculty_and_staff_.field_mailbox
+    - field.field.node.faculty_and_staff_.field_phone_ext
+    - field.field.node.faculty_and_staff_.field_position
+    - field.field.node.faculty_and_staff_.field_room
+    - node.type.faculty_and_staff_
+  module:
+    - user
+id: node.faculty_and_staff_.default
+targetEntityType: node
+bundle: faculty_and_staff_
+mode: default
+content:
+  field_departament:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_email:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_first_name:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_last_name:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_mailbox:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_phone_ext:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_position:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_room:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden:
+  langcode: true

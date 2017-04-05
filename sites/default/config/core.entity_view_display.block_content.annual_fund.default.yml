@@ -1,0 +1,32 @@
+uuid: d34c2a8d-efee-4689-80c1-71f1c2d1924c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.annual_fund
+    - field.field.block_content.annual_fund.body
+    - field.field.block_content.annual_fund.field_paragraph
+  module:
+    - entity_reference_revisions
+    - text
+id: block_content.annual_fund.default
+targetEntityType: block_content
+bundle: annual_fund
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

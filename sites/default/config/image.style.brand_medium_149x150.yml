@@ -1,0 +1,16 @@
+uuid: 82ba0c5c-debc-4948-8a7f-f3d142cde9b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: brand_medium_149x150
+label: 'Brand Medium (149x150)'
+effects:
+  294dd56e-29a4-4c7d-967d-a8911c9df698:
+    uuid: 294dd56e-29a4-4c7d-967d-a8911c9df698
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 149
+      height: 150

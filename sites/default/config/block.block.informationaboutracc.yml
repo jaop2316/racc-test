@@ -1,0 +1,31 @@
+uuid: 78ba2512-5548-4dba-a714-735404b4312e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:information:02012e8c-6a85-48f7-b222-5a370dce3b67'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - bartik
+id: informationaboutracc
+theme: bartik
+region: '-1'
+weight: -5
+provider: null
+plugin: 'block_content:02012e8c-6a85-48f7-b222-5a370dce3b67'
+settings:
+  id: 'block_content:02012e8c-6a85-48f7-b222-5a370dce3b67'
+  label: 'Information about RACC'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

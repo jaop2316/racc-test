@@ -1,0 +1,8 @@
+uuid: fa3fd2a5-d29b-4bdd-8624-dcee885017a8
+langcode: en
+status: true
+dependencies: {  }
+id: copyright
+label: Copyright
+revision: 0
+description: 'It''s a block to copyright text '

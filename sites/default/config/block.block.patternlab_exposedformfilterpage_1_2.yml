@@ -1,0 +1,30 @@
+uuid: 1ab505ca-8ef5-4cf6-b796-b4422085fb8b
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.featured_and_news_
+    - views.view.filter
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - patternlab
+id: patternlab_exposedformfilterpage_1_2
+theme: patternlab
+region: '-1'
+weight: -8
+provider: null
+plugin: 'views_exposed_filter_block:filter-page_1'
+settings:
+  id: 'views_exposed_filter_block:filter-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: NEWS
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: featured_and_news_
+    context_mapping: {  }

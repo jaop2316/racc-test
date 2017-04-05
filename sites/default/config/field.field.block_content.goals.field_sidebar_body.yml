@@ -1,0 +1,22 @@
+uuid: 2914ac1d-1c36-41c1-9af2-4d818d7c74ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.goals
+    - field.storage.block_content.field_sidebar_body
+  module:
+    - text
+id: block_content.goals.field_sidebar_body
+field_name: field_sidebar_body
+entity_type: block_content
+bundle: goals
+label: 'Sidebar Body'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

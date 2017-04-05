@@ -1,0 +1,22 @@
+uuid: d77aa493-372f-40b7-b722-20442aa50df2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.generic_content
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.generic_content.body
+field_name: body
+entity_type: block_content
+bundle: generic_content
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

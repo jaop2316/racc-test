@@ -1,0 +1,17 @@
+uuid: f0f0ab56-7e96-45ef-88ec-5c8a311d2888
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: featured_and_news_
+label: 'Featured and News '
+logic: and
+conditions:
+  c14ec211-e037-4b54-b851-bf8d4d2fb0e2:
+    id: request_path
+    pages: "/news\r\n/news/*\r\n/event/*\r\n/events"
+    negate: false
+    context_mapping: {  }
+    uuid: c14ec211-e037-4b54-b851-bf8d4d2fb0e2
+allow_other_conditions: false

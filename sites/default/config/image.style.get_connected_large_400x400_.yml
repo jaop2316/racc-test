@@ -1,0 +1,16 @@
+uuid: 9b69a338-3430-4aaa-a653-7690a173606d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: get_connected_large_400x400_
+label: 'Get Connected large(400x400)'
+effects:
+  8770dce0-b440-40d6-b960-8a69909a8e15:
+    uuid: 8770dce0-b440-40d6-b960-8a69909a8e15
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400

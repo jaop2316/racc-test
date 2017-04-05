@@ -1,0 +1,54 @@
+uuid: 85e69d55-a208-4824-92c5-791dcfa15f8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.timeline.field_image
+    - field.field.paragraph.timeline.field_time_frame
+    - field.field.paragraph.timeline.field_title
+    - paragraphs.paragraphs_type.timeline
+  module:
+    - ds
+    - image
+third_party_settings:
+  ds:
+    layout:
+      id: twocol
+      path: modules/panels/layouts/twocol
+      library: layout_plugin/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_image
+        - field_time_frame
+        - field_title
+id: paragraph.timeline.default
+targetEntityType: paragraph
+bundle: timeline
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_time_frame:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_title:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

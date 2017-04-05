@@ -1,0 +1,81 @@
+uuid: e940d25a-72ce-4c4d-aea3-8aef9251c023
+langcode: en
+status: false
+dependencies:
+  config:
+    - contact.form.need_more_info
+    - core.entity_view_mode.contact_message.token
+    - field.field.contact_message.need_more_info.field_email
+    - field.field.contact_message.need_more_info.field_name
+    - field.field.contact_message.need_more_info.field_phone
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: threecol_33_34_33
+      path: modules/panels/layouts/threecol_33_34_33
+      library: layout_plugin/threecol_33_34_33
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_name
+      middle:
+        - field_phone
+      right:
+        - field_email
+id: contact_message.need_more_info.token
+targetEntityType: contact_message
+bundle: need_more_info
+mode: token
+content:
+  field_email:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_phone:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  mail:
+    type: basic_string
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: basic_string
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  subject:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

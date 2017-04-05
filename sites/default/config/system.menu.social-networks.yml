@@ -1,0 +1,8 @@
+uuid: 0f27c847-b043-4047-baa9-39a975d38cae
+langcode: en
+status: true
+dependencies: {  }
+id: social-networks
+label: 'Social Networks'
+description: 'it''s a menu for racc social networks links '
+locked: false

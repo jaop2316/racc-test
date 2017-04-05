@@ -1,0 +1,9 @@
+uuid: c14b2703-3abb-4aff-b210-aa47cbe86fd0
+langcode: en
+status: true
+dependencies: {  }
+name: Social
+vid: social_
+description: 'Vocabulary to social network icons'
+hierarchy: 0
+weight: 0

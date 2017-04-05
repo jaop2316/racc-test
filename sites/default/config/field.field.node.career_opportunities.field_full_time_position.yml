@@ -1,0 +1,23 @@
+uuid: 3c608003-dfbc-43a8-8c26-782a66479f2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_time_position
+    - node.type.career_opportunities
+id: node.career_opportunities.field_full_time_position
+field_name: field_full_time_position
+entity_type: node
+bundle: career_opportunities
+label: 'Full Time Position'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

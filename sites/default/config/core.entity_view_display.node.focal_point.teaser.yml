@@ -1,0 +1,20 @@
+uuid: 7f699483-5700-4c4a-8129-6e3cf216834f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.focal_point.field_image
+    - node.type.focal_point
+  module:
+    - user
+id: node.focal_point.teaser
+targetEntityType: node
+bundle: focal_point
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_image: true
+  langcode: true

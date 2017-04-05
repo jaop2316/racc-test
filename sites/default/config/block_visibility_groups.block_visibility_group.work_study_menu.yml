@@ -1,0 +1,17 @@
+uuid: 071ca5a5-f892-4018-b3b4-49974a5ad4f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: work_study_menu
+label: 'Work Study Menu'
+logic: and
+conditions:
+  a54578e1-14f4-4e21-a7b5-c6b52e925b83:
+    id: request_path
+    pages: /admissions/work-study-opportunities
+    negate: false
+    context_mapping: {  }
+    uuid: a54578e1-14f4-4e21-a7b5-c6b52e925b83
+allow_other_conditions: false

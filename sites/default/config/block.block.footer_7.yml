@@ -1,0 +1,33 @@
+uuid: 0c21f783-867c-46d0-a1f0-33e586ee0e30
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - racc_pattern_lab
+id: footer_7
+theme: racc_pattern_lab
+region: footer
+weight: -20
+provider: null
+plugin: 'menu_block:footer'
+settings:
+  id: 'menu_block:footer'
+  label: 'Popular Links'
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'footer:menu_link_content:faf0a0c2-6412-47eb-8cc7-3d0aa1e6af96'
+  suggestion: footer
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: a4df18ed-a1f1-4981-ae60-c0acfae9abb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.panelizer
+    - node.type.basic_page_with_banner
+  module:
+    - panelizer
+id: node.basic_page_with_banner.panelizer
+field_name: panelizer
+entity_type: node
+bundle: basic_page_with_banner
+label: Panelizer
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: panelizer

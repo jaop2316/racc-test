@@ -1,0 +1,14 @@
+uuid: ad4b5fa6-f45c-4e61-90b2-db3887a0b441
+langcode: en
+status: true
+dependencies: {  }
+name: slider_large_1600x1239
+label: 'Slider large (1600x1239)'
+effects:
+  90ea1c89-f9b3-4a78-b1cc-56512ecbd784:
+    uuid: 90ea1c89-f9b3-4a78-b1cc-56512ecbd784
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 1239

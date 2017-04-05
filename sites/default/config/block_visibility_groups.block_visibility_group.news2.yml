@@ -1,0 +1,17 @@
+uuid: f38beb07-34b3-4f96-90a3-4efd64c31269
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: news2
+label: 'Category News'
+logic: and
+conditions:
+  116ab059-6db3-4cb2-bc35-89f911746843:
+    id: request_path
+    pages: "/news\r\n/news/*"
+    negate: false
+    context_mapping: {  }
+    uuid: 116ab059-6db3-4cb2-bc35-89f911746843
+allow_other_conditions: false
