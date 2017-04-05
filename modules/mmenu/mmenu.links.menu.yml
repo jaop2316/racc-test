@@ -1,0 +1,9 @@
+mmenu.admin_config_mobile:
+  route_name: mmenu.admin_config_mobile
+  parent: system.admin_config
+  title: Mobile
+mmenu.settings:
+  title: 'Mobile sliding menu'
+  description: 'Tell Drupal where to configure Mobile slide menu settings.'
+  parent: mmenu.admin_config_mobile
+  route_name: mmenu.settings

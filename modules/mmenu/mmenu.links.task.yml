@@ -1,0 +1,19 @@
+mmenu.settings:
+  route_name: mmenu.settings
+  title: Left Menu
+  base_route: mmenu.settings
+
+mmenu.right_settings:
+  route_name: mmenu.right_settings
+  base_route: mmenu.settings
+  title: Right Menu
+
+mmenu.top_settings:
+  route_name: mmenu.top_settings
+  base_route: mmenu.settings
+  title: Top Menu
+
+mmenu.bottom_settings:
+  route_name:  mmenu.bottom_settings
+  base_route:  mmenu.settings
+  title: Bottom Menu

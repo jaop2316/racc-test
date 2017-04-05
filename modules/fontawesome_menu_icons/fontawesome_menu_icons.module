@@ -1,0 +1,93 @@
+<?php
+
+/**
+ * @file
+ * Contains fontawesome_menu_icons.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Render\FormattableMarkup;
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_help().
+ */
+function fontawesome_menu_icons_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the fontawesome_menu_icons module.
+    case 'help.page.fontawesome_menu_icons':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('FontAwesome Menu Icons') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function fontawesome_menu_icons_form_menu_link_content_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $menu_link = $form_state->getFormObject()->getEntity();
+  $menu_link_options = $menu_link->link->first()->options ?: [];
+
+  $form['fa_icon'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('FontAwesome Icon'),
+    '#default_value' => !empty($menu_link_options['fa_icon']) ? $menu_link_options['fa_icon'] : '',
+    '#attributes'    => [
+      'class' => [
+        'fa-menu-iconpicker',
+      ],
+    ],
+  );
+
+  $form['actions']['submit']['#submit'][] = 'fontawesome_menu_icons_menu_link_content_form_submit';
+
+  // FIXME 'libraries/fontawesome-iconpicker' doesn't work...
+  // @see https://www.drupal.org/docs/8/modules/libraries-api-8x/using-libraries-api-3x-as-a-module-developer
+  // $form['#attached']['library'][] = 'libraries/fontawesome-iconpicker';
+
+  $form['#attached']['library'][] = 'fontawesome_menu_icons/fontawesome-iconpicker';
+  $form['#attached']['library'][] = 'fontawesome_menu_icons/fontawesome-menu-icons';
+}
+
+/**
+ * Process the submitted form.
+ *
+ * @param array $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ */
+function fontawesome_menu_icons_menu_link_content_form_submit($form, FormStateInterface $form_state) {
+  $icon_field = $form_state->getValue('fa_icon');
+  $icon = empty($icon_field) ? '' : $icon_field;
+
+  $options = [
+    'fa_icon' => Html::escape($icon),
+  ];
+
+  $menu_link = $form_state->getFormObject()->getEntity();
+  $menu_link_options = $menu_link->link->first()->options;
+
+  $merged = array_merge($menu_link_options, $options);
+
+  $menu_link->link->first()->options = $merged;
+  $menu_link->save();
+}
+
+/**
+ * Implements hook_link_alter().
+ */
+function fontawesome_menu_icons_link_alter(&$variables) {
+  if (!empty($variables['options']['fa_icon']) && empty($variables['options']['already_processed'])) {
+    $class = $variables['options']['fa_icon'];
+
+    $variables['text'] = new FormattableMarkup('<i class="fa ' . $class . '"></i> @title', [
+      '@title' => $variables['text'],
+    ]);
+
+    $variables['options']['already_processed'] = TRUE;
+  }
+}

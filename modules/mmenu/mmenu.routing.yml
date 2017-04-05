@@ -1,0 +1,43 @@
+mmenu.admin_config_mobile:
+  path: '/admin/config/mobile'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Mobile'
+  requirements:
+    _permission: 'access administration pages'
+
+mmenu.settings:
+  path: '/admin/config/mobile/left_mmenu_settings'
+  defaults:
+    _form: '\Drupal\mmenu\Form\MMenuSettingsForm'
+    _title: 'Mobile sliding menu'
+    mmenu_name: 'mmenu_left'
+  requirements:
+    _permission: 'administer mmenu'
+
+mmenu.right_settings:
+  path: '/admin/config/mobile/right_mmenu_settings'
+  defaults:
+    _form: '\Drupal\mmenu\Form\MMenuSettingsForm'
+    _title: 'Mobile sliding menu'
+    mmenu_name: 'mmenu_right'
+  requirements:
+    _permission: 'administer mmenu'
+
+mmenu.top_settings:
+  path: '/admin/config/mobile/top_mmenu_settings'
+  defaults:
+    _form: '\Drupal\mmenu\Form\MMenuSettingsForm'
+    _title: 'Mobile sliding menu'
+    mmenu_name: 'mmenu_top'
+  requirements:
+    _permission: 'administer mmenu'
+
+mmenu.bottom_settings:
+  path: '/admin/config/mobile/bottom_mmenu_settings'
+  defaults:
+    _form: '\Drupal\mmenu\Form\MMenuSettingsForm'
+    _title: 'Mobile sliding menu'
+    mmenu_name: 'mmenu_bottom'
+  requirements:
+    _permission: 'administer mmenu'
