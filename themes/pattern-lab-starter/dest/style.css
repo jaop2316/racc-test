@@ -6334,7 +6334,10 @@ html {
   left: 10.5%;
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 45px;
+  font-size: 48px;
+  width: 160px;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
 }
 
 /*#views_slideshow_cycle_main_slider-homepage_slideshow:after{
@@ -6349,14 +6352,17 @@ html {
 }*/
 #views_slideshow_cycle_main_slider-homepage_slideshow .views-field-body p {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 11%;
   color: white;
+  font-family: "Raleway", sans-serif;
+  width: 400px;
+  line-height: 1.8;
 }
 
 #views_slideshow_cycle_main_slider-homepage_slideshow .views-field-field-url a {
   position: absolute;
-  top: 58%;
+  top: 70%;
   left: 11%;
   color: white;
   text-decoration: underline;
@@ -6368,6 +6374,7 @@ html {
   top: 10%;
   background-image: url("previus.png");
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 #views_slideshow_controls_text_next_slider-homepage_slideshow {
