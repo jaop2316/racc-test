@@ -1,0 +1,20 @@
+{% for item in items %}
+  <div style="margin: 5px;">
+    <div style="height: {{ item.value }}; width: {{ item.value }}; outline: solid 1px black; display: inline-block; margin-right: 5px;"></div>
+    <span>{{ item.value }} : <code>{{ item.name }}</code></span>
+  </div>
+{% endfor %}
+
+<div class="u-spacing">
+		<p>Spacing with vertical rhythm</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim turpis, volutpat vel diam non, ullamcorper pretium tellus. Aenean lobortis nec ex at euismod. Proin non accumsan lectus. Quisque tincidunt suscipit velit eget condimentum. Fusce id pretium tortor. In cursus consequat nisl, ut pellentesque ipsum vestibulum in. Sed ornare ex quis iaculis porttitor.</p>
+	</div>
+
+	<div class="u-spacing">
+		<p>Spacing with vertical rhythm</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim turpis, volutpat vel diam non, ullamcorper pretium tellus. Aenean lobortis nec ex at euismod. Proin non accumsan lectus. Quisque tincidunt suscipit velit eget condimentum. Fusce id pretium tortor. In cursus consequat nisl, ut pellentesque ipsum vestibulum in. Sed ornare ex quis iaculis porttitor.</p>
+	</div>
+
+{% if meta %}
+  <p> <small>{{ meta.description }}</small> </p>
+{% endif %}

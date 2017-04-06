@@ -1,0 +1,24 @@
+{% for item in items.tables %}
+  <div>
+    <table>
+      <thead>
+      {% for head in item.head %}
+        <th>
+          {{head}}
+        </th>
+      {% endfor %}
+      </thead>
+        <tbody>
+          {% for body in item.body %}
+            <tr>
+            {% for td in body.td %}
+              <td>
+                {{td}}
+              </td>
+            {% endfor %}
+            </tr>
+          {% endfor %}
+        <tbody>
+    </table>
+  </div>
+{% endfor %}
