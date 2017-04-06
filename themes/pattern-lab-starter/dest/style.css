@@ -3724,15 +3724,15 @@
 
 html {
   font-size: 112.5%;
-  line-height: 25px;
-  line-height: 1.38889rem;
+  line-height: 27px;
+  line-height: 1.5rem;
 }
 
 .full-grid-demo {
   font-size: 18px;
   font-size: 1rem;
-  line-height: 25px;
-  line-height: 1.38889rem;
+  line-height: 27px;
+  line-height: 1.5rem;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -6405,6 +6405,7 @@ html {
     width: 32.53012%;
     float: left;
     background-color: #f23321;
+    float: left;
   }
   .generic-content .col-left-body {
     width: 32.53012%;
