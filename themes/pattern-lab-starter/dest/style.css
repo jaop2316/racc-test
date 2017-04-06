@@ -4187,6 +4187,31 @@ html {
     width: 49.53271%;
     float: left;
   }
+  .last-news-container .field-content {
+    position: absolute;
+    z-index: 2;
+    top: 39.5%;
+    color: white;
+    width: 350px;
+    height: 70px;
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .last-news-container .lastnews-image {
+    margin-left: 25px;
+    position: relative;
+  }
+  .last-news-container .lastnews-image ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0) 60%, rgba(10, 10, 10, 0.25) 100%);
+    z-index: 1;
+  }
 }
 
 table {
