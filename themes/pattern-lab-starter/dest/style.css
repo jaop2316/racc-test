@@ -3724,19 +3724,19 @@
 
 html {
   font-size: 112.5%;
-  line-height: 27px;
-  line-height: 1.5rem;
+  line-height: 24px;
+  line-height: 1.33333rem;
 }
 
 .full-grid-demo {
   font-size: 18px;
   font-size: 1rem;
-  line-height: 27px;
-  line-height: 1.5rem;
+  line-height: 24px;
+  line-height: 1.33333rem;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: #9799a1;
+  background: #ebebeb;
 }
 
 .full-grid-demo:after {
@@ -3776,7 +3776,7 @@ html {
   float: left;
   background: black;
   border: solid 1px black;
-  height: 300px;
+  height: 200px;
 }
 
 .float-left {
@@ -4333,7 +4333,7 @@ html {
 }
 
 .brands-block {
-  background-color: #9799a1;
+  background-color: #c8c9cb;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -6010,24 +6010,42 @@ html {
   }
   .grid-getconnect .image-getConnect {
     position: relative;
-    /*&::before{
-        content: '';
-        position:absolute;
-        top:0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    background: linear-gradient(to bottom, rgba(10,10,10,0) 0%,rgba(10,10,10,0.65) 100%);
+  }
+  .grid-getconnect .image-getConnect ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0.65) 100%);
     z-index: 1;
-  }*/
   }
   .grid-getconnect .message-getconnect {
-    top: 30%;
-    color: black;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 50px;
+    margin-right: 70px;
+    padding-right: 60px;
+    color: white;
+    width: 370px;
+    height: 10px;
+    z-index: 2;
   }
   .grid-getconnect .url-getconnect {
-    top: 600%;
+    position: absolute;
     z-index: 2;
+    margin-top: -100px;
+    margin-left: 130px;
+  }
+  .grid-getconnect .type-getconnect {
+    position: absolute;
+    z-index: 2;
+    margin-top: -100px;
+    margin-left: 40px;
+    color: red;
+    font-size: 30px;
+    margin-left: 50px;
   }
 }
 
@@ -6399,21 +6417,54 @@ html {
     float: left;
     margin-left: 0;
     margin-right: 0;
-    position: absolute;
+    position: relative;
+    margin-top: -400px;
+  }
+  .generic-content .container::after {
+    content: " ";
+    display: block;
+    clear: both;
   }
   .generic-content .col-left {
-    width: 32.53012%;
+    width: 24.09639%;
     float: left;
     background-color: #f23321;
-    float: left;
+  }
+  .generic-content .col-left h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 35px;
+    font-weight: 100px;
+    padding-left: 45px;
+    padding-top: 70px;
+  }
+  .generic-content .col-left p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    padding-left: 45px;
+    padding-right: 50px;
+    line-height: 30px;
+    padding-bottom: 100px;
   }
   .generic-content .col-left-body {
-    width: 32.53012%;
+    width: 49.39759%;
     float: left;
   }
   .generic-content .col-right {
-    width: 49.39759%;
+    width: 57.83133%;
     float: left;
+  }
+  .generic-content .col-right p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 45px;
+  }
+  .generic-content .col-right h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    padding-left: 45px;
   }
   .generic-content .col-right-title {
     width: 49.39759%;
@@ -6423,6 +6474,10 @@ html {
     width: 49.39759%;
     float: left;
   }
+}
+
+.clear-box {
+  clear: both;
 }
 
 /*------------------------------------*    $PATTERN LAB-SPECIFIC STYLES

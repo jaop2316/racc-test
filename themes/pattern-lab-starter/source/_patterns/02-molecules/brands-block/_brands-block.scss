@@ -27,7 +27,7 @@ $base-line-height: 24px;
 
 
 .brands-block{
-  background-color: $c-manatee;
+  background-color: $c-silver-sand;
   @include container();
   @include susy-breakpoint($screen-small-8cols, 8) {
   }

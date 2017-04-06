@@ -15,7 +15,7 @@ $base-font-size: 18px;
 
 /// Absolute height of one line of type, in pixels
 /// @type Number
-$base-line-height: 27px;
+$base-line-height: 24px;
 
 /**
  * Initiate Susy and Vertical Rhythm configurations
@@ -32,12 +32,12 @@ $base-line-height: 27px;
   @include susy-breakpoint($screen-medium-12cols, 12) {
     @include container();
   }
-  background: $c-manatee;
+  background: $c-gray--lightest;
 }
 
 .column-grid-item{
    @include span(1);
    background: $c-black;
    border: solid 1px $c-black;
-   height: 300px;
+   height: 200px;
 }
