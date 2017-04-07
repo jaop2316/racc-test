@@ -41,11 +41,12 @@ $base-line-height: 24px;
   left:10.5%;
   color:$c-white;
   font-family: $ff--alternate;
-  font-size: 48px;
-  width: 160px;
+  font-size: 3em;
+  width: 10em;
   letter-spacing: 1.5px;
   line-height: 1.2;
   z-index: 200;
+  font-weight: $fw--100;
 }
 
 /*#views_slideshow_cycle_main_slider-homepage_slideshow:before{
