@@ -6359,6 +6359,10 @@ html {
     z-index: 200;
     font-weight: 100;
   }
+  .slider #views_slideshow_cycle_main_slider-homepage_slideshow .views-field-title a:hover {
+    text-decoration: none;
+    color: #f23321;
+  }
   .slider .slider-image::before {
     content: '';
     position: absolute;
@@ -6386,6 +6390,10 @@ html {
     color: white;
     text-decoration: underline;
     z-index: 200;
+  }
+  .slider #views_slideshow_cycle_main_slider-homepage_slideshow .views-field-field-url a:hover {
+    text-decoration: none;
+    color: #f23321;
   }
   .slider #views_slideshow_controls_text_previous_slider-homepage_slideshow {
     position: absolute;

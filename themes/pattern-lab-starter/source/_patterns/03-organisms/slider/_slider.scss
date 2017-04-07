@@ -45,6 +45,10 @@ $base-line-height: 24px;
       line-height: 1.2;
       z-index: 200;
       font-weight: $fw--100;
+      &:hover{
+        text-decoration: none;
+        color:$c-pomegranate;
+      }
     }
 
     .slider-image{
@@ -79,6 +83,10 @@ $base-line-height: 24px;
       color:white;
       text-decoration: underline;
       z-index: 200;
+      &:hover{
+        text-decoration: none;
+        color:$c-pomegranate;
+      }
     }
 
     #views_slideshow_controls_text_previous_slider-homepage_slideshow{
