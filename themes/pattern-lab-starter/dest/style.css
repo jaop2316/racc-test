@@ -5861,8 +5861,9 @@ html {
   color: white;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-size: 0.9em;
   letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .menu-footer li:hover {

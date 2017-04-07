@@ -2,7 +2,11 @@
 <nav>
 <ul>
     {% for item in items %}
-        <li><a href={{item.url}}>{{item.title=="SEARCH"?'SEARCH':item.title}}</a></li>
+        {%if item.title=="SEARCH" %}
+        <li><a href={{item.url}}><i class="fa fa-search" aria-hidden="true"></i></a></li>
+        {% else %}
+        <li><a href={{item.url}}>{{item.title}}</a></li>
+        {% endif %}
     {% endfor %}
   </ul>
 <nav>
