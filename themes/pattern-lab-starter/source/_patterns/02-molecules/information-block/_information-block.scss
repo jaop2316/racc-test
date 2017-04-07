@@ -95,6 +95,9 @@ $base-line-height: 24px;
   }
   @include susy-breakpoint($screen-medium-12cols, 12) {
     @include container();
+    z-index: 100;
+    position: relative;
+    margin-top: -100px;
     .col1{
       @include span(9);
     }
@@ -181,7 +184,7 @@ $base-line-height: 24px;
     }
 
     .tab-content{
-      margin-top:30px;
+      margin-top:160px;
       margin-left:10px;
 
       p{
@@ -210,14 +213,17 @@ $base-line-height: 24px;
           color:$c-black;
           font-size: 35px;
           font-weight: 400;
-          line-height: 39px;
+          line-height: 2.5rem;
           text-align: left;
           padding-left:50px;
+          margin-top:160px;
+          width: 80%;
         }
 
        p{
          margin-top: 30px;
-         padding-left:50px
+         padding-left:50px;
+         width: 60%;
        }
 
       ul{
@@ -242,6 +248,7 @@ $base-line-height: 24px;
     }
 
 }
+
 
 
 

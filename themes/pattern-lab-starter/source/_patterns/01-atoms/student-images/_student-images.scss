@@ -86,15 +86,16 @@ $base-line-height: 24px;
       @include span(6);
     }
     .field-content{
-      position:absolute;
+      position:relative;
       z-index: 2;
-      top: 39.5%;
+      //top: 39.5%;
       color: $c-white;
       width: 350px;
       height: 70px;
       padding-left: 60px;
       font-size: 20px;
       line-height: 25px;
+      margin-top: -90px;
     }
     .lastnews-image{
       margin-left:25px;

@@ -4188,15 +4188,15 @@ html {
     float: left;
   }
   .last-news-container .field-content {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    top: 39.5%;
     color: white;
     width: 350px;
     height: 70px;
     padding-left: 60px;
     font-size: 20px;
     line-height: 25px;
+    margin-top: -90px;
   }
   .last-news-container .lastnews-image {
     margin-left: 25px;
@@ -5695,6 +5695,9 @@ html {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    z-index: 100;
+    position: relative;
+    margin-top: -100px;
   }
   .information-block:after {
     content: " ";
@@ -5784,7 +5787,7 @@ html {
     padding-top: 60px;
   }
   .information-block .tab-content {
-    margin-top: 30px;
+    margin-top: 160px;
     margin-left: 10px;
   }
   .information-block .tab-content p {
@@ -5807,13 +5810,16 @@ html {
     color: black;
     font-size: 35px;
     font-weight: 400;
-    line-height: 39px;
+    line-height: 2.5rem;
     text-align: left;
     padding-left: 50px;
+    margin-top: 160px;
+    width: 80%;
   }
   .information-block .tab-content-2col p {
     margin-top: 30px;
     padding-left: 50px;
+    width: 60%;
   }
   .information-block .tab-content-2col ul {
     list-style: none;
