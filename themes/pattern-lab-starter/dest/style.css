@@ -6271,6 +6271,9 @@ html {
   }
   .site-header ul.sf-menu.sf-style-white a {
     color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
   }
   .site-header #main-menu-fish.sf-depth-1.menuparent {
     background: unset;
@@ -6329,6 +6332,7 @@ html {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
   .slider:after {
     content: " ";
@@ -6379,7 +6383,7 @@ html {
   .slider #views_slideshow_controls_text_previous_slider-homepage_slideshow {
     position: absolute;
     z-index: 200;
-    top: 10%;
+    top: 55%;
     left: 2%;
     background-image: url("previus.png");
     background-repeat: no-repeat;
@@ -6391,7 +6395,7 @@ html {
   .slider #views_slideshow_controls_text_next_slider-homepage_slideshow {
     position: absolute;
     z-index: 200;
-    top: 10%;
+    top: 55%;
     left: 96%;
   }
   .slider #views_slideshow_controls_text_next_slider-homepage_slideshow a {
