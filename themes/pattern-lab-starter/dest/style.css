@@ -6338,18 +6338,30 @@ html {
   width: 160px;
   letter-spacing: 1.5px;
   line-height: 1.2;
+  z-index: 200;
 }
 
-/*#views_slideshow_cycle_main_slider-homepage_slideshow:after{
+/*#views_slideshow_cycle_main_slider-homepage_slideshow:before{
   content: '';
   position:absolute;
   top:0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background:linear-gradient(to bottom,rgba(255,255,255,0) 20%,black 100%);
   z-index: 100;
 }*/
+.slider-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, black 100%);
+  z-index: 100;
+}
+
 #views_slideshow_cycle_main_slider-homepage_slideshow .views-field-body p {
   position: absolute;
   top: 60%;
@@ -6358,6 +6370,7 @@ html {
   font-family: "Raleway", sans-serif;
   width: 400px;
   line-height: 1.8;
+  z-index: 200;
 }
 
 #views_slideshow_cycle_main_slider-homepage_slideshow .views-field-field-url a {
@@ -6366,6 +6379,7 @@ html {
   left: 11%;
   color: white;
   text-decoration: underline;
+  z-index: 200;
 }
 
 #views_slideshow_controls_text_previous_slider-homepage_slideshow {
@@ -6374,7 +6388,11 @@ html {
   top: 10%;
   background-image: url("previus.png");
   background-repeat: no-repeat;
-  overflow: hidden;
+}
+
+#views_slideshow_controls_text_previous_slider-homepage_slideshow a {
+  color: white;
+  font-size: 35px;
 }
 
 #views_slideshow_controls_text_next_slider-homepage_slideshow {
@@ -6382,6 +6400,14 @@ html {
   z-index: 200;
   top: 10%;
   left: 96%;
+}
+
+#views_slideshow_controls_text_next_slider-homepage_slideshow a {
+  color: white;
+  font-size: 35px;
+  /*&::after{
+      content: "→";
+    }*/
 }
 
 #views_slideshow_slide_counter_slider-homepage_slideshow {
