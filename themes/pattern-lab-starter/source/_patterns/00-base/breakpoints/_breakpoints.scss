@@ -23,7 +23,7 @@ $bp--xxxlarge: 1600px;
 
 // $bp--xsmall-s: 359px;
 // $bp--xsmall-m: 399px;
-   $bp--xsmall-l: 479px; // 8 cols breakpoint
+   //$bp--xsmall-l: 479px; // 8 cols breakpoint
 //
 // $bp--small-s: 599px;
 // $bp--small-m: 719px;
@@ -37,5 +37,5 @@ $bp--xxxlarge: 1600px;
 // $bp--large-l: 1599px;
 //
 // $bp--xlarge: 1919px;
-$screen-small-8cols: 'only screen' ($bp--xsmall-l + 1px);
+$screen-small-8cols: 'only screen' ($bp--xsmall + 1px);
 $screen-medium-12cols: $bp--small-l + 1px;

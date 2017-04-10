@@ -26,6 +26,7 @@
  */
 #}
 <div class="slider">
+	<div class="container-slider">
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
@@ -34,4 +35,6 @@
   {% block content %}
     {{ content }}
   {% endblock %}
+  </div>
+
 </div>

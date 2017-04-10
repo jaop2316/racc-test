@@ -25,13 +25,12 @@
  * @see template_preprocess_block()
  */
 #}
-<div class="information-block">
+
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    {{ content }}
+    {% include "@molecules/information-block-container.twig" with {'content':content} %}
   {% endblock %}
-</div>

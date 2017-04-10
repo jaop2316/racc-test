@@ -98,93 +98,95 @@ $base-line-height: 24px;
     z-index: 100;
     position: relative;
     margin-top: -100px;
-    .col1{
-      @include span(9);
+    .container-information{
+       @include span(73.33333%);
+       float:right;
     }
+    .col-izquierda{
+      @include span(31.25%);
+      display: flex;
+      .box1{
+        @include span(12);
+        background-color: $c-silver-sand;
+        height: 194px;
+        //margin-left: 277px;
+        //color:$c-white;
+        font-family: $ff--alternate;
+        &:hover{
+          background-color:$c-pomegranate;
+        }
+        p{
+        font-size: 35px;
+        text-align: center;
+        //font-weight: 400;
+        line-height: 39px;
+        padding-top: 60px;
+        }
+      }
+      .box2{
+        @include span(12);
+        background-color: $c-manatee;
+        color:$c-white;
+        height: 194px;
+        font-family: $ff--alternate;
+        //margin-left: 277px;
+        &:hover{
+          background-color:$c-pomegranate;
+        }
+        p{
+        font-size: 35px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 39px;
+        padding-top: 60px;
+        }
+      }
 
-    .col2{
-      @include span(3);
+      .box3{
+        @include span(12);
+        background-color: $c-osio-gray;
+        color:$c-white;
+        height: 194px;
+        font-family: $ff--alternate;
+        //margin-left: 277px;
+        &:hover{
+          background-color:$c-pomegranate;
+        }
+        p{
+        font-size: 35px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 39px;
+        padding-top: 60px;
+        }
+
+      }
+
+      .box4{
+        @include span(12);
+        background-color:$c-manatee;
+        color:$c-white;
+        height: 194px;
+        font-family: $ff--alternate;
+        //margin-left: 277px;
+        &:hover{
+          background-color:$c-pomegranate;
+        }
+        p{
+        font-size: 35px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 39px;
+        padding-top: 60px;
+        }
+
+      }
+
     }
-
-    .box1{
-      @include span(7);
-      background-color: $c-silver-sand;
-      height: 194px;
-      margin-left: 450px;
-      //color:$c-white;
-      font-family: $ff--alternate;
-      &:hover{
-        background-color:$c-pomegranate;
-      }
-      p{
-      font-size: 35px;
-      text-align: center;
-      //font-weight: 400;
-      line-height: 39px;
-      padding-top: 60px;
-      }
-    }
-    .box2{
-      @include span(7);
-      background-color: $c-manatee;
-      color:$c-white;
-      height: 194px;
-      font-family: $ff--alternate;
-      margin-left: 450px;
-      &:hover{
-        background-color:$c-pomegranate;
-      }
-      p{
-      font-size: 35px;
-      text-align: center;
-      font-weight: 400;
-      line-height: 39px;
-      padding-top: 60px;
-      }
-    }
-
-    .box3{
-      @include span(7);
-      background-color: $c-osio-gray;
-      color:$c-white;
-      height: 194px;
-      font-family: $ff--alternate;
-      margin-left: 450px;
-      &:hover{
-        background-color:$c-pomegranate;
-      }
-      p{
-      font-size: 35px;
-      text-align: center;
-      font-weight: 400;
-      line-height: 39px;
-      padding-top: 60px;
-      }
-
-    }
-
-    .box4{
-      @include span(7);
-      background-color:$c-manatee;
-      color:$c-white;
-      height: 194px;
-      font-family: $ff--alternate;
-      margin-left: 450px;
-      &:hover{
-        background-color:$c-pomegranate;
-      }
-      p{
-      font-size: 35px;
-      text-align: center;
-      font-weight: 400;
-      line-height: 39px;
-      padding-top: 60px;
-      }
-
-    }
-
-    .tab-content{
-      margin-top:160px;
+    .col-derecha{
+      @include span(68.75%);
+      .tab-content{
+      margin-top:60px;
       margin-left:10px;
 
       p{
@@ -216,7 +218,7 @@ $base-line-height: 24px;
           line-height: 2.5rem;
           text-align: left;
           padding-left:50px;
-          margin-top:160px;
+          margin-top:60px;
           width: 80%;
         }
 
@@ -253,6 +255,18 @@ $base-line-height: 24px;
 
 
   }
+    }
+    .col1{
+      @include span(9);
+    }
+
+    .col2{
+      @include span(3);
+    }
+
+    
+
+    
 }
 
 

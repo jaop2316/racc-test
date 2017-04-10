@@ -32,7 +32,7 @@ $container-style: fluid;
   @include susy-breakpoint($screen-medium-12cols, 12) {
     @include container();
       background-color:$c-tuna;
-      //width: 100%;
+      //max-width: 100%;
       height: 462px;
       color:$c-white;
   h2{

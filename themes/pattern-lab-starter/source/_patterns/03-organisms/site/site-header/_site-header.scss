@@ -23,12 +23,14 @@ $base-line-height: 24px;
   @include border-box-sizing;
   @include establish-new-baseline;
 
-
+$small-range: 381px 800px;
 
 .site-header{
 
-  @include container();
-  @include susy-breakpoint($screen-small-8cols, 8) {
+  //@include container();
+
+  @include breakpoint($small-range) {
+
     @include container();
     background-color:$c-white--gradient;
     width:100%;
@@ -36,21 +38,18 @@ $base-line-height: 24px;
     z-index: 999999999999999999999999;
     top:0;
     left:0;
+
     .branding{
-      //display: none;
+      @include span(6);
     }
-    /*.main-menu{
+
+    .main-menu{
       display: none;
     }
+
     .menus{
       display: none;
     }
-    #main-menu-fish{
-      display:none;
-      .test{
-        display: none;
-      }
-    }*/
     .responsive-menu-toggle-icon:before, .responsive-menu-toggle-icon:after, .responsive-menu-toggle-icon span.icon{
       background-color: $c-black;
     }
